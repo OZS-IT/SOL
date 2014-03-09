@@ -5,7 +5,7 @@ with open("Registracije/registracije1a.csv","r",encoding="utf-8") as f:
         a = f.read()
         b = a.split("\n")
         ozs = urlopen("http://www.orientacijska-zveza.si/index.php?id=56")
-        stran=ozs.read()
+        stran=str(ozs.read())
         s = ""
         for i in b:
             stri=""
@@ -13,11 +13,9 @@ with open("Registracije/registracije1a.csv","r",encoding="utf-8") as f:
             k = 0
             if len(c)>1:
                 if not (c[1]+" "+c[2]+"<sup>" in stran):
-                    while k < 4:
+                    while k < 5:
                         stri += c[k]+";"
                         k += 1
                     stri = stri[:-1] + "\n"
                     s += stri
-        if len(c)>1:
-            if not (c[1]+" "+c[2]+"<sup>" in stran):
-                g.write(s)
+        g.write(s[:-1])
