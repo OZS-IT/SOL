@@ -21,6 +21,8 @@ for j in range(1,17):
             kate=a[4]
             s=presledki(sumniki(a[1]+a[2]))
             s=s.lower()
+            if kate[-1] == "\n":
+                kate = kate[:-1]
             kat.add(kate)
             if ime=="Žiga" and priimek=="Groff":
                 st="483"
@@ -45,7 +47,7 @@ for st_lige in range(1,12):
         st_tekem+=1
         vCsv(stanjeLige,st_tekem,kat,tek)
 if path.isfile('./Resna stanja/SOL'+str(st_tekem)+'.csv'):
-    g=open('sol_2013.csv','w',encoding='utf-8')
+    g=open('sol_2014.csv','w',encoding='utf-8')
     with open('./Resna stanja/SOL'+str(st_tekem)+'.csv','r',encoding='utf-8') as f:
         for i in f.readlines():
             g.write(i)
