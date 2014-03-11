@@ -26,6 +26,10 @@ for j in range(1,17):
             kat.add(kate)
             if ime=="Žiga" and priimek=="Groff":
                 st="483"
+            elif ime == "Cesare" and priimek == "Tarrabocchia":
+                klub = "OK Azimut"
+            elif ime == "Andraž" and priimek == "De Luisa":
+                klub = "OK Azimut"
             if s not in tek.keys():
                 tek[s]=[kate,ime,priimek,tekmaRegistracije,klub,st]
     for i in kat:
@@ -43,6 +47,7 @@ for st_lige in range(1,12):
     if path.isfile('./Rezultati/SOL'+str(st_lige)+'.csv'):
         c=rezultati(st_lige,stanjeLige,kat,tek)
         stanjeLige=izracunLige(c,st_lige,stanjeLige,IP,kat,tek)
+        #print(stanjeLige["M55"])
         #print(stanjeLige["M21E"]["jurezmrzlikar"])
         st_tekem+=1
         vCsv(stanjeLige,st_tekem,kat,tek)

@@ -133,7 +133,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     colnum+=1
                 #print(row[0].split(';'))
                 ok=int(ok)
-                classs={3:"mp",2:"dns",1:"dnf",4:"DISQ",0:True}
+                classs={3:"mp",1:"dns",2:"dnf",4:"DISQ",0:True}
                 
                 if cas1==False and ok not in [1,2,3,4]:
                     cas="mp"
@@ -217,7 +217,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     ime1='Jernej'
                 elif ime1=='Ivo'and priimek1=='Kette':
                     priimek1='Kete'
-                a={'scommendrisio':'SCOM Mendriso','rodjezerskizmaj':'RJZ Velenje','ind':'ind.','ssdgaja':'SSD Gaja','okkomenda':'OK Komenda','pdajdovscina':'PD Ajdovščina','okazimut':'OK Azimut', 'okbrezice':'OK Brežice','okperkmandeljc':'OK Perkmandeljc','okpolaris':'OK Polaris','okslovenjgradec':'OK Slovenj Gradec','okslovenskekonjice':'OK Slovenske Konjice','oktivoli':'OK Tivoli','oktrzin':'OK Trzin','rjzvelenje':'RJZ Velenje','sok':'ŠOK'}
+                a={'mokmariborskiok':'Mariborski OK','kamniskiokkok': 'Kamniški OK','scommendrisio':'SCOM Mendriso','rodjezerskizmaj':'RJZ Velenje','ind':'ind.','ssdgaja':'SSD Gaja','okkomenda':'OK Komenda','pdajdovscina':'PD Ajdovščina','orientacijskiklubazimutokazimut':'OK Azimut', 'okbrezice':'OK Brežice','okperkmandeljc':'OK Perkmandeljc','okpolaris':'OK Polaris','okslovenjgradec':'OK Slovenj Gradec','okslovenskekonjice':'OK Slovenske Konjice','oktivoli':'OK Tivoli','oktrzin':'OK Trzin','rjzvelenje':'RJZ Velenje','sok':'ŠOK'}
                 if presledki(sumniki(klub1).lower()) in a.keys():
                     klub1=a[presledki(sumniki(klub1).lower())]
                 else:
