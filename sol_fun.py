@@ -124,7 +124,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                             else:
                                 ggz=cas1.split(':')
                                 cas1=str(int(ggz[0])//60)+':'+str(int(ggz[0])%60)+':'+ggz[1]
-                    elif header[colnum]=='Cl.name':
+                    elif header[colnum]=="City":
                         klub=col
                     elif header[colnum]=='Classifier':
                         ok=col
