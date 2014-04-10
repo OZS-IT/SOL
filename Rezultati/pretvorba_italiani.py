@@ -1,6 +1,6 @@
 """Navodila:
   -  Izberi primerno vhodno in izhodno datoteko in pot do njiju vpiši spodaj.
-  -  Italiansko datoteko v .xls shrani v izhodno datoteko kot .csv
+  -  Italiansko datoteko v .xls shrani v vhodno datoteko kot .csv
   -  Spremeni kodiranje vhodne datoteke na utf-8.
   -  Med kategorijami zbriši vse (seveda ne tekmovalcev), vmes pusti le prazno vrstico.
   -  V kategorije po vrsti vpiši skupinam tekmovalcev pripadajoče skupine.
