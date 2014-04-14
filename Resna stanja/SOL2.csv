@@ -132,15 +132,16 @@ Jevševar;Bojan;OK Brežice;M35;;;;12;;12;12;43
 Poljanšek;Aleš;OK Azimut;M35;0:54:06;5;10;-;10;10;10;176
 Groff;Tomaž;OK Azimut;M35;0:55:02;7;7;;7;7;7;240
 Kustec;Stanislav;MOK;M35;;;;7;;7;7;125
-Cimerman;Janez;OK Azimut;M35;1:01:38;8;6;1;6;7;4;394
-Foški;Valter;OK Polaris;M35;1:04:21;9;5;-;5;5;5;58
+Šalamun;Miro;OK Polaris;M35;0:58:35;8;6;-;6;6;6;2
+Cimerman;Janez;OK Azimut;M35;1:01:38;9;5;1;5;6;3;394
 Bosisio;Kristian;OK Trzin;M35;;;;5;;5;5;508
-Petrovič;Uroš;OK Polaris;M35;1:08:16;10;4;-;4;4;4;64
+Foški;Valter;OK Polaris;M35;1:04:21;10;4;-;4;4;4;58
 Jazbar;Jožko;OK Azimut;M35;;;;4;;4;4;106
+Petrovič;Uroš;OK Polaris;M35;1:08:16;11;3;-;3;3;3;64
 Kolman;Miran;Kamniški OK;M35;;;;3;;3;3;123
-Rojc;Iztok;OK Polaris;M35;1:12:02;11;3;;3;3;3;65
-Benko;Robert;OK Polaris;M35;1:25:43;12;2;-;2;2;2;151
 Mikložič;Primož;MOK;M35;;;;2;;2;2;222
+Rojc;Iztok;OK Polaris;M35;1:12:02;12;2;;2;2;2;65
+Benko;Robert;OK Polaris;M35;1:25:43;13;1;-;1;1;1;151
 Šalamun;Željko;OK Polaris;M35;;;;;;0;0;152
 Mazej;Uroš;OK Azimut;M35;;;;;;0;0;116
 Cvelbar;Uroš;OK Azimut;M35;;;;;;0;0;115
@@ -148,7 +149,6 @@ Kmetič;Sandi;OK Polaris;M35;;;;;;0;0;67
 Pobežin;Robert;OK Polaris;M35;;;;;;0;0;223
 Savinšek;Primož;OK Polaris;M35;;;;;;0;0;134
 Vrčkovnik;Peter;RJZ Velenje;M35;;;;;;0;0;540
-Šalamun;Miro;OK Polaris;M35;;;;-;;0;0;2
 Kerčmar;Matjaž;OK Azimut;M35;;;;;;0;0;566
 Špeh;Matej;RJZ Velenje;M35;;;;;;0;0;605
 Kostanjevec;Matej;MOK;M35;;;;;;0;0;443
@@ -203,7 +203,8 @@ Podgornik;Eva;PD Ajdovščina;Ž12;;;;;;0;0;623
 Zavrl;Zala;OK Komenda;Ž14;0:29:46;1;25;25;25;50;25;513
 Poljanšek;Nika;OK Azimut;Ž14;0:42:01;2;20;15;20;35;18;257
 Ferenc;Julija;OK Tivoli;Ž14;;;;20;;20;20;409
-Dovč;Rebeka;OK Tivoli;Ž14;0:54:08;3;15;;15;15;15;657
+Šalamun;Ana;OK Polaris;Ž14;0:43:51;3;15;;15;15;15;332
+Dovč;Rebeka;OK Tivoli;Ž14;0:54:08;4;12;;12;12;12;657
 Jevševar;Jedert;OK Brežice;Ž14;;;;12;;12;12;46
 Dremel;Zarja;OK Trzin;Ž14;;;;;;0;0;21
 Bohinc;Vesna;OK Komenda;Ž14;;;;;;0;0;278
@@ -212,7 +213,6 @@ Korelc;Mihala;OK Komenda;Ž14;;;;;;0;0;653
 Mužina;Ivana;PD Ajdovščina;Ž14;;;;-;;0;0;680
 Harej;Daša;PD Ajdovščina;Ž14;;;;-;;0;0;552
 Peršič;Andreja;PD Ajdovščina;Ž14;;;;;;0;0;694
-Šalamun;Ana;OK Polaris;Ž14;;;;;;0;0;332
 Ravnikar;Monika;OK Komenda;Ž16;0:36:12;3;15;25;15;40;20;357
 Lipužič;Marjeta;OK Komenda;Ž16;0:35:14;2;20;20;20;40;20;358
 Foški;Brina;OK Polaris;Ž16;0:32:52;1;25;12;25;37;18;128

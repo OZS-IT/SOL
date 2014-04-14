@@ -129,20 +129,20 @@ Anderluh;Gregor;OK Polaris;M35;;;;8;25;;33;16;155
 Kenda;Klemen;OK Azimut;M35;1:04:05;6;8;10;12;8;30;10;1
 Jevševar;Bojan;OK Brežice;M35;1:00:18;4;12;12;;12;24;12;43
 Kölner;Blaž;OK Komenda;M35;mp;;;6;8;-;14;7;556
-Rojc;Iztok;OK Polaris;M35;1:01:43;5;10;;3;10;13;6;65
-Cimerman;Janez;OK Azimut;M35;1:11:25;10;4;1;6;4;11;4;394
+Šalamun;Miro;OK Polaris;M35;1:06:48;7;7;-;6;7;13;6;2
+Rojc;Iztok;OK Polaris;M35;1:01:43;5;10;;2;10;12;6;65
 Poljanšek;Aleš;OK Azimut;M35;;;;-;10;;10;10;176
 Groff;Tomaž;OK Azimut;M35;1:20:10;11;3;;7;3;10;5;240
+Cimerman;Janez;OK Azimut;M35;1:11:25;10;4;1;5;4;10;3;394
 Kustec;Stanislav;MOK;M35;1:20:28;12;2;7;;2;9;4;125
 Kolman;Miran;Kamniški OK;M35;1:09:40;9;5;3;;5;8;4;123
-Šalamun;Miro;OK Polaris;M35;1:06:48;7;7;-;;7;7;7;2
 Kostanjevec;Matej;MOK;M35;1:08:36;8;6;;;6;6;6;443
-Foški;Valter;OK Polaris;M35;;;;-;5;;5;5;58
 Bosisio;Kristian;OK Trzin;M35;;;;5;;;5;5;508
-Petrovič;Uroš;OK Polaris;M35;1:29:19;14;1;-;4;1;5;2;64
+Foški;Valter;OK Polaris;M35;;;;-;4;;4;4;58
 Jazbar;Jožko;OK Azimut;M35;;;;4;;;4;4;106
-Benko;Robert;OK Polaris;M35;;;;-;2;;2;2;151
+Petrovič;Uroš;OK Polaris;M35;1:29:19;14;1;-;3;1;4;2;64
 Mikložič;Primož;MOK;M35;;;;2;;;2;2;222
+Benko;Robert;OK Polaris;M35;;;;-;1;;1;1;151
 Cimerman;Andrej;OK Polaris;M35;1:21:04;13;1;;;1;1;1;444
 Šalamun;Željko;OK Polaris;M35;;;;;;;0;0;152
 Mazej;Uroš;OK Azimut;M35;;;;;;;0;0;116
@@ -202,10 +202,10 @@ Bratina;Kaja;PD Ajdovščina;Ž12;;;;-;;;0;0;624
 Podgornik;Eva;PD Ajdovščina;Ž12;;;;;;;0;0;623
 Zavrl;Zala;OK Komenda;Ž14;0:20:59;1;25;25;25;25;75;25;513
 Poljanšek;Nika;OK Azimut;Ž14;0:27:36;4;12;15;20;12;47;16;257
-Dovč;Rebeka;OK Tivoli;Ž14;0:42:12;5;10;;15;10;25;12;657
+Šalamun;Ana;OK Polaris;Ž14;0:24:54;3;15;;15;15;30;15;332
+Dovč;Rebeka;OK Tivoli;Ž14;0:42:12;5;10;;12;10;22;11;657
 Ferenc;Julija;OK Tivoli;Ž14;;;;20;;;20;20;409
 Harej;Daša;PD Ajdovščina;Ž14;0:21:34;2;20;-;;20;20;20;552
-Šalamun;Ana;OK Polaris;Ž14;0:24:54;3;15;;;15;15;15;332
 Jevševar;Jedert;OK Brežice;Ž14;;;;12;;;12;12;46
 Dremel;Zarja;OK Trzin;Ž14;;;;;;;0;0;21
 Bohinc;Vesna;OK Komenda;Ž14;;;;;;;0;0;278
