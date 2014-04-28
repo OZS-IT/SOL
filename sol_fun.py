@@ -14,24 +14,22 @@ def presledki(niz):
         if i!=' ':
             a+=i
     return a
-def tocke(i):
-    #i je mesto
-    t=[25,20,15,12,10,8,7,6,5,4,3,2,1]
-    if i>len(t)-1:
-        return 1
-    return t[i]
+
 def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
     #'st_tekme' je št SOL(npr. pri SOL2, je to 2).
     #IP je vrednost tekme(1.2 pomeni, da je tekmo vredna 20 % več).
     #stanjeLige mora biti enako stanjeLige[kategorija]
     for kat in kategorija:
+        toce = 0
         if rezultatiTekme[kat]:
             #Sestavljamo seznam z časi in točkami.
             seznamCasov=[]
             for naziv in rezultatiTekme[kat].keys():
                 if  tek.get(naziv,[0])[0]==kat and tek.get(naziv)[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ"]:
                     seznamCasov.append((rezultatiTekme[kat][naziv][0])*3600+(rezultatiTekme[kat][naziv][1])*60+rezultatiTekme[kat][naziv][2])
-                    
+                    toce+=1
+
+            t = [i for i in range(toce,0,-1)]
             seznamCasov.sort()
             for naziv in rezultatiTekme[kat].keys():
                 if  tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ"]:
@@ -40,7 +38,7 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
                         if seznamCasov[i]==RT:
                             mesto=i+1
                             break
-                    stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],tocke(mesto-1),mesto]
+                    stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],t[mesto-1],mesto]
 
                 elif tek.get(naziv,[0])[0]==kat  and tek.get(naziv,[0])[3]<=st_tekme:
                     if rezultatiTekme[kat][naziv]!="dns":
@@ -86,7 +84,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
         rezultat[i]={}
     import csv
     kodiranje='utf-8'
-    with open('./Rezultati/SOL'+str(st_lige)+'.csv',encoding=kodiranje) as f:
+    with open('./Rezultati/solsko'+str(st_lige)+'.csv',encoding=kodiranje) as f:
         reader=csv.reader(f)
         rownum=0
         for row in reader:
@@ -259,7 +257,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
 
 
 def vCsv(stanjeLige,st_tekem,kat,tek):
-    with open('./Stanja racunana/SOL'+str(st_tekem)+'.csv','w+',encoding='utf-8') as f:
+    with open('./stanja/solsko'+str(st_tekem)+'.csv','w+',encoding='utf-8') as f:
         #st_tekem-=1
         f.write('Surname;First name;Cl.name;Class;Time;Pl;Points')
         for i in range(1,st_tekem +1):
