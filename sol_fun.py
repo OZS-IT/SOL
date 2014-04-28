@@ -15,6 +15,57 @@ def presledki(niz):
             a+=i
     return a
 
+def klubsko(stanjeLige,kategorije,st_tekem):
+    rez1 = [0]*len(kategorije)
+    klubii = set()
+    for i in range(len(kategorije)):
+        a,klu=pklubsko(stanjeLige[kategorije[i]],st_tekem)
+        klubii |= klu
+        rez1[i]=a
+    rez=[]
+    for klu in klubii:
+        rez.append((klu,sum([k.get(klu,0) for k in rez1])))
+    rez.sort(key = lambda x:x[1])
+    with open("sestevek.csv","w",encoding="utf-8")as f:
+        f.write("mesto;sola;tocke\n")
+        i = 0
+        j = 1
+        prejšnji = -1
+        for a,b in rez[::-1]:
+            if b == prejšnji:
+                j+=1
+            else:
+                prejšnji = b
+                i+=j
+                j=1
+            f.write("{0}.;{1};{2}\n".format(i,a,b))
+    return None
+
+def pklubsko(stanjeLige,st_tekem):
+    klubii = {b["klub"] for a,b in stanjeLige.items()}
+    rez = {klu:{} for klu in klubii}
+    for klu in klubii:
+        for a,b in stanjeLige.items():
+            if b["klub"]==klu:
+                for i in range(1,st_tekem+1):
+                    if i in b.keys():
+                        if b[i][1]!="-":
+                            rez[klu][i]=rez[klu].get(i,[])
+                            rez[klu][i].append(b[i][1])
+    rez1={}
+    for a,b in rez.items():
+        r=[0]*st_tekem
+        for i in range(1,st_tekem+1):
+            if i in b.keys():
+                b[i].sort()
+                if len(b[i])>3:
+                    r[i-1]=b[i][-1]+b[i][-2]+b[i][-3]
+                else:
+                    r[i-1]=sum(b[i])
+        rez1[a]=sum(r)
+    return rez1,klubii
+        
+
 def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
     #'st_tekme' je št SOL(npr. pri SOL2, je to 2).
     #IP je vrednost tekme(1.2 pomeni, da je tekmo vredna 20 % več).

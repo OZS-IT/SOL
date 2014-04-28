@@ -45,4 +45,4 @@ for st_lige in range(1,12):
         #print(stanjeLige["M21E"]["jurezmrzlikar"])
         st_tekem+=1
         vCsv(stanjeLige,st_tekem,kat,tek)
-
+klubsko(stanjeLige,list(kat),st_tekem)
