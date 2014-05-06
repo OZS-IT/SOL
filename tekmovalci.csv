@@ -1,255 +1,1195 @@
-﻿595;Andraž;De Luisa;OK Azimut;M18
-684;Vedran;Bijelič;OK Brežice;M21E
-685;Manu;Jurado;OK Tivoli;M21E
-483;Žiga;Groff;OK Azimut;M10
-585;Martin;Jevševar;OK Brežice;M10
-613;Luka;Seljak;OK Komenda;M10
-648;Rok;Kern;OK Komenda;M10
-651;Denis;Gregorc;OK Komenda;M10
-473;Domen;Petrovič;OK Polaris;M10
-474;Luka;Anderluh;OK Polaris;M10
-654;Fedja;Močnik;OK Polaris;M10
-578;Matevž;Kunc;OK Tivoli;M10
-636;Gašper;Zgonec;OK Tivoli;M10
-575;Mark;Skušek;OK Komenda;M12
-615;Anže;Mirtič;OK Komenda;M12
-650;Erik;Gregorc;OK Komenda;M12
-652;Domen;Kavčič;OK Komenda;M12
-406;Filip;Petrovič;OK Polaris;M12
-646;Rok;Tepeš;OK Polaris;M12
-567;Rok;Hernec;OK Tivoli;M12
-569;Gašper;Lešnjak;OK Tivoli;M12
-637;Filip;Grad;OK Tivoli;M12
-586;Vid;Keresteš;OK Trzin;M12
-397;Žan;Ravnikar;OK Komenda;M14
-437;Matjaž;Kavčič;OK Komenda;M14
-520;Matic;Blaž;OK Komenda;M14
-121;Peter;Zupan;OK Polaris;M14
-323;Saš;Močnik;OK Polaris;M14
-499;Gregor;Kunc;OK Tivoli;M14
-625;Matic;Sever;PD Ajdovščina;M14
-626;Matic;Soban;PD Ajdovščina;M14
-679;Samo;Fučka;PD Ajdovščina;M14
-367;Denis;Krhlikar;OK Azimut;M16
-370;Gal;Petkovšek;OK Azimut;M16
-376;Gašper;Rejec;OK Azimut;M16
-535;Domen;Kavčič;OK Azimut;M16
-614;Aljoša;Pogačar;OK Komenda;M16
-71;Gašper;Petrovič;OK Polaris;M16
-132;Matej;Škarabot;OK Polaris;M16
-150;Jan;Šalamun;OK Polaris;M16
-17;Filip Jakob;Špendl;OK Trzin;M16
-341;Klemen;Zabukovec;PD Ajdovščina;M16
-346;Sašo;Škvarč;PD Ajdovščina;M16
-419;Peter;Tušar;OK Azimut;M18
-526;Andraž;Rupnik;OK Azimut;M18
-595;Andraž;De Luisa;OK Azimut;M18
-618;Aljaž;Pavšič;OK Azimut;M18
-619;Matic;Močnik;OK Azimut;M18
-620;Simon;Stanonik;OK Azimut;M18
-676;Žiga;Jevšnik;OK Azimut;M18
-70;Blaž;Petrovič;OK Polaris;M18
-16;Martin;Špendl;OK Trzin;M18
-19;Maj;Hrovat;OK Trzin;M18
-88;Blaž;Grah;OK Azimut;M21A
-97;Franc;Knap;OK Azimut;M21A
-109;Samo;Vodopivec;OK Azimut;M21A
-190;Nejc;Močnik;OK Azimut;M21A
-68;Andraž;Ravnikar;OK Polaris;M21A
-258;Tobija;Cukjati;OK Polaris;M21A
-5;Zoran;Furman;OK Slovenske Konjice;M21A
-28;Marko;Casagrande;OK Tivoli;M21A
-658;Virgil;Kos;OK Tivoli;M21A
-663;Aljaž;Černe;OK Tivoli;M21A
-144;Matjaž;Draksler;ŠOK;M21A
-412;Ivo;Kete;PD Ajdovščina;M21A
-485;David;Tajnšek;RJZ Velenje;M21A
-490;Andrej;Šmit;RJZ Velenje;M21A
-509;Žiga;Gregorin;RJZ Velenje;M21A
-524;Aleksander;Škorič;RJZ Velenje;M21A
-89;Blaž;Kovačič;OK Azimut;M21B
-96;Emil;Kacin;OK Azimut;M21B
-104;Janko;Bačnar;OK Azimut;M21B
-239;Matjaž;Koprivc;OK Azimut;M21B
-308;Rok;Sušnik;OK Azimut;M21B
-482;Tadej;Dolenc;OK Azimut;M21B
-494;Vladan;Vukajlovič;OK Azimut;M21B
-610;Janez;Zavrl;OK Komenda;M21B
-321;Griša;Močnik;OK Polaris;M21B
-416;Dragan;Krivičić;OK Perkmandeljc;M21B
-446;Miloš;Sterle;OK Slovenske Konjice;M21B
-3;Krešo;Keresteš;OK Trzin;M21B
-326;Bojan;Dremel;OK Trzin;M21B
-609;Jan;Kolar;RJZ Velenje;M21B
-194;Tibor;Mrak;OK Azimut;M21E
-373;Tilen;Rupnik;OK Azimut;M21E
-424;Gregor;Hvala;OK Azimut;M21E
-45;Andraž;Hribar;OK Brežice;M21E
-57;Jaka;Piltaver;OK Brežice;M21E
-684;Vedran;Bijelič;OK Brežice;M21E
-72;Jure;Zmrzlikar;OK Komenda;M21E
-276;Jernej;Zorman;OK Komenda;M21E
-133;Rajko;Kračun;OK Polaris;M21E
-6;Daniel;Lebar;OK Slovenske Konjice;M21E
-25;Andrej;Borštnik;OK Tivoli;M21E
-26;Aljaž;Borštnik;OK Tivoli;M21E
-410;Jan;Dovč;OK Tivoli;M21E
-588;Boštjan;Čerin;OK Tivoli;M21E
-659;Janez Elija;Kos;OK Tivoli;M21E
-241;Feike;Alewijnse;OK Trzin;M21E
-337;David;Čufer;PD Ajdovščina;M21E
-476;Uroš;Burič;RJZ Velenje;M21E
-126;David;Rihtarič;MOK;M21E
-280;Leon;Kropivšek;MOK;M21E
-414;Matej;Pistor;MOK;M21E
-590;Ivan;Boyadzhiev ml.;MOK;M21E
-436;Denis;Kokelj;Kamniški OK;M21E
-1;Klemen;Kenda;OK Azimut;M35
-106;Jožko;Jazbar;OK Azimut;M35
-115;Uroš;Cvelbar;OK Azimut;M35
-116;Uroš;Mazej;OK Azimut;M35
-176;Aleš;Poljanšek;OK Azimut;M35
-240;Tomaž;Groff;OK Azimut;M35
-394;Janez;Cimerman;OK Azimut;M35
-581;Aljoša;Primožič;OK Azimut;M35
-566;Matjaž;Kerčmar;OK Azimut;M35
-43;Bojan;Jevševar;OK Brežice;M35
-556;Blaž;Kölner;OK Komenda;M35
-561;Janez;Korošec;OK Komenda;M35
-2;Miro;Šalamun;OK Polaris;M35
-58;Valter;Foški;OK Polaris;M35
-64;Uroš;Petrovič;OK Polaris;M35
-65;Iztok;Rojc;OK Polaris;M35
-67;Sandi;Kmetič;OK Polaris;M35
-69;Dušan;Petrovič;OK Polaris;M35
-134;Primož;Savinšek;OK Polaris;M35
-151;Robert;Benko;OK Polaris;M35
-152;Željko;Šalamun;OK Polaris;M35
-155;Gregor;Anderluh;OK Polaris;M35
-223;Robert;Pobežin;OK Polaris;M35
-444;Andrej;Cimerman;OK Polaris;M35
-508;Kristian;Bosisio;OK Trzin;M35
-540;Peter;Vrčkovnik;RJZ Velenje;M35
-605;Matej;Špeh;RJZ Velenje;M35
-60;Herwig;Allwinger;MOK;M35
-62;Boris;Bauman;MOK;M35
-125;Stanislav;Kustec;MOK;M35
-222;Primož;Mikložič;MOK;M35
-443;Matej;Kostanjevec;MOK;M35
-102;Janez;Pretnar;Kamniški OK;M35
-123;Miran;Kolman;Kamniški OK;M35
-92;Damjan;Čelik;OK Azimut;M45
-98;Igor;Bončina;OK Azimut;M45
-119;Vojko;Kacin;OK Azimut;M45
-193;Silvij;Močnik;OK Azimut;M45
-54;Miha;Škarabot;OK Polaris;M45
-55;Aleš;Zupan;OK Polaris;M45
-148;Dalibor;Radovan;OK Polaris;M45
-315;Vlado;Rogulja;OK Polaris;M45
-42;Samo;Gjerek;OK Perkmandeljc;M45
-594;Marco;Giovannini;OK Trzin;M45
-489;Samo;Frankovič;RJZ Velenje;M45
-100;Ivan;Mrak;OK Azimut;M50
-493;Pavel;Rejec;OK Azimut;M50
-39;Roman;Sladič;OK Perkmandeljc;M50
-24;Aleš;Borštnik;OK Tivoli;M50
-29;Roman;Volčič;OK Tivoli;M50
-587;Aleš;Čerin;OK Tivoli;M50
-635;Ivan;Boyadzhiev;MOK;M50
-666;Herman;Novak;MOK;M50
-91;Cesare;Tarrabocchia;OK Azimut;M55
-105;Janko;Lapajne;OK Azimut;M55
-118;Vlado;Sedej;OK Azimut;M55
-198;Črtomir;Knap;OK Azimut;M55
-643;Charles;Nelson;OK Azimut;M55
-139;Srečo;Pirman;ŠOK;M55
-336;Stanko;Čufer;PD Ajdovščina;M55
-598;Brina;Kerčmar;OK Azimut;Ž10
-629;Pija;Burger;OK Komenda;Ž10
-506;Zala;Ferenc;OK Tivoli;Ž10
-441;Nika;Ravnikar;OK Komenda;Ž12
-515;Ana Pia;Pogačar;OK Komenda;Ž12
-518;Nina;McQuarrie;OK Komenda;Ž12
-647;Tina;Kern;OK Komenda;Ž12
-122;Neža;Zupan;OK Polaris;Ž12
-584;Zarja;Kmetič;OK Polaris;Ž12
-399;Anja;Škarabot;OK Polaris;Ž12
-445;Katarina Eva;Anderluh;OK Polaris;Ž12
-645;Neja;Tepeš;OK Polaris;Ž12
-570;Katja;Zgonec;OK Tivoli;Ž12
-623;Eva;Podgornik;PD Ajdovščina;Ž12
-624;Kaja;Bratina;PD Ajdovščina;Ž12
-257;Nika;Poljanšek;OK Azimut;Ž14
-46;Jedert;Jevševar;OK Brežice;Ž14
-513;Zala;Zavrl;OK Komenda;Ž14
-649;Patricija;Primožič;OK Komenda;Ž14
-653;Mihala;Korelc;OK Komenda;Ž14
-332;Ana;Šalamun;OK Polaris;Ž14
-409;Julija;Ferenc;OK Tivoli;Ž14
-657;Rebeka;Dovč;OK Tivoli;Ž14
-21;Zarja;Dremel;OK Trzin;Ž14
-552;Daša;Harej;PD Ajdovščina;Ž14
-680;Ivana;Mužina;PD Ajdovščina;Ž14
-671;Tjaša;Kogovšek;OK Azimut;Ž16
-672;Petra;Trček;OK Azimut;Ž16
-673;Lara;Gantar;OK Azimut;Ž16
-674;Anja;Humar;OK Azimut;Ž16
-675;Blažka;Rupnik;OK Azimut;Ž16
-357;Monika;Ravnikar;OK Komenda;Ž16
-358;Marjeta;Lipužič;OK Komenda;Ž16
-128;Brina;Foški;OK Polaris;Ž16
-390;Nina;Črnigoj;ŠOK;Ž16
-498;Jana;Kete;PD Ajdovščina;Ž16
-488;Ajda;Frankovič;RJZ Velenje;Ž16
-182;Katjuša;Poljanšek;OK Azimut;Ž18
-420;Manca;Cvek;OK Azimut;Ž18
-617;Urša;Beguš;OK Azimut;Ž18
-398;Veronika;Burger;OK Polaris;Ž18
-582;Ema;Radovan;OK Polaris;Ž18
-34;Eva;Casagrande;OK Tivoli;Ž18
-18;Lara;Jerman;OK Trzin;Ž18
-117;Urša;Tomažin;OK Azimut;Ž21A
-421;Nuša;Jeram;OK Azimut;Ž21A
-519;Ajda;Flašker;OK Komenda;Ž21A
-545;Jona;Mirnik;OK Komenda;Ž21A
-59;Mojca;Foški;OK Polaris;Ž21A
-129;Tajda;Foški;OK Polaris;Ž21A
-23;Ana;Pribaković Borštnik;OK Tivoli;Ž21A
-507;Metka;Udovič;OK Trzin;Ž21A
-22;Jerca;Bernik;ŠOK;Ž21A
-492;Maja;Zupančič;RJZ Velenje;Ž21A
-82;Mojca;Flerin;Kamniški OK;Ž21A
-112;Tanja;Pretnar;Kamniški OK;Ž21A
-316;Suzana;Drevenšek;Kamniški OK;Ž21A
-188;Marjanca;Poljanšek;OK Azimut;Ž21B
-495;Marjana;Rejec;OK Azimut;Ž21B
-564;Loreta;Stojčevski;OK Brežice;Ž21B
-516;Nataša;Aljančič;OK Komenda;Ž21B
-462;Alenka;Škarabot;OK Polaris;Ž21B
-616;Tina;Arh;OK Polaris;Ž21B
-642;Katja;Jurca;OK Tivoli;Ž21B
-662;Andreja;Strnad;OK Tivoli;Ž21B
-14;Ula;Dremel;OK Trzin;Ž21B
-141;Petra;Kalan;ŠOK;Ž21B
-401;Ana;Plavčak;ŠOK;Ž21B
-405;Alja;Ojstrež;ŠOK;Ž21B
-352;Marija;Kovač;PD Ajdovščina;Ž21B
-477;Anja;Slapničar;RJZ Velenje;Ž21B
-510;Ana;Vojnovič;RJZ Velenje;Ž21B
-277;Lidija;Hribar;Kamniški OK;Ž21B
-667;Barbara;Kmetec;Kamniški OK;Ž21B
-668;Katja;Kobentar;Kamniški OK;Ž21B
-670;Tina;Zagorc;Kamniški OK;Ž21B
-678;Valerija;Lovrec;Kamniški OK;Ž21B
-110;Saša;Žižek;OK Azimut;Ž35
-44;Anica;Hribar;OK Brežice;Ž35
-630;Irena;Hacin Kölner;OK Komenda;Ž35
-56;Polona;Zupan;OK Polaris;Ž35
-322;Maruša;Debeljak;OK Polaris;Ž35
-400;Marija;Anderluh;OK Polaris;Ž35
-583;Martina;Petrovič;OK Polaris;Ž35
-644;Metka;Pikl;OK Polaris;Ž35
-8;Anja;Babič;OK Trzin;Ž35
-9;Mateja;Keresteš;OK Trzin;Ž35
-61;Tunde;Allwinger;MOK;Ž35
-99;Irma;Pretnar;Kamniški OK;Ž35
+0;Gašper;Zgonec;OK Tivoli;Beginners
+0;Kaja;Bratina;Planinsko Društvo Ajdovščina;Beginners
+0;Aleks;Pahor;Planinsko Društvo Ajdovščina;Beginners
+0;Tina;Stifter;OC Fürstenfeld;Beginners
+0;Andreja;Peršič;Planinsko Društvo Ajdovščina;Beginners
+0;Tinka;Ferenc;OK Tivoli;Beginners
+0;Alexander;Jeindl;OC Fürstenfeld;Beginners
+0;Jan;Kaltenegger;OC Fürstenfeld;Beginners
+0;Marit;Aas;;Beginners
+0;Laura;Venhauer;OLC Union Viktring;Beginners
+0;Alvina;Venhauer;OLC Union Viktring;Beginners
+0;Matija;Deržek;;Beginners
+0;Vanessa;Renzo;Vicenza Orienteering Team;Beginners
+0;Regina;Kumair;OLC Graz;Beginners
+0;Sara;Durn;Planinsko Društvo Ajdovščina;Beginners
+0;Lara;Bratina;Planinsko Društvo Ajdovščina;Beginners
+0;Alina;Lovracic;SSD GAJA;Beginners
+0;Veronika;Koiser;OL HSV Wr. Neustadt;Beginners
+0;Manuela;Crepaz;U.S. Primiero A.S.D;Beginners
+0;Gabriele;Giudici;ORIENTEERING TRIESTE;Beginners
+0;Lara;Deržek;;Beginners
+0;Taoreed Gbolahan;Ajala;;Beginners
+0;Tjaša;Kogovšek;OK Azimut;Beginners
+0;Daniel;Hediger;thurgorienta1;Beginners
+0;Anja;Humar;OK Azimut;Beginners
+0;Petra;Trček;OK Azimut;Beginners
+0;Michela;Dini;Punto K Orienteering ASD;Beginners
+0;Mojca;Kunc;OK Tivoli;Beginners
+0;Elias;Dobnik;OLC Union Viktring;Beginners
+0;Valery;Tchoukwe Bamou;assocition sportive d'orientation du Cameroun;Beginners
+0;Jonas;Springer;OLC Union Viktring;Beginners
+0;Márk;Bujdosó;Tabáni Spartacus Sport és Környezetvédõ Egyesület;Beginners
+0;Mauro;Renzo;Vicenza Orienteering Team;Beginners
+0;Noukeu;Marjolain;assocition sportive d'orientation du Cameroun;Beginners
+0;Mirko;Tisljar;OK Orion;Beginners
+0;Martin;Gajda;Praha;M10
+0;Luka;Seljak;Orientacijski klub Komenda;M10
+0;Martin;Jevševar;OK Brežice;M10
+0;Domen;Petrovič;Orientacijski Klub Polaris;M10
+0;Matevž;Kunc;OK Tivoli;M10
+0;Thomas;Basa;Semiperdo Orienteering Maniago;M10
+0;Luka;Anderluh;Orientacijski Klub Polaris;M10
+0;Alexander;Basa;Semiperdo Orienteering Maniago;M10
+0;Nicolo;Mantese;Semiperdo Orienteering Maniago;M10
+0;Denis;Gregorc;Orientacijski klub Komenda;M10
+0;Ildiko;Hentes;;M10
+0;Jonas;Deubel;Naturfreunde Wien;M12
+0;Jan;Gobec;OK Vihor;M12
+0;Stanis³aw;Pachnik;UKS TUKAN Iwiny;M12
+0;Filip;Petrovič;Orientacijski Klub Polaris;M12
+0;Rok;Hernec;OK Tivoli;M12
+0;Luca;Fontanot;Punto K Orienteering ASD;M12
+0;Tamir;Sedmak;SSD GAJA;M12
+0;Andrej;Lakovich;Semiperdo Orienteering Maniago;M12
+0;Alessio;Jerman;ORIENTEERING TRIESTE;M12
+0;Kristjan;Kalc;SSD GAJA;M12
+0;Giovanni;Gaio;G.S. Pavione - Imer;M12
+0;Max;Pietsch;Naturfreunde Wien;M12
+0;Erik;Gregorc;Orientacijski klub Komenda;M12
+0;Marko;Mayer;LESOVIK;M12
+0;Filip;Grad;OK Tivoli;M12
+0;Uli;Weiß;OC Fürstenfeld;M12
+0;Elia;Budicin;Semiperdo Orienteering Maniago;M12
+0;Anže;Mirtič;Orientacijski klub Komenda;M12
+0;Erik;Bonek;Naturfreunde Wien;M14
+0;Jan;Gajda;Praha;M14
+0;Dmitry;Tikhonov;OMEGA RUSSIA;M14
+0;Matic;Blaž;Orientacijski klub Komenda;M14
+0;Jura;Kukec;OK Vihor;M14
+0;Jakob;Wolfram;Naturfreunde Wien;M14
+0;Nikolay;Babyev;O-Baby Team Moscow;M14
+0;Sebastian;Fabian;OC Fürstenfeld;M14
+0;Matej;Matousek;Klub vytrvalostnich sportu Sumperk;M14
+0;Stefan;Rainer;ÖFOL Youth;M14
+0;Thierry;Odermatt;OLG Basel Oberwil;M14
+0;Silvio;Gaio;G.S. Pavione - Imer;M14
+0;Robert;Babin;Naturfreunde Villach Orienteering;M14
+0;Luca;Libardoni;Orienteering Crea Rossa A.S.D.;M14
+0;Joergen;Deubel;Naturfreunde Wien;M14
+0;Peter;Zupan;Orientacijski Klub Polaris;M14
+0;Martin;Rode;Orientacijski klub Komenda;M14
+0;Leo;Holper;OC Fürstenfeld;M14
+0;Matjaz;Kavcic;Orientacijski klub Komenda;M14
+0;Samuel;Kremshofer;OC Fürstenfeld;M14
+0;Matic;Soban;Planinsko Društvo Ajdovščina;M14
+0;Samo;Fučka;Planinsko Društvo Ajdovščina;M14
+0;Gregor;Kunc;OK Tivoli;M14
+0;Sebastiano;Valente;Punto K Orienteering ASD;M14
+0;Pietro;Palumbo;Orienteering Crea Rossa A.S.D.;M14
+0;Tobias;Micko;ÖFOL Youth;M14
+0;Luka;Mayer;LESOVIK;M14
+0;Jaka;Grad;OK Tivoli;M14
+0;Žan;Ravnikar;Orientacijski klub Komenda;M14
+0;Zoltán;Bujdosó;Tabáni Spartacus Sport és Környezetvédõ Egyesület;M14
+0;Vojtech;Sykora;TJ Slovan Luhačovice;M16
+0;Szuromi;Mátyás;Pécsi Vasutas SK;M16
+0;Otakar;Hirs;SK Zabovresky Brno;M16
+0;Ormay;Mihály;Siralyok Se.;M16
+0;Nicolas;Kastner;ÖFOL Youth;M16
+0;Dominik;Jandl;WiN Team;M16
+0;Jannis;Bonek;ÖFOL Youth;M16
+0;Balázs;Gyenizse-nagy;Pécsi Vasutas SK;M16
+0;Paolo;Gaio;G.S. Pavione - Imer;M16
+0;Barnabás;Kovács;Pécsi Vasutas SK;M16
+0;Jonas;Muller;Klub vytrvalostnich sportu Sumperk;M16
+0;Herwig Jun.;Allwinger;Leibnitzer AC -Orienteering;M16
+0;Gabriele;Bizzarri;U.S. Primiero A.S.D;M16
+0;Patrik;Ptáček;BETA URSUS Brno;M16
+0;Dávid;Rajkó;MOM Budapest;M16
+0;Giovanni;Dalla Gasperina;G.S. Pavione - Imer;M16
+0;Fabio;Brunet;U.S. Primiero A.S.D;M16
+0;Ondrej;Sramek;Klub vytrvalostnich sportu Sumperk;M16
+0;Mattia;Rosin;Orienteering Crea Rossa A.S.D.;M16
+0;Jan;Ritter;OC Fürstenfeld;M16
+0;Martin;Krenn;OC Fürstenfeld;M16
+0;Georg;Groell;ÖFOL Youth;M16
+0;Matej;Škarabot;Orientacijski Klub Polaris;M16
+0;Ondrej;Jilek;Klub vytrvalostnich sportu Sumperk;M16
+0;Bernhard;Lerchegger;Leibnitzer AC -Orienteering;M16
+0;Roman;Schuh;WiN Team;M16
+0;Gašper;Rejec;OK Azimut;M16
+0;Florian;Nestelberger;OC Fürstenfeld;M16
+0;Markus;Adenstedt;WiN Team;M16
+0;Andro Vladimir;Štambuk;Ivan Merz;M16
+0;Gašper;Petrovič;Orientacijski Klub Polaris;M16
+0;Andreas;Zechner;OC Fürstenfeld;M16
+0;Maurizio;Castellaz;G.S. Pavione - Imer;M16
+0;Antun;Tisljar;OK Orion;M16
+0;Jan;Šalamun;Orientacijski Klub Polaris;M16
+0;Aljoša;Pogačar;Orientacijski klub Komenda;M16
+0;Raphael;Stadlober;OC Fürstenfeld;M16
+0;Erik;Nicolao;U.S. Primiero A.S.D;M16
+0;Michele;Ciliberti;ATLETICA INTERFLUMINA;M16
+0;Christopher;Pedenzini;Orienteering Crea Rossa A.S.D.;M16
+0;Leonardo;Bonfiglioli;SSD GAJA;M16
+0;Jernej;Vidali;SSD GAJA;M16
+0;Francesco;Gulic;SSD GAJA;M16
+0;Niklas;Brantner;ÖFOL Youth;M16
+0;Carlo;Felicetti;U.S. Primiero A.S.D;M16
+0;Sašo;Škvarč;Planinsko Društvo Ajdovščina;M16
+0;Lora;Hristova;Regionalkader OÖ;M16
+0;Vince;Weiler;Tabáni Spartacus Sport és Környezetvédõ Egyesület;M16
+0;Daniel;Gotthardt;HSV Spittal/Drau;M16
+0;Clemens;Wolfram;ÖFOL Youth;M16
+0;Filip;Wadsten;OK Landehof;M18
+0;Olle;Andersson;Tullinge SK;M18
+0;Mathias;Peter;Austrian junior team;M18
+0;Balázs;Miavecz;MOM Budapest;M18
+0;Filip;Grahn;HESTRA IF;M18
+0;Linus;Landergren;HESTRA IF;M18
+0;Heino;Ollin;Sävedalens AIK;M18
+0;Johan;Lenning;Skaneslättens OL;M18
+0;Adrián;Tóth;Tipo Orienteering Club;M18
+0;Albin;Lillieström;OK Roxen;M18
+0;Peter;Tušar;OK Azimut;M18
+0;Markus;Larsson;HESTRA IF;M18
+0;Samuel;Plumppu;HESTRA IF;M18
+0;Pavel;Ptáček;BETA URSUS Brno;M18
+0;Florian;Kurz;Austrian junior team;M18
+0;Stefan;Kubelka;Austrian junior team;M18
+0;Samuele;Tait;Junior Team Trentino;M18
+0;Joakim;Andén;Södertälje-Nykvarn Orientering;M18
+0;Rafael;Dobnik;Austrian junior team;M18
+0;Oskar;Lindqvist;Sävedalens AIK;M18
+0;Hajdu;Erik;Tipo Orienteering Club;M18
+0;Emanuel;Braun;Austrian junior team;M18
+0;Mattias;Johansson;Stangenäs AIS;M18
+0;Ivar;Sörqvist;Markbygdens OK;M18
+0;Maximilian;Lerchegger;Austrian junior team;M18
+0;Marcin;Wieczorek;UKS TUKAN Iwiny;M18
+0;Oskar;Lind;Eksjö SOK;M18
+0;Valentin;Hellmayr;OC Fürstenfeld;M18
+0;Richard;Gremmel;HSV Pinkafeld;M18
+0;Andraž;De Luisa;OK Azimut;M18
+0;Lucas;Johanson Sundblad;Eksjö SOK;M18
+0;Simone;Bettega;G.S. Pavione - Imer;M18
+0;Blaž;Petrovič;Orientacijski Klub Polaris;M18
+0;Greci;Cristian;ATLETICA INTERFLUMINA;M18
+0;Brian;Odermatt;OLG Basel Oberwil;M18
+0;Gergely;Bogya;C.S. TranSilva Cluj;M18
+0;Oyvind;Johannessen;IL Gneist;M18
+0;Simon;Stanonik;OK Azimut;M18
+0;Vilmos;Weiler;Tabáni Spartacus Sport és Környezetvédõ Egyesület;M18
+0;Michael;Sittlinger;HSV Spittal/Drau;M18
+0;Andraž;Rupnik;OK Azimut;M18
+0;Tommaso;Carlini;Corsaorientamento Club Roma;M18
+0;Jesper;Sjöblom;Södertälje-Nykvarn Orientering;M18
+0;Andreas;Mayer;OLC Wienerwald;M18
+0;Max;Rudlof;SU Schöckl Graz;M18
+0;Samuele;Canella;GRUPPO SPORTIVO MONTE GINER A.S.D.;M18
+0;Aljaž;Pavšič;OK Azimut;M18
+0;Erik;Dymbe;IL Gneist;M18
+0;Matic;Močnik;OK Azimut;M18
+0;Jan;Čech;BETA URSUS Brno;M18
+0;Marek;Minar;Czech Junior team;M20
+0;Björn;Cederberg;OK PAN Kristianstad;M20
+0;Emil;Granqvist;OK Ravinen - Nacka;M20
+0;Erik;Andersson;OK Orion;M20
+0;Vojtech;Kettner;Czech Junior team;M20
+0;Ondrej;Semik;Czech Junior team;M20
+0;Oskar;Lundqvist;OK Orion;M20
+0;Jan;Grundmann;Czech Junior team;M20
+0;Jan;Pavlovec;Czech Junior team;M20
+0;Bertalan;Kovács;Pécsi Vasutas SK;M20
+0;Matthias;Reiner;Austrian junior team;M20
+0;Patrik;Horak;Czech Junior team;M20
+0;Martin;Hunhammar;OK Ravinen;M20
+0;Fabiano;Bettega;Team Italia;M20
+0;Arvid;Vag;Lerums SOK;M20
+0;Xander;Berger;Austrian junior team;M20
+0;Carl;Broman;Västeras SOK;M20
+0;Samuele;Curzio;Team Italia;M20
+0;Matous;Fürst;Czech Junior team;M20
+0;Jakob;Pauser;Austrian junior team;M20
+0;Stefan;Falk;Austrian junior team;M20
+0;Jonas;Falck Weber;Eksjö SOK;M20
+0;Jakub;Hruška;SK Zabovresky Brno;M20
+0;Thomas;Polster;Austrian junior team;M20
+0;Walter;Bettega;G.S. Pavione - Imer;M20
+0;Matej;Štambuk;Ivan Merz;M20
+0;Matthias;Griener;WiN Team;M20
+0;Stefano;Raus;Junior Team Trentino;M20
+0;Mattia;Salvioni;Polisportiva Besanese;M20
+0;Michael;Tanzer;WiN Team;M20
+0;Snorre;Lunde;IL Gneist;M20
+0;Michele;Maritano;Polisportiva Besanese;M20
+0;Alexandr;Jordanov;SK Zabovresky Brno;M20
+0;Žiga;Brenčič;Orientacijski klub Komenda;M20
+0;Felix;Hartlieb;Austrian junior team;M20
+0;Nikola;Bilic;PK Pobeda;M20
+0;Arvid;Henriksson;Järla Orientering;M20
+0;Gregor;Hvala;OK Azimut;M20
+0;Anton;Nilsson;Ok Tranan;M20
+0;Matthias;Gröll;Austrian junior team;M20
+0;Rasmus;Svantesson;OK PAN Kristianstad;M20
+0;Andreas;Waldmann;Austrian junior team;M20
+0;Stepan;Mudrak;TJ Slovan Luhačovice;M20
+0;André;Dyrstad;IL Gneist;M20
+0;Michael;Siemmeister;OC Fürstenfeld;M20
+0;Mattia;Debertolis;Team Italia;M20
+0;Andrea;Melioli;Team Italia;M20
+0;Radim;Ondracek;Klub vytrvalostnich sportu Sumperk;M21A
+0;Zdenek;Janu J.;Klub vytrvalostnich sportu Sumperk;M21A
+0;Gunther;Deferme;HAMMEGA;M21A
+0;Petr;Turczer;Klub vytrvalostnich sportu Sumperk;M21A
+0;Nicolo;Liva;Semiperdo Orienteering Maniago;M21A
+0;Andreas G;Polden;IL Gneist;M21A
+0;Libor;Zridkavesely;Austrian junior team;M21A
+0;Jiri;Martan;Slavia Liberec Orienteering;M21A
+0;Frane;Markovič;OK Japetic;M21A
+0;Federico;Bacci;Polisportiva G.Masi;M21A
+0;Armin;Mariacher;SU Schöckl Graz;M21A
+0;Fabio;Daves;Junior Team Trentino;M21A
+0;Michel;Van Dongen;NMOLT;M21A
+0;Marc;Kerkchofs;HAMMEGA;M21A
+0;Nicola;Pilotto;Semiperdo Orienteering Maniago;M21A
+0;Matteo;Zoppe;;M21A
+0;Pim;Van De Nouwelant;NMOLT;M21A
+0;Herfried;Trummer;OC Fürstenfeld;M21A
+0;Jan;Land;NMOLT;M21A
+0;Aljosa;Pecar;Mariborski OK;M21A
+0;Sturle;Nordeide;IL Gneist;M21A
+0;Aljaž;Černe;OK Tivoli;M21A
+0;Stanko;Čufer;Planinsko Društvo Ajdovščina;M21A
+0;Alessandro;Giacchetto;Semiperdo Orienteering Maniago;M21A
+0;Nejc;Močnik;OK Azimut;M21A
+0;Ivo;Kete;Planinsko Društvo Ajdovščina;M21A
+0;Giovanni;Sonna;GRUPPO SPORTIVO MONTE GINER A.S.D.;M21A
+0;Jaromir;Sramek;Klub vytrvalostnich sportu Sumperk;M21A
+0;Lukáš;König;SK Zabovresky Brno;M21A
+0;Jakub;Jilek;Klub vytrvalostnich sportu Sumperk;M21A
+0;Henrik;Martensson;Modum OL;M21A
+0;Pieter;Geldere Van;NMOLT;M21A
+0;Herwig;Allwinger;Mariborski OK;M21B
+0;Pavel;Matl;Klub vytrvalostnich sportu Sumperk;M21B
+0;Szabolcs;Bojtor;Siralyok Se.;M21B
+0;Lukas;Ruzicka;Klub vytrvalostnich sportu Sumperk;M21B
+0;Gerhard;Jöbstl;OLC Graz;M21B
+0;Kiss;Péter;Paksi Sportegyesület;M21B
+0;Thomas;Hudax;OC Fürstenfeld;M21B
+0;Milos;Hecl;Klub vytrvalostnich sportu Sumperk;M21B
+0;Roland;Vogl;SV Mietraching;M21B
+0;Ben Rejeb;Alain;ATLETICA INTERFLUMINA;M21B
+0;Zoltan;Kovacs;Siralyok Se.;M21B
+0;Elio;Golja;Orientacijski Klub Polaris;M21B
+0;Zdenek;Janu S.;Klub vytrvalostnich sportu Sumperk;M21B
+0;Milan;Matousek;Klub vytrvalostnich sportu Sumperk;M21B
+0;Davide;Zuin;Vicenza Orienteering Team;M21B
+0;Attila;Molnár;Tipo Orienteering Club;M21B
+0;Boris;Eržen;Škofjeloški orientacijski klub;M21B
+0;Gombkötõ;Péter;Tipo Orienteering Club;M21B
+0;Laták;Rudolf;KFKI Petõfi SK;M21B
+0;Roland;Berner;SSV Hallein-Neualm;M21B
+0;Blaž;Kovačič;OK Azimut;M21B
+0;Matjaž;Koprivc;OK Azimut;M21B
+0;Emil;Kacin;OK Azimut;M21B
+0;Mirko;Montibeller;Orienteering Crea Rossa A.S.D.;M21B
+0;Daniel;Ekhlas;Leibnitzer AC -Orienteering;M21B
+0;Franz;Prach;Leibnitzer AC -Orienteering;M21B
+0;Horst;Mayer;SSV Hallein-Neualm;M21B
+0;Marco;Leoni;SSD GAJA;M21B
+0;Piero;Giudici;ORIENTEERING TRIESTE;M21B
+0;Vladan;Vukajlovič;OK Azimut;M21B
+0;Michele;Cafagna;ORIENTEERING TRIESTE;M21B
+0;Konrad;Baumann;OLC Graz;M21B
+0;Erich;Peter;OLC Graz;M21B
+0;Dragan;Krivičič;OK Perkmandeljc Trbovlje;M21B
+0;Janez;Zavrl;Orientacijski klub Komenda;M21B
+0;Niccolo';Giovannoni;Orienteering Prato a.s.d.;M21B
+0;Christoffer;Raa;IL Gneist;M21B
+0;Olaf;Sedmak;SSD GAJA;M21B
+0;Edi;Grbac;OK Torpedo;M21B
+0;Adriano;Maggi;SSD GAJA;M21B
+0;Olav;Lundanes;Team Norway;M21E
+0;Pavel;Kubát;Team Czech Republic;M21E
+0;Eskil;Kinneberg;Team Norway;M21E
+0;Adam;Chromy;SK Zabovresky Brno;M21E
+0;Eirik;Kamstrup Hovin;Team Norway;M21E
+0;Magne;Dahli;Team Norway;M21E
+0;Bjorn;Ekeberg;Team Norway;M21E
+0;Vojtìch;Král;Team Czech Republic;M21E
+0;Jan;Petržela;Team Czech Republic;M21E
+0;Adam;Chloupek;Team Czech Republic;M21E
+0;Oystien;Kvaal Osterbo;Team Norway;M21E
+0;Manuel;Negrello;Team Italia;M21E
+0;Miloš;Nykodým;Team Czech Republic;M21E
+0;Alessio;Tenani;Team Italia;M21E
+0;Jan;Šedivý;Team Czech Republic;M21E
+0;Thomas;Natvig Arstad;Team Norway;M21E
+0;Jan;Procházka;Team Czech Republic;M21E
+0;Roberto;Dallavalle;Team Italia;M21E
+0;Gaute;Hallan Steiwer;Team Norway;M21E
+0;Olivier;Blanc Tranchant;O'Jura;M21E
+0;Emiliano;Corona;Team Italia;M21E
+0;Erik;Nilsson Simkovics;OLC Wienerwald;M21E
+0;Áron;Bakó;Tabáni Spartacus Sport és Környezetvédõ Egyesület;M21E
+0;Joakim;Hederskog;IK Hakarpspojkarna;M21E
+0;Marco;Seppi;Team Italia;M21E
+0;Tomáš;Kubelka;Team Czech Republic;M21E
+0;Radek;Nožka;OK Lokomotiva Pardubice;M21E
+0;Daniel;Hájek;Team Czech Republic;M21E
+0;Sindre;Ronning;Team Norway;M21E
+0;Yngve;Skogstad;Team Norway;M21E
+0;Michele;Caraglio;Team Italia;M21E
+0;Sebastian;Inderst;Team Italia;M21E
+0;Máté;Baumholczer;Pécsi Vasutas SK;M21E
+0;Martin;Vister;Team Norway;M21E
+0;David;Procházka;OK Lokomotiva Pardubice;M21E
+0;Michal;Hubáček;Team Czech Republic;M21E
+0;Modestas;Bacys;OSK SAKAS;M21E
+0;Jan;Kolin;Vyspely jih Čech (a okoli);M21E
+0;Scalet;Tommaso;Team Italia;M21E
+0;Simon;Brändli;KRK Trainingcamp;M21E
+0;Sampo;Rahko;SK Pohjantähti;M21E
+0;Giacomo;Zagonel;Team Italia;M21E
+0;Bogya;Tamas;CS Unirea Alba Iulia;M21E
+0;Pavel;Kosarek;Czech Junior team;M21E
+0;Marek;Schuster;Team Czech Republic;M21E
+0;Jernej;Zorman;Orientacijski klub Komenda;M21E
+0;Matìj;Kamenický;OK Lokomotiva Pardubice;M21E
+0;Honza;Flašar;Vyspely jih Čech (a okoli);M21E
+0;Helmut;Gremmel;HSV Pinkafeld;M21E
+0;Markus;Plohn;HSV OL Wiener Neustadt;M21E
+0;Duncan;Archer;Cleveland Orienteering Klub;M21E
+0;Francois;Van der Ouderaa;Belgian Military Team;M21E
+0;Giacomo;Barbone;Gruppo Orientamento CAI XXX Ottobre A.S.D.;M21E
+0;Ákos;Kisvölcsey;MOM Budapest;M21E
+0;Ivano;Bettega;Team Italia;M21E
+0;Manu;Jurado;OK Tivoli;M21E
+0;Giacomo;Nisi;Corsaorientamento Club Roma;M21E
+0;Martin;Janda;Vyspely jih Čech (a okoli);M21E
+0;Trond Einar;Moen Pedersli;Team Norway;M21E
+0;Nicholas;Barber;Cleveland Orienteering Klub;M21E
+0;Petr;Suchy;Vyspely jih Čech (a okoli);M21E
+0;Marton;Mets;MOM Budapest;M21E
+0;Martin;Nyvlt;Vyspely jih Čech (a okoli);M21E
+0;Bugár;Gergely;BÖF;M21E
+0;Aaron;Gaio;G.S. Pavione - Imer;M21E
+0;Ábel;Györgyi;MOM Budapest;M21E
+0;Pavel;Brlica;SK Zabovresky Brno;M21E
+0;Geert;Simkens;Belgian Military Team;M21E
+0;Jan;Zhanal;SK Zabovresky Brno;M21E
+0;Ivan;Boyadzhiev ml.;Mariborski OK;M21E
+0;Michal;Henek;Radioklub Blansko;M21E
+0;Radim;Hošek;Vyspely jih Čech (a okoli);M21E
+0;Wojtek;Pachnik;UKS TUKAN Iwiny;M21E
+0;Joe;Taunton;North Gloucestershire Orienteering Club;M21E
+0;Jouni;Kujala;SK Pohjantähti;M21E
+0;David;Rihtarič;Mariborski OK;M21E
+0;Sergiy;Muchidinov;U.S. Aldo Moro Paluzza;M21E
+0;Denis;Kokelj;Kamniški orientacijski klub;M21E
+0;Jo;Linten;Belgian Military Team;M21E
+0;Bart;Delobel;Belgian Military Team;M21E
+0;Leon;Kropivšek;Mariborski OK;M21E
+0;Axel;Koppert;OLC Graz;M21E
+0;Mario;Štambuk;Ivan Merz;M21E
+0;Kilian;Jörg;OLC Wienerwald;M21E
+0;Serge;Dusza;Belgian Military Team;M21E
+0;Tommy;Janssens;Belgian Military Team;M21E
+0;Tibor;Mrak;OK Azimut;M21E
+0;Werner;Péter;Pécsi Vasutas SK;M21E
+0;Uroš;Burič;Rod Jezerski zmaj Velenje;M21E
+0;Matthias;Poell;OLC Wienerwald;M21E
+0;Sven;Karstaedt;German Military Team;M21E
+0;Boštjan;Čerin;OK Tivoli;M21E
+0;Peter;Weinig;OC München;M21E
+0;Christoph;Egli;KRK Trainingcamp;M21E
+0;Manuel;Reichert;German Military Team;M21E
+0;Fabian;Janischowski;German Military Team;M21E
+0;Daniel;Heininger;German Military Team;M21E
+0;Richard;Patek;SK Zabovresky Brno;M21E
+0;Björn;Frieling;German Military Team;M21E
+0;Mike;Sintoni;Corsaorientamento Club Roma;M21E
+0;Filip;Hadač;Team Czech Republic;M21E
+0;Jure;Zmrzlikar;Orientacijski klub Komenda;M21E
+0;Nikola;Maksimovic;OT RTANJ;M21E
+0;Blažo;Maksimovič;OT RTANJ;M21E
+0;Benjamin;Anciaux;Belgian Military Team;M21E
+0;Jeroným;Kamenický;SK OS Nové Mìsto na Moravì;M21E
+0;Borger;Melsom;Team Norway;M21E
+0;Luigi;Giuliani;Polisportiva Besanese;M21E
+0;Philipp;Schiel;Ulricehamns OK;M21E
+0;Matija;Razum;OK Japetic;M21E
+0;Lorenzo;Pinna;AGOROSSO BERGAMO;M21E
+0;Klaus;Schgaguler;Team Italia;M21E
+0;Ionut;Zinca;Universitatea Craiova;M21E
+0;Vit;Kasal;SK Zabovresky Brno;M21E
+0;Daniel;Steiger;German Military Team;M21E
+0;David;Čufer;Planinsko Društvo Ajdovščina;M21E
+0;Aljaž;Borštnik;OK Tivoli;M21E
+0;Sandro;Schachner;SU Schöckl Graz;M21E
+0;Henrik;Sulz;OLC Wienerwald;M21E
+0;Herbert;Schiel;OLC Wienerwald;M21E
+0;Hakon;Jarvis Westergard;Team Norway;M21E
+0;Andrej;Borštnik;OK Tivoli;M21E
+0;Juraj;Bencur;TJ Slovan Luhačovice;M21E
+0;Michal;Jirásek;Team Czech Republic;M21E
+0;Michael;Stockmayer;HSV OL Wiener Neustadt;M35
+0;Janez;Pretnar;Kamniški orientacijski klub;M35
+0;Paolo Mario;Grassi;Sportclub Meran;M35
+0;Eddy;Sandri;Panda Orienteering Valsugana;M35
+0;Dario;Pedrotti;Junior Team Trentino;M35
+0;Edi;Ocvirk;OK Japetic;M35
+0;Dušan;Petrovič;Orientacijski Klub Polaris;M35
+0;Boris;Bauman;Mariborski OK;M35
+0;Bojan;Jevševar;OK Brežice;M35
+0;Nikolay;Babiev;O-Baby Team Moscow;M35
+0;Andrea;Gobber;U.S. Primiero A.S.D;M35
+0;Klemen;Kenda;OK Azimut;M35
+0;Gregor;Anderluh;Orientacijski Klub Polaris;M35
+0;Stanislav;Kustec;Mariborski OK;M35
+0;Blaž;Kölner;Orientacijski klub Komenda;M35
+0;Edoardo;Cortellazzi;CUS Parma Orienteering;M35
+0;Kõszegvári;Tibor;KFKI Petõfi SK;M35
+0;Norbert;Bozsó;Maccabi VAC - Hungary;M35
+0;Andreas;Öhman;Malax IF;M35
+0;Kristian;Bosisio;OK Trzin;M35
+0;Jožko;Jazbar;OK Azimut;M35
+0;Petr;Klimeš;Vyspely jih Čech (a okoli);M35
+0;Miran;Kolman;Kamniški orientacijski klub;M35
+0;Norbert;Deixler;OC München;M35
+0;Brian;Mccarthy;;M35
+0;Stefano;Brambilla;CUS Parma Orienteering;M35
+0;Tomislav;Varnica;OK Vihor;M35
+0;Andrea;Rivetta;Semiperdo Orienteering Maniago;M35
+0;Primož;Mikložič;Mariborski OK;M35
+0;Janez;Cimerman;OK Azimut;M35
+0;Nagy;Gábor;KFKI Petõfi SK;M35
+0;Hannes;Wenzel;OLC Union Viktring;M35
+0;Peter;Ferluga;SSD GAJA;M35
+0;Alessio;Rozzi;SSD GAJA;M35
+0;Philippe;MOTTU;Raid tourist life;M35
+0;Massimiliano;Cavara;CUS BOLOGNA;M35
+0;Robert;Benko;Orientacijski Klub Polaris;M35
+0;Jan;Šidla;Team Czech Republic;M35
+0;Aleš;Poljanšek;OK Azimut;M35
+0;Christophe;LOPEZ;Raid tourist life;M35
+0;Lino;Legac;OK Japetic;M35
+0;Simone;Grassi;Sportclub Meran;M35
+0;Martin;Veitsberger;OLT Transdanubien;M40
+0;Sören;Olsen;Eksjö SOK;M40
+0;Bernhard;Venhauer;OLC Union Viktring;M40
+0;Alex;Odermatt;OLG Basel Oberwil;M40
+0;Damir;Gobec;OK Vihor;M40
+0;Remo;Madella;CUS Parma Orienteering;M40
+0;Uroš;Petrovič;Orientacijski Klub Polaris;M40
+0;Alberto;Grilli;CUS Parma Orienteering;M40
+0;Alessandro;Pacasso;Sci club Udine;M40
+0;Robert;Fredriksen;Notodden OL;M40
+0;Robert;Erber;Orienteering Klosterneuburg;M40
+0;Stefano;Galletti;ASD  Unione Lombarda;M40
+0;Mirek;Hadac;Czech Junior team;M45
+0;Nikolay;Tikhonov;OMEGA RUSSIA;M45
+0;Ferenc;Viniczai;Pécsi Vasutas SK;M45
+0;Wim;Vervoort;hamok;M45
+0;Werner;Pietsch;ÖFOL Youth;M45
+0;Wiet;Laenen;hamok;M45
+0;Emanuel;Braun;HSV OL Wiener Neustadt;M45
+0;Reinhard;Groell;OLC Graz;M45
+0;Thomas;Hlosta;LC Erste Bank;M45
+0;Jurg;Niggli;Orientation Haut-Jura;M45
+0;Tamas;Toth;Tipo Orienteering Club;M45
+0;Jussi;Borgenström;Hyvinkään Rasti;M45
+0;Martin;Gruenberger;WiN Team;M45
+0;Jan;Hindér;Tolered Utby OL;M45
+0;Arno;Huss;SPORTUNION Klagenfurt;M45
+0;Zoltán;Miháczi;Tipo Orienteering Club;M45
+0;Antonin;Procházka;Expres Czech Team;M45
+0;Pataki;Gabor;Pécsi Vasutas SK;M45
+0;Silvij;Močnik;OK Azimut;M45
+0;Christoph;Schaffer;HSV Ried im Innkreis;M45
+0;Dariusz;Pachnik;UKS TUKAN Iwiny;M45
+0;Robert;Orehoci;OK Bjelovar;M45
+0;Lars Erik;Gjein;Sandefjord OK;M45
+0;Attila;Dalos;Tipo Orienteering Club;M45
+0;Marco;Giovannini;OK Trzin;M45
+0;Ilian;Dyankov;Mariborski OK;M45
+0;Roland;Kohlbacher;Naturfreunde Villach Orienteering;M45
+0;Margus;Kesa;Azuolas;M45
+0;Igor;Boncina;OK Azimut;M45
+0;Roland;Reisenberger;Orienteering Klosterneuburg;M45
+0;Boris;Kastner-jirka;Naturfreunde Wien;M45
+0;Peter;Heim;OL-Team Filder;M45
+0;Valter;Foški;Orientacijski Klub Polaris;M45
+0;Stefan;Roehl;ESV Lok Berlin-Schöneweide;M45
+0;Nikolaus;Adenstedt;Orienteering Klosterneuburg;M45
+0;László;Ipsics;Tipo Orienteering Club;M45
+0;Helmut;Lerchegger;Leibnitzer AC -Orienteering;M45
+0;Günther;Rosenkranz;OL Andritz;M45
+0;Robert;Kalcher;HSV Pinkafeld;M45
+0;Marko;De Luisa;SSD GAJA;M45
+0;Aleš;Zupan;Orientacijski Klub Polaris;M45
+0;Miha;Škarabot;Orientacijski Klub Polaris;M45
+0;Vojko;Kacin;OK Azimut;M45
+0;Horányi;György;Paksi Sportegyesület;M45
+0;Renato;Bettin;OR SWALLOWS;M45
+0;Ivo;Tisljar;OK Orion;M45
+0;Mátyás;Paskuj;Maccabi VAC - Hungary;M45
+0;Markus;Sterba;WiN Team;M45
+0;Josef;Hilbert;LC Erste Bank;M45
+0;Samo;Gjerek;OK Perkmandeljc Trbovlje;M45
+0;Erik;Adenstedt;WiN Team;M45
+0;Lars;Loe;Notodden OL;M45
+0;Lado;Draksler;OK Perkmandeljc Trbovlje;M45
+0;Peter;Bonek;Naturfreunde Wien;M50
+0;Luc;Melis;hamok;M50
+0;Wolfgang;Pietsch;Naturfreunde Wien;M50
+0;Siegfried;Opetnik;HSV KLAGENFURT;M50
+0;Erwin;Köck;HSV OL Wiener Neustadt;M50
+0;Jan;Kaplan;OK Lokomotiva Pardubice;M50
+0;Patrice;MONTEMONT;ORIENTALP;M50
+0;Miro;Šalamun;Orientacijski Klub Polaris;M50
+0;Herwig;Proske;OC Fürstenfeld;M50
+0;Gottfried;Scheikl;OC Fürstenfeld;M50
+0;Günter;Kradischnig;OLC Graz;M50
+0;Anders;Nilsson;Täby OK;M50
+0;Manu;Verpoorten;Belgian Military Team;M50
+0;Klaus;Krischan;Ennstal;M50
+0;Anders;Ovegren;Ljusdals OK;M50
+0;Miklos;Mets;MOM Budapest;M50
+0;Peter;Skyttner;Ljusdals OK;M50
+0;Corrado;Arduini;ATLETICA INTERFLUMINA;M50
+0;Paolo;Pizzamus;SSD GAJA;M50
+0;Zsolt;Weiler;Tabáni Spartacus Sport és Környezetvédõ Egyesület;M50
+0;Martin;Greiner;TSV Grünwald;M50
+0;Belskiy;Vladimir;Ust-Kamenogorsk;M50
+0;Andreas;Cart;OLC Wienerwald;M50
+0;Rudolf;Koeller;SPORTUNION Klagenfurt;M50
+0;Hans Joachim;Riehl;German Military Team;M50
+0;Tommy;Östh;Ljusdals OK;M50
+0;Jan-erik;Skyttner;Ljusdals OK;M50
+0;Roman;Volčič;OK Tivoli;M50
+0;Armin;Friessnig;OC Fürstenfeld;M50
+0;Roman;Sladič;OK Perkmandeljc Trbovlje;M50
+0;Christian;Gotthardt;HSV Spittal/Drau;M50
+0;Josef;Tanzer;WiN Team;M50
+0;Andrea;Macca;Vicenza Orienteering Team;M50
+0;Pavel;Rejec;OK Azimut;M50
+0;Aleš;Čerin;OK Tivoli;M50
+0;Aleš;Borštnik;OK Tivoli;M50
+0;Ivan;Boyadzhiev;Mariborski OK;M50
+0;Ivan;Mrak;OK Azimut;M50
+0;Mauro;Clemente;SSD GAJA;M50
+0;Mauro;Vecellio;Vicenza Orienteering Team;M50
+0;Franco;Vaccari;OTIS Trieste;M50
+0;Maths;Carlsson;Tolered Utby OL;M50
+0;István;Bujdosó;Tabáni Spartacus Sport és Környezetvédõ Egyesület;M50
+0;Josef;Polster;HSV Spittal/Drau;M50
+0;Hannes;Pacher;SU Schöckl Graz;M55
+0;Joachim;Friessnig;OC Fürstenfeld;M55
+0;Jörgen;Martensson;Modum OL;M55
+0;Anders;Björklund;Sävedalens AIK;M55
+0;Iain;Rochford;OC Fürstenfeld;M55
+0;Karolis;Mickevicius;Azuolas;M55
+0;Bruno;Scherr;HSV Villach;M55
+0;Alastair;Mackenzie;Darlington Orienteers;M55
+0;Valentin;Pidner;ÖFOL Youth;M55
+0;Kjell;Boman;Söderhamns OK;M55
+0;Phill;Batts;Darlington Orienteers;M55
+0;Kjell Einar;Andersen;Varteig OL;M55
+0;Reino;Kurkela;Ounasvaaran Hiihtoseura;M55
+0;Stefano;Zonato;Lessinia Orienteering;M55
+0;Vladimir;John;Expres Czech Team;M55
+0;Kóger;Gyula;PVM Pécs;M55
+0;Zdenìk;Blabla;Expres Czech Team;M55
+0;Cesare;Tarabocchia;Gruppo Orientamento CAI XXX Ottobre A.S.D.;M55
+0;Dario;Štambuk;Ivan Merz;M55
+0;Gerrit;Van De Riet;OLifant;M55
+0;Luca;Battistoni;VA-O;M55
+0;Kristian;Leonhardt;OC Fürstenfeld;M55
+0;Frederic;Genevois;Naturfreunde Wien;M55
+0;Adriano;Bettega;G.S. Pavione - Imer;M55
+0;Srečo;Pirman;Škofjeloški orientacijski klub;M55
+0;Arne;Heikoop;NMOLT;M55
+0;Piero;Taufer;U.S. Primiero A.S.D;M55
+0;Günther;Dobnik;OLC Union Viktring;M55
+0;Philippe;Sinaeve;Belgian Military Team;M55
+0;Conci;Alessandro;Orienteering Crea Rossa A.S.D.;M55
+0;Manfred;Huemer;SPORTUNION Klagenfurt;M55
+0;Jure;Gawel;Expres Czech Team;M55
+0;Vlado;Sedej;OK Azimut;M55
+0;Eugen;Kainrath;HSV Pinkafeld;M55
+0;Ewald;Mayer;OL HSV Wr. Neustadt;M55
+0;Gerhard;Koiser;OL HSV Wr. Neustadt;M55
+0;Ciliberti;Pasquale;ATLETICA INTERFLUMINA;M55
+0;Janko;Lapajne;OK Azimut;M55
+0;Arnulf;Wolfram;WAT;M55
+0;Rudolf;Wernig;Naturfreunde Kühnsdorf;M55
+0;Luciano;Zagonel;U.S. Primiero A.S.D;M55
+0;Josip;Matijašič;OK Vihor;M55
+0;Damir;Jasprica;OK Torpedo;M55
+0;Giorgio;Ghersi;ORIENTEERING TRIESTE;M55
+0;Marco;Ongaro;U.S. Primiero A.S.D;M55
+0;Fulvio;Pacor;SSD GAJA;M55
+0;Ofer;Yodfat;Modiin O club;M55
+0;Manuel;Dias;Lisboa OK;M60
+0;Are;Eriksen;OSI;M60
+0;Walter;Dravetz;OLC Graz;M60
+0;Lars;Silvervret;OK Hedströmmen;M60
+0;Gottfried;Lang;NF Steiermark;M60
+0;Lars;Hogedal;Vänersborgs SK;M60
+0;Lorenzo;Depaoli;U.S. Primiero A.S.D;M60
+0;Leo;Johansson;Vandrarringen;M60
+0;Ludwig;Genderjahn;ESV Lok Berlin-Schöneweide;M60
+0;Wolfgang;Germ;Naturfreunde Kühnsdorf;M60
+0;David;Rosen;SROC;M60
+0;Stein;Turtumoygard;Maren OK;M60
+0;Robert;Mayrhofer;LAUFKLUB KOMPASS INNSBRUCK;M60
+0;Franz;Ponweiser;OL HSV Wr. Neustadt;M60
+0;Valerio;Leso;Lessinia Orienteering;M60
+0;Martti;Alilonttinen;MS Parma;M60
+0;Bugar;Jozsef;BÖF;M60
+0;Lennart;Tägtström;Domnarvet;M60
+0;Mikko;Mannonen;Turun Suunnistajat;M60
+0;Juergen;Ziesche;ESV Lok Berlin-Schöneweide;M60
+0;Anders;Bjorkaas;Askvoll & Holmedal IL;M60
+0;Rudolf;Hudax;OC Fürstenfeld;M60
+0;Lars Owe;Ström;Täby OK;M60
+0;Magyar;János;BÖF;M60
+0;Karl;Pongratz;HSV Pinkafeld;M60
+0;Sergio;Caveggion;Vicenza Orienteering Team;M60
+0;Nigel;Foley-Fisher;MNAV,Ireland;M60
+0;Günther;Prommer;Naturfreunde Villach Orienteering;M60
+0;Peter;Koolmeister;Tamperen Pyrintö;M60
+0;Tomislav;Paravič;OK Torpedo;M60
+0;Giancarlo;Dell'eva;GRUPPO SPORTIVO MONTE GINER A.S.D.;M60
+0;Kalle;Lindqvist;Växjö OK;M60
+0;Keith;Dawson;Interlopers;M60
+0;Franz;Wyss;OLregioolten;M65
+0;Seppo;Väli-Klemelä;Paimion Rasti;M65
+0;Stefan;Larsson;OK Njudung;M65
+0;Juha;Penttinen;Mesikämmenet;M65
+0;Max;Moosberger;OLregioolten;M65
+0;Claes;Nideborn;Stora Tuna OK;M65
+0;Sven-Olov;Wiklund;Arboga OK;M65
+0;Franz;Käfer;OC Fürstenfeld;M65
+0;Gino;Vivian;Orienteering Pergine;M65
+0;Nils Olav;Vennevik;Freidig;M65
+0;Wilhelm;Grabenhofer;HSV Pinkafeld;M65
+0;Egil;Repvik;OL Trollelg;M65
+0;Hubert;Lukadeder;WiN Team;M65
+0;Ilmars;Limbens;Sigulda OK;M65
+0;Johnny;Karlsson;Uddevalla OK;M65
+0;Svein;Glendrange;Stavanger OK;M65
+0;Renzo;Bernabe;Orienteering Pergine;M65
+0;Timo;Vienanlinna;Turun Suunnistajat;M65
+0;Odd;Hauger;BKOK;M65
+0;Robert;Benedek;HSV Pinkafeld;M65
+0;Wolf;Eberle;HSV Aigen;M65
+0;Jens Viggo;Limstrand;B&OI;M65
+0;Svein;Hove;Byasen IL orientering;M65
+0;Roy;Dawson;GAFA;M65
+0;Luigino;Sibillin;Vicenza Orienteering Team;M65
+0;Rolf;Gustafsson;Helsingborgs SOK;M65
+0;Gottfried;Tobler;OL HSV Wr. Neustadt;M65
+0;Oistein;Aasmul;Trollelg;M65
+0;Jorma;Paldanius;Turun Suunnistajat;M65
+0;Henrik;Hvoslef;IK Stern;M70
+0;Rolf;Skoglund;Hellas Orientering;M70
+0;Juhani;Jokinen;Maarian Mahti;M70
+0;Otto;Venhauer;OLC Union Viktring;M70
+0;Rune;Raadestroem;Snättringe SK;M70
+0;Ernst;Bonek;;M70
+0;Lasse;Vrale;IF Sturla;M70
+0;Carl Ove;Berg;OK Skeidi;M70
+0;Ole K.;Throndsen;Kongsberg OL;M70
+0;Arne;Grondahl;Sollerod OK;M70
+0;Ivan;Ernvid;Ulricehamns OK;M70
+0;Magnus;Landstad;Freidig;M70
+0;Erland;Ling;Jönköpings OK;M70
+0;Magne;Klovning;Porsgrunn OL;M70
+0;Giancarlo;Gozzer;Orienteering Crea Rossa A.S.D.;M70
+0;Egil;Ronass;Porsgrunn OL;M70
+0;Trygve;Fosse;Gimle IF;M70
+0;Heinrich;Czembirek;MTV Hernals;M70
+0;Janos;Toth;Tipo Orienteering Club;M70
+0;Gunnar;Riddervold;Heming Orientering;M70
+0;Asbjorn;Brack;Kongsberg OL;M70
+0;Stelvio;Manfrin;Orienteering Prato a.s.d.;M70
+0;Paul;Ziermann;HSV Pinkafeld;M70
+0;Pieter;Mulder;OLG Goldau;M70
+0;Folke;Sjöberg;Lunds OK;M70
+0;Carl Bamse;Bjorseth;Bodo & Omegn IF;M75
+0;Arne Chr.;Scheie;Ostmarka OK;M75
+0;Ulf;Eskilsson;OK Södertörn;M75
+0;Lars;Kjellman;Vandrarringen;M75
+0;Tor;Drage;Haugerud;M75
+0;Gerfried;Hoch;NF Steiermark;M75
+0;Sture;Nilsson;Stockholmspolisens IF;M75
+0;Burne;Nilsson;OK Torfinn;M75
+0;Arnfinn;Bujordet;Kristiansand OK;M80
+0;2Kjell H.;Eriksen;Fossum;M80
+0;Kjell;Andersen;Varteig O-lag;M80
+0;Einar;Jorundland;OK Sor;M80
+0;Thor;Eggen;Maren;M80
+0;Pavel;Ptáček;BETA URSUS Brno;OPEN
+0;Markus;Seppele;Naturfreunde Villach Orienteering;OPEN
+0;Martin;Kunz;BETA URSUS Brno;OPEN
+0;Markus;Babin;Naturfreunde Villach Orienteering;OPEN
+0;Dirk;Deubel;Naturfreunde Wien;OPEN
+0;Marco;Dorigo;Punto K Orienteering ASD;OPEN
+0;Clemens;Loidolt;OC Fürstenfeld;OPEN
+0;Peter;Babin;Naturfreunde Villach Orienteering;OPEN
+0;Francesco;Raimondo;Orienteering Pergine;OPEN
+0;Denis;Bortoluzzi;Orienteering Pergine;OPEN
+0;Diego;Ruzzier;Punto K Orienteering ASD;OPEN
+0;Luca;Ruini;Punto K Orienteering ASD;OPEN
+0;Enrico;Cignini;Punto K Orienteering ASD;OPEN
+0;Maddalena;Zupin;Punto K Orienteering ASD;OPEN
+0;Jan;Gajda;Praha;OPEN
+0;Alessia;Albano;Punto K Orienteering ASD;OPEN
+0;Daniele;Fontanot;Punto K Orienteering ASD;OPEN
+0;Zdenìk;Olexa;Expres Czech Team;OPEN
+0;Iva;Kunzová;BETA URSUS Brno;OPEN
+0;Enrico;Ferigutti;Semiperdo Orienteering Maniago;OPEN
+0;Andrea;Ceschin;Punto K Orienteering ASD;OPEN
+0;Ágnes;Tóth;Tabáni Spartacus Sport és Környezetvédõ Egyesület;OPEN
+0;Eva;Primus;Naturfreunde Villach Orienteering;OPEN
+0;Andrea;Bernardi;Punto K Orienteering ASD;OPEN
+0;Armin;Kösegi;TV 1895 Bad Rappenau eV;OPEN
+0;Luka;Plavčak;;OPEN
+0;Filippo;Kovacic;Punto K Orienteering ASD;OPEN
+0;Giulia;Bernardi;Punto K Orienteering ASD;OPEN
+0;Margherita;Ruzzier;Punto K Orienteering ASD;OPEN
+0;Cristina;Ruini;Punto K Orienteering ASD;OPEN
+0;Cristiano;Colombo;Semiperdo Orienteering Maniago;OPEN
+0;Barbara in Žiga;Kušar;;OPEN
+0;Alessandro;Bellese;Panda Orienteering Valsugana;OPEN
+0;Doris;Schiel;OLC Wienerwald;OPEN
+0;Sara;Simonetti;Sci club Udine;OPEN
+0;Franca;Crevatin;Punto K Orienteering ASD;OPEN
+0;Igor;Del Puppo;Gruppo Orientamento CAI XXX Ottobre A.S.D.;OPEN
+0;Agneta;Janzon;Söderhamns OK;OPEN
+0;Giulio;Ceccone;Punto K Orienteering ASD;OPEN
+0;Gert;Wallas;Naturfreunde Villach Orienteering;OPEN
+0;Tiziana;De Monte;Gruppo Orientamento CAI XXX Ottobre A.S.D.;OPEN
+0;Stefania;Chialchia;Sci club Udine;OPEN
+0;Antonio;Di Bartolomeo;Punto K Orienteering ASD;OPEN
+0;Marta;Pacor;SSD GAJA;OPEN
+0;Lea;Martanova;Slavia Liberec Orienteering;W10
+0;Nastja;Ferluga;SSD GAJA;W10
+0;Stella;Cignini;Punto K Orienteering ASD;W10
+0;Silvia;Ferigutti;Semiperdo Orienteering Maniago;W10
+0;Anna;Budicin;Semiperdo Orienteering Maniago;W10
+0;Iris Aurora;Pecorari;Semiperdo Orienteering Maniago;W10
+0;Zala;Ferenc;OK Tivoli;W10
+0;Marta;Kukec;OK Vihor;W10
+0;Miriam;Veitsberger;OLT Transdanubien;W10
+0;Emily;Adenstedt;Orienteering Klosterneuburg;W10
+0;Elin;Martanova;Slavia Liberec Orienteering;W12
+0;Ana Pia;Pogačar;Orientacijski klub Komenda;W12
+0;Joshna;Pipolo;SSD GAJA;W12
+0;Colombo;Iris;Semiperdo Orienteering Maniago;W12
+0;Nika;Ravnikar;Orientacijski klub Komenda;W12
+0;Ivana;Mužina;Planinsko Društvo Ajdovščina;W12
+0;Katja;Zgonec;OK Tivoli;W12
+0;Pataki;Virag Lara;Pécsi Vasutas SK;W12
+0;Neža;Zupan;Orientacijski Klub Polaris;W12
+0;Elisa;Cafagna;ORIENTEERING TRIESTE;W12
+0;Anja;Škarabot;Orientacijski Klub Polaris;W12
+0;Katarina Eva ;Anderluh;Orientacijski Klub Polaris;W12
+0;Carina;Veitsberger;OLT Transdanubien;W12
+0;Csilla;Gárdonyi;MOM Budapest;W14
+0;Jana;Peterová;Vyspely jih Čech (a okoli);W14
+0;Anna;Auermullerova;SK Zabovresky Brno;W14
+0;Ylvi;Kastner;ÖFOL Youth;W14
+0;Elena;Zeiner;ÖFOL Youth;W14
+0;Zala;Zavrl;Orientacijski klub Komenda;W14
+0;Anna;Lueger;SU Schöckl Graz;W14
+0;Lea;Hnilica;WiN Team;W14
+0;Laura;Sladek;SU Schöckl Graz;W14
+0;Julija;Ferenc;OK Tivoli;W14
+0;Nika;Poljanšek;OK Azimut;W14
+0;Pia;Gruenberger;WiN Team;W14
+0;Jedert;Jevševar;OK Brežice;W14
+0;Katarina;Kušar;;W14
+0;Ana;Tisljar;OK Orion;W14
+0;Teresa;Pezze';Junior Team Trentino;W14
+0;Daša;Harej;Planinsko Društvo Ajdovščina;W14
+0;Jasmina;Gassner;ÖFOL Youth;W16
+0;Réka Dalida;Pataki;Pécsi Vasutas SK;W16
+0;Ekaterina;Babyeva;O-Baby Team Moscow;W16
+0;Zsófia;Sárközy;MOM Budapest;W16
+0;Szuromi;Hanga;Pécsi Vasutas SK;W16
+0;Ines;Schaffer;ÖFOL Youth;W16
+0;Veronika;Svancarova;Klub vytrvalostnich sportu Sumperk;W16
+0;Monika;Ravnikar;Orientacijski klub Komenda;W16
+0;Rosa;Trummer;ÖFOL Youth;W16
+0;Hannah;Kalcher;HSV Pinkafeld;W16
+0;Tina;Tiefenboeck;ÖFOL Youth;W16
+0;Antonia;Erhart;ÖFOL Youth;W16
+0;Magdalena;Kalcher;HSV Pinkafeld;W16
+0;Eva;Malivankova;SK Zabovresky Brno;W16
+0;Marjeta;Lipužič;Orientacijski klub Komenda;W16
+0;Anni;Berger;ÖFOL Youth;W16
+0;Lara;Gantar;OK Azimut;W16
+0;Brina;Foški;Orientacijski Klub Polaris;W16
+0;Pia;Ocvirk;OK Japetic;W16
+0;Hannah;Hoffmann;LZ OMAHA;W16
+0;Agnes;Scheikl;OC Fürstenfeld;W16
+0;Michela;Jerman;ORIENTEERING TRIESTE;W16
+0;Lena;Kohlbacher;Naturfreunde Villach Orienteering;W16
+0;Makovinyi;Dorottya;Paksi Sportegyesület;W16
+0;Giulia;Maschio;U.S. Primiero A.S.D;W16
+0;Alice;Talignani;ATLETICA INTERFLUMINA;W16
+0;Antonella;Fantoni;Naturfreunde Villach Orienteering;W16
+0;Doris;Prach;Leibnitzer AC -Orienteering;W16
+0;Nina;Črnigoj;Škofjeloški orientacijski klub;W16
+0;Veronica;Dalla Santa;G.S. Pavione - Imer;W16
+0;Sabrina;Campestrin;Junior Team Trentino;W16
+0;Marketa;Firesova;SK Zabovresky Brno;W16
+0;Luca;Szuromi;Pécsi Vasutas SK;W18
+0;Linnéa;Golsäter;Eksjö SOK;W18
+0;Tilda;Johansson;OK Orion;W18
+0;Moa;Pettersson;OK Dacke;W18
+0;Anna;Kindlundh;Södertälje-Nykvarn Orientering;W18
+0;Csenge;Viniczai;Pécsi Vasutas SK;W18
+0;Anika;Gassner;Austrian junior team;W18
+0;Sara;Kindlund;Ok Tranan;W18
+0;Kajsa;Hedin;Hjärnarps GHOL;W18
+0;Hanna;Aberg;OK Landehof;W18
+0;Borbála;Kézdy;MOM Budapest;W18
+0;Elvira;Björklund;Trollhättans SOK;W18
+0;Carina;Polzer;Austrian junior team;W18
+0;Nuša;Jeram;OK Azimut;W18
+0;Hanna;Lindström;Ok Tranan;W18
+0;Virág;Weiler;Tabáni Spartacus Sport és Környezetvédõ Egyesület;W18
+0;Denisa;Hlosta;Austrian junior team;W18
+0;Judith;Pirklbauer;Regionalkader OÖ;W18
+0;Reka;Schwendtner;Siralyok Se.;W18
+0;Francesca;Taufer;U.S. Primiero A.S.D;W18
+0;Andrea;Papugova;TJ Slovan Luhačovice;W18
+0;Annalisa;Gadler;Junior Team Trentino;W18
+0;Sara;Fend;SU Schöckl Graz;W18
+0;Roberta;Orehoci;OK Bjelovar;W18
+0;Martina;Palumbo;Junior Team Trentino;W18
+0;Vilde Hopland;Skage;IL Gneist;W18
+0;Sigrid;Sovik;IL Gneist;W18
+0;Irene;Cibin;Punto K Orienteering ASD;W18
+0;Becze;Rita;Pécsi Vasutas SK;W18
+0;Marta;Scapin;Orienteering Tarzo a.s.d.;W18
+0;Marlene;Berger;Austrian junior team;W18
+0;Chiara;Dalla Santa;G.S. Pavione - Imer;W18
+0;Katrine;Molvik;IL Gneist;W18
+0;Julia;Kohlbacher;Naturfreunde Villach Orienteering;W18
+0;Urša;Beguš;OK Azimut;W18
+0;Tinnyei;Petra;Paksi Sportegyesület;W18
+0;Isabel;Schaffer;Regionalkader OÖ;W18
+0;Gerda;Prach;Leibnitzer AC -Orienteering;W18
+0;Elisa;Lucian;U.S. Primiero A.S.D;W18
+0;Gabriella;Gustafsson;IK Hakarpspojkarna;W18
+0;Hanna;Karlsson;Markbygdens OK;W18
+0;Jeanette;Jönsson-hellstadius;Södertälje-Nykvarn Orientering;W18
+0;Line;Cederberg;Vänersborgs SK;W18
+0;Sophie;Peroutka;WiN Team;W18
+0;Ida;Pauser;Austrian junior team;W18
+0;Josefine;Kristiansson;Trollhättans SOK;W18
+0;Marija;Tisljar;OK Orion;W18
+0;Emma;Nilsson;Ok Tranan;W18
+0;Amanda Falck;Weber;Eksjö SOK;W18
+0;Lenka;Koporová;SK Zabovresky Brno;W18
+0;Katjuša;Poljanšek;OK Azimut;W18
+0;Sara;Hagström;Falköpings AIK OK;W20
+0;Simona;Chládková;OK Lokomotiva Pardubice;W20
+0;Lenka;Svobodova;Czech Junior team;W20
+0;Katerina;Chroma;Czech Junior team;W20
+0;Pavla;Horova;Czech Junior team;W20
+0;Felicia;Stuhlhofer;OK Landehof;W20
+0;Anna;Caglio;Team Italia;W20
+0;Kristyna;Hlubuckova;Czech Junior team;W20
+0;Anna;Stickova;Czech Junior team;W20
+0;Karolina;Borankova;Czech Junior team;W20
+0;Marketa;Tesarova;Czech Junior team;W20
+0;Klara;Prochazkova;Czech Junior team;W20
+0;Eliška;Kulhavá;OK Lokomotiva Pardubice;W20
+0;Matilda;Martinsson;Falkenbergs OK;W20
+0;Marie;Prochazkova;Czech Junior team;W20
+0;Martina;Walch;Austrian junior team;W20
+0;Lisa;Pacher;Austrian junior team;W20
+0;Beatrice;Baldi;Team Italia;W20
+0;Maren;Herrgesell;OLC Graz;W20
+0;Arianna;Taufer;Team Italia;W20
+0;Katerina;Dolezelova;Czech Junior team;W20
+0;Eleonora;Donadini;Team Italia;W20
+0;Tajda;Foški;Orientacijski Klub Polaris;W20
+0;Lisa;Pirker;Naturfreunde Villach Orienteering;W20
+0;Ingelinn;Molvik;IL Gneist;W20
+0;Marcela;Tesarova;TJ Slovan Luhačovice;W20
+0;Marie;Dymbe;IL Gneist;W20
+0;Hanna;Östenberg;Eksjö SOK;W20
+0;Lena;Stromberger;Austrian junior team;W20
+0;Martina;Papugova;TJ Slovan Luhačovice;W20
+0;Evelina;Grigaite;OSK SAKAS;W21LA
+0;Adela;Chroma;SK Zabovresky Brno;W21LA
+0;Josephine;Greiner;TSV Grünwald;W21LA
+0;Sarka;Hnilicova;Klub vytrvalostnich sportu Sumperk;W21LA
+0;Veronika;Ondrackova;Klub vytrvalostnich sportu Sumperk;W21LA
+0;Verka;Peterová;Vyspely jih Čech (a okoli);W21LA
+0;Jana;Jiráčková;SK Zabovresky Brno;W21LA
+0;Hana;Janu;Klub vytrvalostnich sportu Sumperk;W21LA
+0;Jerca;Bernik;Škofjeloški orientacijski klub;W21LA
+0;Anett;Kovács;Siralyok Se.;W21LA
+0;Agnes;Harreither;OLC Wienerwald;W21LA
+0;Nausica;Paris;Junior Team Trentino;W21LA
+0;Sara;Liparesi;CUS BOLOGNA;W21LA
+0;Alice;Kozumpliková;Radioklub Blansko;W21LA
+0;Nevija;Leljak;OK Kapela;W21LA
+0;Urša;Tomažin;OK Azimut;W21LA
+0;Anja;Slapničar;Rod Jezerski zmaj Velenje;W21LA
+0;Martina;Erber;Orienteering Klosterneuburg;W21LA
+0;Suzana;Drevenšek;Kamniški orientacijski klub;W21LA
+0;Federica;Negri;Polisportiva Besanese;W21LA
+0;Geke;Bakker;NMOLT;W21LA
+0;Lucie;Schutznerová;Vyspely jih Čech (a okoli);W21LA
+0;Mariell;Arntzen;IL Gneist;W21LA
+0;Ljuba;Lippert;Ust-Kamenogorsk;W21LA
+0;Sabrina;Rinaldi;Junior Team Trentino;W21LA
+0;Petra;Germ;Naturfreunde Kühnsdorf;W21B
+0;Lidija;Hribar;Kamniški orientacijski klub;W21B
+0;Ana;Plavčak;Škofjeloški orientacijski klub;W21B
+0;Barbara;Kmetec;Kamniški orientacijski klub;W21B
+0;Theresa;Reinisch;Naturfreunde Villach Orienteering;W21B
+0;Helena;Svancarova;Klub vytrvalostnich sportu Sumperk;W21B
+0;Karin;Vogl;SV Mietraching;W21B
+0;Manuela;Margiore;ORIENTEERING TRIESTE;W21B
+0;Jana;Ruzickova;Klub vytrvalostnich sportu Sumperk;W21B
+0;Sonja;Springer - Venhauer;OLC Union Viktring;W21B
+0;Ina Hopland;Skage;IL Gneist;W21B
+0;Mirja;Pavič;OK Japetic;W21B
+0;Kristina;Krznar;OK Vihor;W21B
+0;Giuliana;Zoppe;Panda Orienteering Valsugana;W21B
+0;Elisa;Ciliberti;ATLETICA INTERFLUMINA;W21B
+0;Arianna;Ridolfo;Gruppo Orientamento CAI XXX Ottobre A.S.D.;W21B
+0;Julia;Deutscmann;German Military Team;W21B
+0;Jasminka;Vlahovič;OK Vihor;W21B
+0;Alda;Grassi;ATLETICA INTERFLUMINA;W21B
+0;Francesca;Severi;Vicenza Orienteering Team;W21B
+0;Maja;Kušt;OK Vihor;W21B
+0;Alenka;Škarabot;Orientacijski Klub Polaris;W21B
+0;Jana;Vackova;SK Zabovresky Brno;W21B
+0;Bernardica;Stipic;OK Vihor;W21B
+0;Jasna;Mandac;OK Vihor;W21B
+0;Gorana;Cindrič;OK Torpedo;W21B
+0;Lorenza;Pravato;SSD GAJA;W21B
+0;Marjana;Rejec;OK Azimut;W21B
+0;Andrea;Rass - Venhauer;OLC Union Viktring;W21B
+0;Tamara;Vuletic;OK DIF;W21B
+0;Tina;Zagorc;Kamniški orientacijski klub;W21B
+0;Andreja;Strnad;OK Tivoli;W21B
+0;Valerija;Lovrec;Kamniški orientacijski klub;W21B
+0;Karolina;Kukec;OK Vihor;W21B
+0;Petra;Šiler;;W21B
+0;Marjanca;Poljanšek;OK Azimut;W21B
+0;Marte;Narum;Team Norway;W21A
+0;Iveta;Duchová;Team Czech Republic;W21A
+0;Michaela;Omová;Team Czech Republic;W21A
+0;Ursula;Kadan;OC Fürstenfeld;W21A
+0;Eva;Kabáthová;Team Czech Republic;W21A
+0;Kine;Hallan Steiwer;Team Norway;W21A
+0;Martina;Zvìøinová;Team Czech Republic;W21A
+0;Heike;Torggler;Team Italia;W21A
+0;Carlotta;Scalet;Team Italia;W21A
+0;Dana;Šafka Brožková;Team Czech Republic;W21A
+0;Lenka;Knapová;Team Czech Republic;W21A
+0;Tone;Wigemyr;Team Norway;W21A
+0;Gunvor;Hov Hoydal;Team Norway;W21A
+0;Jana;Knapová;Team Czech Republic;W21A
+0;Ida Marie;Nass Bjorgul;Team Norway;W21A
+0;Michela;Guizzardi;Team Italia;W21A
+0;Franziska;Dörig;KRK Trainingcamp;W21A
+0;Mirjam;Hellmüller;KRK Trainingcamp;W21A
+0;Mathilde;Rundhaug;Team Norway;W21A
+0;Maren;Janson Haverstad;Team Norway;W21A
+0;Vendula;Horčičková;Team Czech Republic;W21A
+0;Nicole;Scalet;Team Italia;W21A
+0;Viola;Zagonel;Team Italia;W21A
+0;Heidi;Martensson;Team Norway;W21A
+0;Amilia;Björklund;Sävedalens AIK;W21A
+0;Adrienne;Brandi;Team Italia;W21A
+0;Šárka;Svobodná;Vyspely jih Čech (a okoli);W21A
+0;Iva;Kosarkova;Czech Junior team;W21A
+0;Pippa;Archer;Cleveland Orienteering Klub;W21A
+0;Száva;Zsigmond;MOM Budapest;W21A
+0;Lucia;Curzio;Polisportiva G.Masi;W21A
+0;Salome;Weber;KRK Trainingcamp;W21A
+0;Ingjerd;Myhre;Team Norway;W21A
+0;Mojca;Flerin;Kamniški orientacijski klub;W21A
+0;Filoména;Kovács;Pécsi Vasutas SK;W21A
+0;Barbora;Hruskova;SK Zabovresky Brno;W21A
+0;Radka;Sklenáøová;OLC Wienerwald;W21A
+0;Regula;Müller;KRK Trainingcamp;W21A
+0;Petra;Koporova;SK Zabovresky Brno;W21A
+0;Yana;Sandieva;CS Unirea Alba Iulia;W21A
+0;Thalia;Bertschinger;KRK Trainingcamp;W21A
+0;Ma³gorzata;Szeliga;UKS TUKAN Iwiny;W21A
+0;Ajda;Flašker;Orientacijski klub Komenda;W21A
+0;Andrea;Zinca;Universitatea Craiova;W21A
+0;Liesbeth;Vandevelde;HAMMEGA;W21A
+0;Nancy;Wenderickx;HAMMEGA;W21A
+0;Dominika;Plochová;Vyspely jih Čech (a okoli);W21A
+0;Ana;Pribaković Borštnik;OK Tivoli;W21A
+0;Jona;Mirnik;Orientacijski klub Komenda;W21A
+0;Andreina;Brandi;Team Italia;W21A
+0;Metka;Udovic;OK Trzin;W21A
+0;Tanja;Pretnar;Kamniški orientacijski klub;W21A
+0;Barbara;Giuganino;CUS Parma Orienteering;W21A
+0;Draga;Maksimovic;OT RTANJ;W21A
+0;Mari;Fasting;Team Norway;W21A
+0;Heidi;Bagstevold;Team Norway;W21A
+0;Jenni;Hesselberg Indby;Team Norway;W21A
+0;Eva;Juøeníková;Team Czech Republic;W21A
+0;Patrizia;Stögerer;HSV Pinkafeld;W21A
+0;Nathanaëlle;Gerbeaux;OLC Wienerwald;W21A
+0;Hanne;Staff;Team Norway;W35
+0;Clizia;Zambiasi;Semiperdo Orienteering Maniago;W35
+0;Judit;Allwinger;Leibnitzer AC -Orienteering;W35
+0;Anica;Hribar;OK Brežice;W35
+0;Helga;Bertoldi;Junior Team Trentino;W35
+0;Mojca;Foški;Orientacijski Klub Polaris;W35
+0;Ingrid;Adenstedt;Orienteering Klosterneuburg;W35
+0;Daria;Niggli;Orientation Haut-Jura;W35
+0;Anka;Kuzmin;Semiperdo Orienteering Maniago;W35
+0;Marirosa;Hechich;Semiperdo Orienteering Maniago;W35
+0;Ester;Manfrin;Orienteering Prato a.s.d.;W35
+0;Ursula;Odermatt;OLG Basel Oberwil;W35
+0;Tünde;Allwinger;Leibnitzer AC -Orienteering;W35
+0;Ivana;Gobec;OK Vihor;W35
+0;Ebinger;Monika;KFKI Petõfi SK;W35
+0;Marija;Anderluh;Orientacijski Klub Polaris;W35
+0;Bettina;Deixler-Thier;OC München;W35
+0;Saša;Žižek;OK Azimut;W35
+0;Sara;Gaion;ORIENTEERING TRIESTE;W35
+0;Chiara;Sepin;SSD GAJA;W35
+0;Irma;Pretnar;Kamniški orientacijski klub;W35
+0;Alenka;Vuga Seljak;Orientacijski klub Komenda;W35
+0;Erzsebet;Kanasz-Nagy;Maccabi VAC - Hungary;W35
+0;Irena;Hacin Kölner;Orientacijski klub Komenda;W35
+0;Linda;Nordin;Eksjö SOK;W35
+0;Angelika;Aschacher;HSV OL Wiener Neustadt;W35
+0;Hedwig;Berger;ÖFOL Youth;W45
+0;Claudia;Bonek;Naturfreunde Wien;W45
+0;Kirsi;Viitanen;Ounasvaaran Hiihtoseura;W45
+0;Dunja;Van De Riet;OLifant;W45
+0;Elena;Tikhonova;OMEGA RUSSIA;W45
+0;Claudia;Greiner;TSV Grünwald;W45
+0;Katri;Haataja;OH;W45
+0;Cristina;Grabar;U.S. Primiero A.S.D;W45
+0;Ulrike Gabriella;Wagner;OL Andritz;W45
+0;Guni;Palme;Orienteering Klosterneuburg;W45
+0;Susi;Veitsberger;OLT Transdanubien;W45
+0;Mirta;Pacher;Junior Team Trentino;W45
+0;Antónia;Holper;Tipo Orienteering Club;W45
+0;Urša;Draksler;OK Perkmandeljc Trbovlje;W45
+0;Mateja;Gjerek;OK Perkmandeljc Trbovlje;W45
+0;Sabine;Hilbert;LC Erste Bank;W45
+0;Christine;Gruenberger;WiN Team;W45
+0;Maria Claudia;Doff Sotta;U.S. Primiero A.S.D;W50
+0;Päivi;Annila;Tampereen Pyrintö;W50
+0;Antonella;Marcantoni;U.S. Primiero A.S.D;W50
+0;Greta;Mols;hamok;W50
+0;Lippert;Yelena;Ust-Kamenogorsk;W50
+0;Elsie;Brenne;Varteig OL;W50
+0;Hilde;Krols;hamok;W50
+0;Maria Pia;Virgolini;Orienteering Tarzo a.s.d.;W50
+0;Caroline;Mackenzie;Darlington Orienteers;W50
+0;Daniela;Putzu;VA-O;W50
+0;Gro Hege;Ludvigsen;Maren OK;W50
+0;Galina;Belskaya;Ust-Kamenogorsk;W50
+0;Maja;Cvitkovič;OK Vihor;W50
+0;Silvia;Pietsch;ÖFOL Youth;W50
+0;Lory Meri;Savorgnano;Vicenza Orienteering Team;W50
+0;Ruth;Nativ;Modiin O club;W50
+0;Elisabeth;Knapp;Orienteering Klosterneuburg;W55
+0;Outi;Borgenström;Ikaalisten Nouseva-Voima;W55
+0;Kirsi;Hakomäki;Espoon Suunta;W55
+0;Eva;Karlsson;Uddevalla OK;W55
+0;Siren;Greve;BT;W55
+0;Vroni;Akeret;Thurgorienta;W55
+0;Kristil;Kristensen;OK Skeidi;W55
+0;Tazia;Lorenzet;U.S. Primiero A.S.D;W55
+0;Miluše;Procházková;Expres Czech Team;W55
+0;Christine;Ponweiser;OL HSV Wr. Neustadt;W55
+0;Gertraud;Leonhardt;OC Fürstenfeld;W55
+0;Paola;Viliotti;Orienteering Pergine;W55
+0;Sandra;Hoffer;Orienteering Pergine;W55
+0;Esther;Moosberger;OLregioolten;W55
+0;Elisabeth;Steinlechner;OC Fürstenfeld;W55
+0;Anna-Lena;Martensson;SMOL;W55
+0;Ines;Mayrhofer;LAUFKLUB KOMPASS INNSBRUCK;W55
+0;Solveig;Gadd;Helsingborgs OK;W55
+0;Luise;Oswald;HSV Pinkafeld;W55
+0;Lise;Hortvedt;Kongsberg olag;W55
+0;Lorraine;Batts;Darlington Orienteers;W55
+0;Paola;Spinelli;SSD GAJA;W55
+0;Karin;Irk;Naturfreunde Villach Orienteering;W55
+0;Anna Karin;Johansson;Vandrarringen;W60
+0;Traude;Fesselhofer;HSV OL Wiener Neustadt;W60
+0;Elle;Melbye;Heming Orientering;W60
+0;Ingrid E;Ström;Täby OK;W60
+0;Reingild;Linhart;HSV OL Wiener Neustadt;W60
+0;Gunilla;Hogedal;Vänersborgs SK;W60
+0;Martha;Prommer;Naturfreunde Villach Orienteering;W60
+0;Ivana;Zotta;Junior Team Trentino;W60
+0;Anneli;Bergström;Espoon Suunta;W60
+0;Gunnel;Nilsson;OLC Wienerwald;W60
+0;Catherine;Dawson;GAFA;W60
+0;Jenei;Margit;BÖF;W60
+0;Edit;Kühn;PVM Pécs;W60
+0;Anne Berit;Vikhals;B&OI orientering;W60
+0;Barbara;Foley-Fisher;MNAV,Ireland;W60
+0;Gerti;Schandor;OC Fürstenfeld;W60
+0;Eva;Nordin;Gustavsberg OK;W60
+0;Leena;Metsämäki;Turun Suunnistajat;W60
+0;Svatava;Henková;Radioklub Blansko;W60
+0;Mona;Hauger;BKOK;W65
+0;Inger;Glans;OK Torfinn;W65
+0;Haldis;Glendrange;Stavanger OK;W65
+0;Miriam;Rosen;SROC;W65
+0;Rudite;Limbena;Sigulda OK;W65
+0;Torill N.;Mikkelsen;Berger og Svelvik OL;W65
+0;Cristina;Chiettini;Junior Team Trentino;W65
+0;Margareta;Sjöberg;Lunds OK;W65
+0;Karen M.;Bjorseth;Bodo & Omegn IF;W65
+0;Kirsten;Bakke;Gjovard OL;W65
+0;Maritta;Vienanlinna;Turun Suunnistajat;W65
+0;Elisabeth;Primus;Naturfreunde Villach Orienteering;W65
+0;Margareta;Larsson;OK Njudung;W65
+0;Annamaria;Abram;Orienteering Crea Rossa A.S.D.;W65
+0;Ulla;Ling;Jönköpings OK;W65
+0;Toril;Riddervold;Heming Orientering;W65
+0;Barbara;Tobler;OL HSV Wr. Neustadt;W65
+0;Gry B.;Vrale;IF Sturla;W65
+0;Turid;Nystrom;Stavanger O-klubb;W65
+0;Maj-Britt;Gustafsson;Helsingborgs SOK;W65
+0;Birgitta;Stenström;Vänersborgs SK;W70
+0;Anne-Britt;Nilsen;Kjelsas IL;W70
+0;Anneliese;Bonek;Naturfreunde Wien;W70
+0;Ragnhild;Krogvig;Kolbotn & Skimt;W70
+0;Kerstin;Ernvid;Ulricehamns OK;W70
+0;Inger;Dohlen;Raumar orientering;W70
+0;Eli Jorid;Klovning;Porsgrunn OL;W70
+0;Hanne;Brack;Kongsberg OL;W70
+0;Eva;Kjellman;Vandrarringen;W70
+0;Dietlinde;Venhauer;OLC Union Viktring;W70
+0;Turid;Bratland;Fossum;W70
+0;Liz;Mulder;OLG Goldau;W70
+0;Kristina;Skoglund;Hellas Orientering;W70
+0;Aste;Eggen;Maren;W70
+0;Ulla;Lindhe;IK Stern;W70
+0;Gudveig;Jorundland;OK Sor;W75
+0;Unni;Drage;Haugerud;W75
+0;Gunvor;Granath;Nynäshamns OK;W75
+0;Edda;Nilsson;Stockholmspolisens IF;W75
+0;Anne-Lise;Ronass;Porsgrunn OL;W75
+0;Eva;Bujordet;Kristiansand OK;W75

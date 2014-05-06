@@ -1,9 +1,26 @@
 from sol_fun import *
 from os import path
+from re import sub
 import csv
 tek={}
 stanjeLige={}
 kat=set()
+with open("Rezultati/solsko1.csv","r",encoding="utf-8") as f:
+    with open("tekmovalci.csv","w",encoding="utf-8") as g:
+        a = str(f.read())
+        a=a.split("\n")
+        header = a[1].split(";")
+        pointer={}
+        polja=["First name","Surname","City","Short"]
+        for i in polja:
+            pointer[i]=header.index(i)
+        for i in range(2,len(a)):
+            vrstica = a[i].split(";")
+            ime = sub(r"\"",r"",vrstica[pointer["First name"]])
+            priimek = sub(r"\"",r"",vrstica[pointer["Surname"]])
+            klub = sub(r"\"",r"",vrstica[pointer["City"]])
+            kate = sub(r"\"",r"",vrstica[pointer["Short"]])
+            g.write("0;{0};{1};{2};{3}\n".format(ime,priimek,klub,kate))
 
 with open("tekmovalci.csv",'r',encoding="utf-8") as f:
     for i in f:
