@@ -16,10 +16,10 @@ with open("Rezultati/solsko1.csv","r",encoding="utf-8") as f:
             pointer[i]=header.index(i)
         for i in range(2,len(a)):
             vrstica = a[i].split(";")
-            ime = sub(r"\"",r"",vrstica[pointer["First name"]])
-            priimek = sub(r"\"",r"",vrstica[pointer["Surname"]])
-            klub = sub(r"\"",r"",vrstica[pointer["City"]])
-            kate = sub(r"\"",r"",vrstica[pointer["Short"]])
+            ime = vrstica[pointer['First name']]
+            priimek = vrstica[pointer['Surname']]
+            klub = vrstica[pointer['City']]
+            kate = vrstica[pointer['Short']]
             g.write("0;{0};{1};{2};{3}\n".format(ime,priimek,klub,kate))
 
 with open("tekmovalci.csv",'r',encoding="utf-8") as f:

@@ -279,17 +279,11 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     naziv+="."
                     #print(naziv,cas)
                 #print(kategorija)
-                if not kategorija:
-                    pass
-                elif kategorija[0]=="W":
-                    kategorija="Ž"+kategorija[1:]
-                elif kategorija[0]=="H":
-                    kategorija="M"+kategorija[1:]
-                elif kategorija[0]=="D":
-                    kategorija="Ž"+kategorija[1:]
+
                 if kategorija in kat:
                     if naziv not in stanjeLige[kategorija].keys():
                         if tek.get(naziv,[0])[0]!=0  and tek.get(naziv)[3]<=st_lige:
+                            print(naziv)
                             rezultat[tek[naziv][0]][naziv]="mp"
                         #stanjeLige[kategorija][naziv]={0:0,'ime':ime,'priimek':priimek,'klub':klub1}
                     elif stanjeLige[kategorija][naziv].get('klub',1)==(1 or '' or 'ind.' or ' '):
@@ -300,6 +294,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     else:
                         rezultat[kategorija][naziv]=cas
                 else:
+                    print (naziv)
                     if naziv in tek.keys():
                         rezultat[tek[naziv][0]][naziv]="mp"
 
