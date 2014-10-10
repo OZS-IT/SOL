@@ -17,6 +17,7 @@ Petrovič;Filip;OK Polaris;M12;0:22:17;1;25;25;25;25;406
 Hernec;Rok;OK Tivoli;M12;0:22:29;2;20;20;20;20;567
 Gregorc;Erik;OK Komenda;M12;0:37:05;3;15;15;15;15;650
 Keresteš;Vid;OK Trzin;M12;;;;;0;0;586
+Pestotnik Stres;Svit;OK Polaris;M12;;;;;0;0;706
 Tepeš;Rok;OK Polaris;M12;;;;;0;0;646
 Skušek;Mark;OK Komenda;M12;;;;;0;0;575
 Vojvoda;Maks;OK Komenda;M12;;;;;0;0;514
@@ -148,6 +149,7 @@ Mazej;Uroš;OK Azimut;M35;;;;;0;0;116
 Cvelbar;Uroš;OK Azimut;M35;;;;;0;0;115
 Groff;Tomaž;OK Azimut;M35;;;;;0;0;240
 Kmetič;Sandi;OK Polaris;M35;;;;;0;0;67
+Pestotnik;Rok;OK Polaris;M35;;;;;0;0;705
 Pobežin;Robert;OK Polaris;M35;;;;;0;0;223
 Benko;Robert;OK Polaris;M35;mp;;;-;0;0;151
 Savinšek;Primož;OK Polaris;M35;;;;;0;0;134
@@ -200,6 +202,7 @@ Zupan;Neža;OK Polaris;Ž12;0:45:25;4;12;12;12;12;122
 Škarabot;Anja;OK Polaris;Ž12;1:36:17;5;10;10;10;10;399
 Kmetič;Zarja;OK Polaris;Ž12;;;;;0;0;584
 Kern;Tina;OK Komenda;Ž12;;;;;0;0;647
+Kostanjevec;Špela;MOK;Ž12;;;;;0;0;709
 McQuarrie;Nina;OK Komenda;Ž12;;;;;0;0;518
 Tepeš;Neja;OK Polaris;Ž12;;;;;0;0;645
 Anderluh;Katarina Eva;OK Polaris;Ž12;dnf;;;-;0;0;445
@@ -215,6 +218,7 @@ Dovč;Rebeka;OK Tivoli;Ž14;;;;;0;0;657
 Primožič;Patricija;OK Komenda;Ž14;;;;;0;0;649
 Korelc;Mihala;OK Komenda;Ž14;;;;;0;0;653
 Mužina;Ivana;PD Ajdovščina;Ž14;mp;;;-;0;0;680
+Pestotnik Stres;Dora;OK Polaris;Ž14;;;;;0;0;707
 Harej;Daša;PD Ajdovščina;Ž14;dnf;;;-;0;0;552
 Peršič;Andreja;PD Ajdovščina;Ž14;;;;;0;0;694
 Šalamun;Ana;OK Polaris;Ž14;;;;;0;0;332
@@ -224,6 +228,7 @@ Gantar;Lara;OK Azimut;Ž16;0:37:11;3;15;15;15;15;673
 Foški;Brina;OK Polaris;Ž16;0:37:27;4;12;12;12;12;128
 Črnigoj;Nina;ŠOK;Ž16;1:03:32;5;10;10;10;10;390
 Kogovšek;Tjaša;OK Azimut;Ž16;mp;;;-;0;0;671
+Dobravec;Pia;OK Azimut;Ž16;;;;;0;0;708
 Trček;Petra;OK Azimut;Ž16;mp;;;-;0;0;672
 Kete;Jana;PD Ajdovščina;Ž16;;;;;0;0;498
 Rupnik;Blažka;OK Azimut;Ž16;;;;;0;0;675
@@ -269,6 +274,7 @@ Kovač;Marija;PD Ajdovščina;Ž21B;;;;;0;0;352
 Stojčevski;Loreta;OK Brežice;Ž21B;;;;;0;0;564
 Kobentar;Katja;Kamniški OK;Ž21B;;;;;0;0;668
 Jurca;Katja;OK Tivoli;Ž21B;;;;;0;0;642
+Dovč;Katja;OK Tivoli;Ž21B;;;;;0;0;642
 Slapničar;Anja;RJZ Velenje;Ž21B;mp;;;-;0;0;477
 Strnad;Andreja;OK Tivoli;Ž21B;mp;;;-;0;0;662
 Vojnovič;Ana;RJZ Velenje;Ž21B;;;;;0;0;510
