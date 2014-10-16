@@ -1,4 +1,4 @@
-def sumniki(niz):
+﻿def sumniki(niz):
     #Vrne enak niz, brez sumnikov.
     sumniki={'š':'s','č':'c','ž':'z','Š':'S','Č':'C','Ž':'Z','ć':'c','Ć':'C','ö':'o','ä':'a','Ä':'A','Ö':'O'}
     a=''
@@ -44,7 +44,7 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
 
                 elif tek.get(naziv,[0])[0]==kat  and tek.get(naziv,[0])[3]<=st_tekme:
                     if rezultatiTekme[kat][naziv]!="dns":
-                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-', float("inf")] #dodal sem float(inf), da lahko primerjam kdo je ve�krat premagal druge z <
+                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-', float("inf")] #dodal sem float(inf), da lahko primerjam kdo je večkrat premagal druge z <
                 vsota_=0
                 k=0
                 if rezultatiTekme[kat][naziv]not in ["dns","dnf","mp","DISQ"] and tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme:
@@ -258,40 +258,44 @@ def rezultati(st_lige,stanjeLige,kat,tek):
     return rezultat
 
 def popraviEnakoTock(h, stanjeLigeKat, stTekem):
-    #�e ima va� ljudi enako to�k jih razvrsti, kot je v pravilniku
+    #Če ima več ljudi enako točk jih razvrsti, kot je v pravilniku
+    print("Tekma: ",stTekem,"\n\n\n\n\n")
 
-    #najdemo vse ljudi z enako to�kami
+    #najdemo vse ljudi z enako točkami
     def najdiEnake(h):
         d = {}
         k = 0
         for sestevek,povprecje,naziv in h:
-            d[sestevek] = d.get(sestevek,[]).append((naziv,k))
+            d[sestevek] = d.get(sestevek,[])+[(naziv,k)]
             k += 1
-        return [j for i,j in d if j > 1]
+        return [j for i,j in d.items() if len(j) > 1]
     enaki = najdiEnake(h)
     for i in enaki:
-        #ra�unamo �tevilo zmag nad vsemi ostalimi
+        #računamo število zmag nad vsemi ostalimi
         zmage = [0] * len(i)
         for st in range(1, stTekem+1):
             mesto = [0] * len(i)
             for j in range(len(i)):
-                mesto[j] = stanjeLigeKat[i[j][0]][st][2]
+                try: #niso vsi na vseh tekmah
+                    mesto[j] = stanjeLigeKat[i[j][0]][st][2]
+                except:
+                    pass
             for j in range(len(i)):
-                zmage[j] += len([mest for mest in mesto if mest < mesto[j]])
+                zmage[j] += len([mest for mest in mesto if (mest > mesto[j] and mest)])
         zmage = [(zmage[j],i[j][1],i[j][0]) for j in range(len(zmage))]
         zmage.sort(key = lambda x: x[0])
         indeksi = [k[1] for k in zmage]
-        if not len(set(zmage)) == len(zmage):
-            #�e imajo tudi po tem kriteriju tekmovalci enak izkupi�ek, gledamo mesta po vrsti
+        if not len(set([zmaga[0] for zmaga in zmage])) == len(zmage):
+            #Če imajo tudi po tem kriteriju tekmovalci enak izkupiček, gledamo mesta po vrsti
             noviEnaki = najdiEnake(zmage)
             for skupina in noviEnaki:
-                mesta = [([stanjeLigeKat[k[0]][st][2] for st in stTekem].sort(),k[1]) for k in skupina]
-                mesta.sort(key = lambda x: x[0])
-                indeksi1 = [zmage[k][1] for k in mesta]
-                #zmanjkalo kriterijev, kakor je, je mesta popravi ro�no (v html-ju, jaz jih itak ne pi�em)
-                zmage[min(indeksi1):max(indeksi1)+1] = [zmage[i] for i in indeksi]
-                if not len(set(mesta)) == len(mesta):
-                    print("Tekmovalc(a)i" + [zmage[i][2] for i in indeksi].join(", ") + "se ujemajo v vseh kriterijih.")
+                mesta = [([stanjeLigeKat[k[0]][st][2] for st in range(1, stTekem+1) if not stanjeLigeKat[k[0]].get(st) == None].sort(),k[1]) for k in skupina]
+                mesta.sort(key = lambda x: x[0] if x[0] else float("inf")) #če ni tekmoval dobi inf
+                indeksi1 = [k[1] for k in mesta]
+                #zmanjkalo kriterijev, kakor je, je mesta popravi ročno (v html-ju, jaz jih itak ne pišem)
+                zmage[min(indeksi1):max(indeksi1)+1] = [zmage[bla] for bla in indeksi1]
+                if not len(set([mesto[0] for mesto in mesta])) == len(mesta):
+                    print("Tekmovalc(a)i" + ", ".join([zmage[bla][2] for bla in indeksi1]) + "se ujemajo v vseh kriterijih.")
         #kar se je dalo popraviti smo
         h[min(indeksi):max(indeksi)+1] = [h[k[1]] for k in zmage]
     return h
@@ -311,8 +315,8 @@ def vCsv(stanjeLige,st_tekem,kat,tek):
             for naziv in stanjeLige[k].keys():
                 if stanjeLige[k][naziv].get('sestevek',None)!=None:
                     h.append((stanjeLige[k][naziv]['sestevek'],stanjeLige[k][naziv]['povprecje'],naziv))
-            h.sort(lambda x:  1/x[0] if x[0] else float("inf"))
-            h = popraviEnakoTock(h, stanjeLige[k], st_tekem, k)
+            h.sort(key = lambda x:  1/x[0] if x[0] else float("inf"))
+            h = popraviEnakoTock(h, stanjeLige[k], st_tekem)
             for t,z,naziv in h:
                 if stanjeLige[k][naziv].get('klub',None)!=None:
                     if stanjeLige[k][naziv].get('sestevek',None)==None:
