@@ -44,7 +44,7 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
 
                 elif tek.get(naziv,[0])[0]==kat  and tek.get(naziv,[0])[3]<=st_tekme:
                     if rezultatiTekme[kat][naziv]!="dns":
-                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-']
+                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-', float("inf")] #dodal sem float(inf), da lahko primerjam kdo je veèkrat premagal druge z <
                 vsota_=0
                 k=0
                 if rezultatiTekme[kat][naziv]not in ["dns","dnf","mp","DISQ"] and tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme:
@@ -257,6 +257,45 @@ def rezultati(st_lige,stanjeLige,kat,tek):
             rownum+=1
     return rezultat
 
+def popraviEnakoTock(h, stanjeLigeKat, stTekem):
+    #èe ima vaè ljudi enako toèk jih razvrsti, kot je v pravilniku
+
+    #najdemo vse ljudi z enako toèkami
+    def najdiEnake(h):
+        d = {}
+        k = 0
+        for sestevek,povprecje,naziv in h:
+            d[sestevek] = d.get(sestevek,[]).append((naziv,k))
+            k += 1
+        return [j for i,j in d if j > 1]
+    enaki = najdiEnake(h)
+    for i in enaki:
+        #raèunamo število zmag nad vsemi ostalimi
+        zmage = [0] * len(i)
+        for st in range(1, stTekem+1):
+            mesto = [0] * len(i)
+            for j in range(len(i)):
+                mesto[j] = stanjeLigeKat[i[j][0]][st][2]
+            for j in range(len(i)):
+                zmage[j] += len([mest for mest in mesto if mest < mesto[j]])
+        zmage = [(zmage[j],i[j][1],i[j][0]) for j in range(len(zmage))]
+        zmage.sort(key = lambda x: x[0])
+        indeksi = [k[1] for k in zmage]
+        if not len(set(zmage)) == len(zmage):
+            #èe imajo tudi po tem kriteriju tekmovalci enak izkupièek, gledamo mesta po vrsti
+            noviEnaki = najdiEnake(zmage)
+            for skupina in noviEnaki:
+                mesta = [([stanjeLigeKat[k[0]][st][2] for st in stTekem].sort(),k[1]) for k in skupina]
+                mesta.sort(key = lambda x: x[0])
+                indeksi1 = [zmage[k][1] for k in mesta]
+                #zmanjkalo kriterijev, kakor je, je mesta popravi roèno (v html-ju, jaz jih itak ne pišem)
+                zmage[min(indeksi1):max(indeksi1)+1] = [zmage[i] for i in indeksi]
+                if not len(set(mesta)) == len(mesta):
+                    print("Tekmovalc(a)i" + [zmage[i][2] for i in indeksi].join(", ") + "se ujemajo v vseh kriterijih.")
+        #kar se je dalo popraviti smo
+        h[min(indeksi):max(indeksi)+1] = [h[k[1]] for k in zmage]
+    return h
+                
 
 def vCsv(stanjeLige,st_tekem,kat,tek):
     with open('./Stanja racunana/SOL'+str(st_tekem)+'.csv','w+',encoding='utf-8') as f:
@@ -272,8 +311,8 @@ def vCsv(stanjeLige,st_tekem,kat,tek):
             for naziv in stanjeLige[k].keys():
                 if stanjeLige[k][naziv].get('sestevek',None)!=None:
                     h.append((stanjeLige[k][naziv]['sestevek'],stanjeLige[k][naziv]['povprecje'],naziv))
-            h.sort()
-            h=h[::-1]
+            h.sort(lambda x:  1/x[0] if x[0] else float("inf"))
+            h = popraviEnakoTock(h, stanjeLige[k], st_tekem, k)
             for t,z,naziv in h:
                 if stanjeLige[k][naziv].get('klub',None)!=None:
                     if stanjeLige[k][naziv].get('sestevek',None)==None:
