@@ -289,7 +289,8 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
             #Če imajo tudi po tem kriteriju tekmovalci enak izkupiček, gledamo mesta po vrsti
             noviEnaki = najdiEnake(zmage)
             for skupina in noviEnaki:
-                mesta = [([stanjeLigeKat[k[0]][st][2] for st in range(1, stTekem+1) if not stanjeLigeKat[k[0]].get(st) == None].sort(),k[1]) for k in skupina]
+                mesta = [([stanjeLigeKat[k[0]][st][2] for st in range(1, stTekem+1) if not stanjeLigeKat[k[0]].get(st) == None],k[1]) for k in skupina]
+                for bla in range(len(mesta)): mesta[bla].sort()
                 mesta.sort(key = lambda x: x[0] if x[0] else float("inf")) #če ni tekmoval dobi inf
                 indeksi1 = [k[1] for k in mesta]
                 #zmanjkalo kriterijev, kakor je, je mesta popravi ročno (v html-ju, jaz jih itak ne pišem)
