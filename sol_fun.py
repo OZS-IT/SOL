@@ -268,7 +268,7 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
         for sestevek,povprecje,naziv in h:
             d[sestevek] = d.get(sestevek,[])+[(naziv,k)]
             k += 1
-        return [j for i,j in d.items() if len(j) > 1]
+        return [j for i,j in d.items() if len(j) > 1 and i > 0]
     enaki = najdiEnake(h)
     for i in enaki:
         #računamo število zmag nad vsemi ostalimi
@@ -290,12 +290,15 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
             noviEnaki = najdiEnake(zmage)
             for skupina in noviEnaki:
                 mesta = [([stanjeLigeKat[k[0]][st][2] for st in range(1, stTekem+1) if not stanjeLigeKat[k[0]].get(st) == None],k[1]) for k in skupina]
-                for bla in range(len(mesta)): mesta[bla].sort()
+                for bla in range(len(mesta)):
+                    seznamcek = mesta[bla][0]
+                    seznamcek.sort()
+                    mesta[bla] = (seznamcek,mesta[bla][1])
                 mesta.sort(key = lambda x: x[0] if x[0] else float("inf")) #če ni tekmoval dobi inf
                 indeksi1 = [k[1] for k in mesta]
                 #zmanjkalo kriterijev, kakor je, je mesta popravi ročno (v html-ju, jaz jih itak ne pišem)
                 zmage[min(indeksi1):max(indeksi1)+1] = [zmage[bla] for bla in indeksi1]
-                if not len(set([mesto[0] for mesto in mesta])) == len(mesta):
+                if not len(set([tuple(mesto[0]) for mesto in mesta])) == len(mesta):
                     print("Tekmovalc(a)i" + ", ".join([zmage[bla][2] for bla in indeksi1]) + "se ujemajo v vseh kriterijih.")
         #kar se je dalo popraviti smo
         h[min(indeksi):max(indeksi)+1] = [h[k[1]] for k in zmage]
