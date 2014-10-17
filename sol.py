@@ -9,8 +9,8 @@ for j in range(1,17):
     if not path.isfile(dat):
         break
     tekmaRegistracije=j
-    #Na kateri še ne šteje za toèkovanje.
-    #Še ni vkljuèeno, vljuèi enkrat.
+    #Na kateri Å¡e ne Å¡teje za toÄkovanje.
+    #Å e ni vkljuÄeno, vljuÄi enkrat.
     with open(dat,'r',encoding="utf-8") as f:
         for i in f:
             a=i.split(";")
@@ -24,7 +24,7 @@ for j in range(1,17):
             if kate[-1] == "\n":
                 kate = kate[:-1]
             kat.add(kate)
-            if ime=="iga" and priimek=="Groff":
+            if ime=="Å½iga" and priimek=="Groff":
                 st="483"
             elif ime == "Cesare" and priimek == "Tarrabocchia":
                 klub = "OK Azimut"
