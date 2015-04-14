@@ -52,7 +52,7 @@ for st_lige in range(1,12):
         st_tekem+=1
         vCsv(stanjeLige,st_tekem,kat,tek)
 if path.isfile('./Resna stanja/SOL'+str(st_tekem)+'.csv'):
-    g=open('sol_2014.csv','w',encoding='utf-8')
+    g=open('sol_2015.csv','w',encoding='utf-8')
     with open('./Resna stanja/SOL'+str(st_tekem)+'.csv','r',encoding='utf-8') as f:
         for i in f.readlines():
             g.write(i)
