@@ -238,6 +238,14 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     kategorija="M"+kategorija[1:]
                 elif kategorija[0]=="D":
                     kategorija="Ž"+kategorija[1:]
+                elif kategorija[:2]=="MW":
+                    kategorija="MŽ"+kategorija[2:]
+                elif kategorija[:2]=="MD":
+                    kategorija="MŽ"+kategorija[2:]
+                elif kategorija[:2]=="HW":
+                    kategorija="MŽ"+kategorija[2:]
+                elif kategorija[:2]=="HD":
+                    kategorija="MŽ"+kategorija[2:]
                 if kategorija in kat:
                     if naziv not in stanjeLige[kategorija].keys():
                         if tek.get(naziv,[0])[0]!=0  and tek.get(naziv)[3]<=st_lige:
@@ -269,7 +277,8 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
             d[sestevek] = d.get(sestevek,[])+[(naziv,k)]
             k += 1
         return [j for i,j in d.items() if len(j) > 1 and i > 0]
-    enaki = najdiEnake(h)
+    enaki = najdiEnake(h) # seznam seznamov ljudi z enakimi točkami
+    #print(enaki)
     for i in enaki:
         #računamo število zmag nad vsemi ostalimi
         zmage = [0] * len(i)
@@ -281,11 +290,14 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
                 except:
                     pass
             for j in range(len(i)):
-                zmage[j] += len([mest for mest in mesto if (mest > mesto[j] and mest)])
+                zmage[j] += len([mest for mest in mesto if (mest > mesto[j] and not mest == 0 and not mesto[j] == 0)]) 
+                #print(zmage)
+            #print("------")
         zmage = [(zmage[j],i[j][1],i[j][0]) for j in range(len(zmage))]
-        zmage.sort(key = lambda x: x[0])
+        zmage.sort(key = lambda x: -x[0])
+        #print(zmage)
         indeksi = [k[1] for k in zmage]
-        if not len(set([zmaga[0] for zmaga in zmage])) == len(zmage):
+        if len(set([zmaga[0] for zmaga in zmage])) == len(zmage):
             #Če imajo tudi po tem kriteriju tekmovalci enak izkupiček, gledamo mesta po vrsti
             noviEnaki = najdiEnake(zmage)
             for skupina in noviEnaki:
@@ -299,9 +311,10 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
                 #zmanjkalo kriterijev, kakor je, je mesta popravi ročno (v html-ju, jaz jih itak ne pišem)
                 zmage[min(indeksi1):max(indeksi1)+1] = [zmage[bla] for bla in indeksi1]
                 if not len(set([tuple(mesto[0]) for mesto in mesta])) == len(mesta):
-                    print("Tekmovalc(a)i" + ", ".join([zmage[bla][2] for bla in indeksi1]) + "se ujemajo v vseh kriterijih.")
+                    print("Tekmovalc(a)i " + ", ".join([zmage[bla][2] for bla in indeksi1]) + " se ujemajo v vseh kriterijih.")
         #kar se je dalo popraviti smo
         h[min(indeksi):max(indeksi)+1] = [h[k[1]] for k in zmage]
+        #print(h)
     return h
                 
 
