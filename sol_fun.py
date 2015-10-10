@@ -29,12 +29,12 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
             #Sestavljamo seznam z časi in točkami.
             seznamCasov=[]
             for naziv in rezultatiTekme[kat].keys():
-                if  tek.get(naziv,[0])[0]==kat and tek.get(naziv)[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ"]:
+                if  tek.get(naziv,[0])[0]==kat and tek.get(naziv)[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ","wrongKat"]:
                     seznamCasov.append((rezultatiTekme[kat][naziv][0])*3600+(rezultatiTekme[kat][naziv][1])*60+rezultatiTekme[kat][naziv][2])
                     
             seznamCasov.sort()
             for naziv in rezultatiTekme[kat].keys():
-                if  tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ"]:
+                if  tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ","wrongKat"]:
                     RT=(rezultatiTekme[kat][naziv][0])*3600+(rezultatiTekme[kat][naziv][1])*60+rezultatiTekme[kat][naziv][2]
                     for i in range(len(seznamCasov)):
                         if seznamCasov[i]==RT:
@@ -43,13 +43,15 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
                     stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],tocke(mesto-1),mesto]
 
                 elif tek.get(naziv,[0])[0]==kat  and tek.get(naziv,[0])[3]<=st_tekme:
-                    if rezultatiTekme[kat][naziv]!="dns":
+                    if rezultatiTekme[kat][naziv] == "wrongKat":
+                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-k', float("inf")]
+                    elif rezultatiTekme[kat][naziv]!="dns":
                         stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-', float("inf")] #dodal sem float(inf), da lahko primerjam kdo je večkrat premagal druge z <
                 vsota_=0
                 k=0
-                if rezultatiTekme[kat][naziv]not in ["dns","dnf","mp","DISQ"] and tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme:
+                if rezultatiTekme[kat][naziv]not in ["dns","dnf","mp","DISQ","wrongKat"] and tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme:
                     for i,j in stanjeLige[kat][naziv].items():
-                        if i not in ['sestevek','tekmaRegistracije','povprecje','klub','ime','priimek',0] and j[1]!='-' and j[1]>0:
+                        if i not in ['sestevek','tekmaRegistracije','povprecje','klub','ime','priimek',0] and j[1]!='-' and j[1]!='-k' and j[1]>0:
                             vsota_+=round(j[1])
                             k+=1
                         else:
@@ -61,7 +63,7 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
             for naziv in stanjeLige[kat].keys():
                 seznam=[]
                 for i,j in stanjeLige[kat][naziv].items():
-                    if i in [k for k in range(1,12)] and j[1]!='-' and j[1]>0:#največ 11 lig je lahko
+                    if i in [k for k in range(1,12)] and j[1]!='-' and j[1]!='-k' and j[1]>0:#največ 11 lig je lahko
                         seznam.append(j[1])
                 seznam.sort()
                 seznam=seznam[::-1]
@@ -249,7 +251,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                 if kategorija in kat:
                     if naziv not in stanjeLige[kategorija].keys():
                         if tek.get(naziv,[0])[0]!=0  and tek.get(naziv)[3]<=st_lige:
-                            rezultat[tek[naziv][0]][naziv]="mp"
+                            rezultat[tek[naziv][0]][naziv]="wrongKat"
                         #stanjeLige[kategorija][naziv]={0:0,'ime':ime,'priimek':priimek,'klub':klub1}
                     elif stanjeLige[kategorija][naziv].get('klub',1)==(1 or '' or 'ind.' or ' '):
                         if klub1==(' 'or''or'ind'):
@@ -260,7 +262,7 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                         rezultat[kategorija][naziv]=cas
                 else:
                     if naziv in tek.keys():
-                        rezultat[tek[naziv][0]][naziv]="mp"
+                        rezultat[tek[naziv][0]][naziv]="wrongKat"
 
             rownum+=1
     return rezultat
@@ -286,7 +288,8 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
             mesto = [0] * len(i)
             for j in range(len(i)):
                 try: #niso vsi na vseh tekmah
-                    mesto[j] = stanjeLigeKat[i[j][0]][st][2]
+                    if stanjeLigeKat[i[j][0]][st][1] != "-k":
+                        mesto[j] = stanjeLigeKat[i[j][0]][st][2]
                 except:
                     pass
             for j in range(len(i)):
@@ -340,7 +343,7 @@ def vCsv(stanjeLige,st_tekem,kat,tek):
                             pass
                     elif stanjeLige[k][naziv].get(st_tekem,None)==None:
                         f.write(stanjeLige[k][naziv]['priimek']+';'+stanjeLige[k][naziv]['ime']+';'+str(stanjeLige[k][naziv]['klub'])+';'+k+';'+''+';'+''+';'+'')
-                    elif stanjeLige[k][naziv][st_tekem][0] not in ["dns","dnf","mp","DISQ"]:
+                    elif stanjeLige[k][naziv][st_tekem][0] not in ["dns","dnf","mp","DISQ","wrongKat"]:
                         cas=''
                         podpicja=0
                         for j in range(3):
@@ -368,7 +371,7 @@ def vCsv(stanjeLige,st_tekem,kat,tek):
                             pass
                     elif stanjeLige[k][naziv].get(st_tekem,None)==None:
                         f.write(stanjeLige[k][naziv]['priimek']+';'+stanjeLige[k][naziv]['ime']+';'+''+';'+k+';'+''+';'+''+';'+'')
-                    elif stanjeLige[k][naziv][st_tekem][0] not in ["dns","dnf","mp","DISQ"]:
+                    elif stanjeLige[k][naziv][st_tekem][0] not in ["dns","dnf","mp","DISQ","wrongKat"]:
                         cas=''
                         podpicja=0
                         for j in range(3):
