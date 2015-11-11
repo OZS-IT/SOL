@@ -44,14 +44,14 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
 
                 elif tek.get(naziv,[0])[0]==kat  and tek.get(naziv,[0])[3]<=st_tekme:
                     if rezultatiTekme[kat][naziv] == "wrongKat":
-                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-k', float("inf")]
+                        stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'*', float("inf")]
                     elif rezultatiTekme[kat][naziv]!="dns":
                         stanjeLige[kat][naziv][st_tekme]=[rezultatiTekme[kat][naziv],'-', float("inf")] #dodal sem float(inf), da lahko primerjam kdo je večkrat premagal druge z <
                 vsota_=0
                 k=0
                 if rezultatiTekme[kat][naziv]not in ["dns","dnf","mp","DISQ","wrongKat"] and tek.get(naziv,[0])[0]==kat and tek.get(naziv,[0])[3]<=st_tekme:
                     for i,j in stanjeLige[kat][naziv].items():
-                        if i not in ['sestevek','tekmaRegistracije','povprecje','klub','ime','priimek',0] and j[1]!='-' and j[1]!='-k' and j[1]>0:
+                        if i not in ['sestevek','tekmaRegistracije','povprecje','klub','ime','priimek',0] and j[1]!='-' and j[1]!='*' and j[1]>0:
                             vsota_+=round(j[1])
                             k+=1
                         else:
@@ -63,7 +63,7 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
             for naziv in stanjeLige[kat].keys():
                 seznam=[]
                 for i,j in stanjeLige[kat][naziv].items():
-                    if i in [k for k in range(1,12)] and j[1]!='-' and j[1]!='-k' and j[1]>0:#največ 11 lig je lahko
+                    if i in [k for k in range(1,12)] and j[1]!='-' and j[1]!='*' and j[1]>0:#največ 11 lig je lahko
                         seznam.append(j[1])
                 seznam.sort()
                 seznam=seznam[::-1]
@@ -288,7 +288,7 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
             mesto = [0] * len(i)
             for j in range(len(i)):
                 try: #niso vsi na vseh tekmah
-                    if stanjeLigeKat[i[j][0]][st][1] != "-k":
+                    if stanjeLigeKat[i[j][0]][st][1] != "*":
                         mesto[j] = stanjeLigeKat[i[j][0]][st][2]
                 except:
                     pass
