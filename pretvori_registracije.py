@@ -1,14 +1,15 @@
 from urllib.request import urlopen
 
-with open("Registracije/registracije9a.csv","r",encoding="utf-8") as f:
-    with open("Registracije/registracije9a.csv","w",encoding="utf-8") as g:
+with open("Registracije/registracije6a.csv","r",encoding="utf-8") as f:
+    with open("Registracije/registracije6.csv","w",encoding="utf-8") as g:
         a = f.read()
         b = a.split("\n")
         ozs = urlopen("http://www.orientacijska-zveza.si/index.php?id=56")
         stran=str(ozs.read(),encoding="utf-8")
         s = ""
         tujci = ["Herwig Allwinger jr.", "Andraž De Luisa", "Vedran Bijelič",
-                 "Manuel Jurado", "Marko Dudić", "Mariya Perepelytsya", "Matjaž Štanfel"]
+                 "Manuel Jurado", "Marko Dudić", "Mariya Perepelytsya", "Matjaž Štanfel",
+                 "Tihon Salopek"]
         for i in b:
             stri=""
             c = i.split(";")
