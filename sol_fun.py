@@ -20,7 +20,7 @@ def tocke(i):
     if i>len(t)-1:
         return 1
     return t[i]
-def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
+def izracunLige(rezultatiTekme,st_tekme1,stanjeLige,IP,kategorija,tek):
     #'st_tekme' je št SOL(npr. pri SOL2, je to 2).
     #IP je vrednost tekme(1.2 pomeni, da je tekmo vredna 20 % več).
     #stanjeLige mora biti enako stanjeLige[kategorija]
@@ -28,6 +28,7 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
         if rezultatiTekme[kat]:
             #Sestavljamo seznam z časi in točkami.
             seznamCasov=[]
+            st_tekme = st_tekme1()
             for naziv in rezultatiTekme[kat].keys():
                 if  tek.get(naziv,[0])[0]==kat and tek.get(naziv)[3]<=st_tekme and rezultatiTekme[kat][naziv] not in ["dns","dnf","mp","DISQ","wrongKat"]:
                     seznamCasov.append((rezultatiTekme[kat][naziv][0])*3600+(rezultatiTekme[kat][naziv][1])*60+rezultatiTekme[kat][naziv][2])
@@ -67,12 +68,13 @@ def izracunLige(rezultatiTekme,st_tekme,stanjeLige,IP,kategorija,tek):
                         seznam.append(j[1])
                 seznam.sort()
                 seznam=seznam[::-1]
+                st_tekem = st_tekme1(kat) // 2 + 1
                 if len(seznam)==0:
                     stanjeLige[kat][naziv]['sestevek']=0
                     stanjeLige[kat][naziv]['povprecje']=0
-                elif len(seznam)>=5:
-                    stanjeLige[kat][naziv]['sestevek']=sum(seznam[0:5])
-                    stanjeLige[kat][naziv]['povprecje']=round(sum(seznam[0:5])/5)
+                elif len(seznam)>= st_tekem:
+                    stanjeLige[kat][naziv]['sestevek']=sum(seznam[0:st_tekem])
+                    stanjeLige[kat][naziv]['povprecje']=round(sum(seznam[0:st_tekem])/st_tekem)
                 else:
                     stanjeLige[kat][naziv]['sestevek']=sum(seznam[0:len(seznam)])
                     stanjeLige[kat][naziv]['povprecje']=round(sum(seznam[0:len(seznam)])/len(seznam))
@@ -248,6 +250,10 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     kategorija="MŽ"+kategorija[2:]
                 elif kategorija[:2]=="HD":
                     kategorija="MŽ"+kategorija[2:]
+
+                if kategorija == "M10" or kategorija == "Ž10":
+                    kategorija = "MŽ10"
+
                 if kategorija in kat:
                     if naziv not in stanjeLige[kategorija].keys():
                         if tek.get(naziv,[0])[0]!=0  and tek.get(naziv)[3]<=st_lige:
@@ -300,9 +306,10 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
         zmage.sort(key = lambda x: -x[0])
         #print(zmage)
         indeksi = [k[1] for k in zmage]
-        if len(set([zmaga[0] for zmaga in zmage])) == len(zmage):
+        if len(set([zmaga[0] for zmaga in zmage])) == 1: #len(zmage):
             #Če imajo tudi po tem kriteriju tekmovalci enak izkupiček, gledamo mesta po vrsti
             noviEnaki = najdiEnake(zmage)
+            #print(noviEnaki)
             for skupina in noviEnaki:
                 mesta = [([stanjeLigeKat[k[0]][st][2] if not (stanjeLigeKat[k[0]].get(st) == None) else float("inf") for st in range(1, stTekem+1)],k[1]) for k in skupina]
                 for bla in range(len(mesta)):
@@ -312,9 +319,13 @@ def popraviEnakoTock(h, stanjeLigeKat, stTekem):
                 mesta.sort(key = lambda x: x[0] if x[0] else float("inf")) #če ni tekmoval dobi inf
                 indeksi1 = [k[1] for k in mesta]
                 #zmanjkalo kriterijev, kakor je, je mesta popravi ročno (v html-ju, jaz jih itak ne pišem)
+                #todo bolje je, če jaz napišem mesto v csv
                 zmage[min(indeksi1):max(indeksi1)+1] = [zmage[bla] for bla in indeksi1]
                 if not len(set([tuple(mesto[0]) for mesto in mesta])) == len(mesta):
                     print("Tekmovalc(a)i " + ", ".join([zmage[bla][2] for bla in indeksi1]) + " se ujemajo v vseh kriterijih.")
+        elif len(set([zmaga[0] for zmaga in zmage])) < len(zmage):
+            # todo odstrani najboljše, potem pa še enkrat izračunaj
+            pass
         #kar se je dalo popraviti smo
         h[min(indeksi):max(indeksi)+1] = [h[k[1]] for k in zmage]
         #print(h)
