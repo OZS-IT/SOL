@@ -41,14 +41,12 @@ for j in range(1,17):
 st_tekem=0
 IP=1
 zadnja=16
-ll = []
 for st_lige in range(1,12):
     if st_lige==zadnja:#Nočemo, da se zgodi v sol, je pa na voljo.
         IP=1.15
     if path.isfile('./Rezultati/SOL'+str(st_lige)+'.csv'):
         c=rezultati(st_lige,stanjeLige,kat,tek)
         st_lige1 = (lambda st_lige: lambda kate="": st_lige if st_lige < 5 or kate not in ["M21E", "M21A", "M18", "M35", "M45", "Ž21E"] else st_lige - 1)(st_lige)
-        ll.append(st_lige1)
         stanjeLige=izracunLige(c,st_lige1,stanjeLige,IP,kat,tek)
         #print(stanjeLige["M55"])
         #print(stanjeLige["M21E"]["jurezmrzlikar"])
