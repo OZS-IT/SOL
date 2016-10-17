@@ -165,7 +165,7 @@ class Registration:
                 continue
             if row[0][0] == '\ufeff':
                 row[0] = row[0][1:]
-            siteId = int(row[0])
+            siteId = row[0]
             name = row[1]
             surname = row[2]
             club = row[3]
@@ -182,6 +182,7 @@ class Registration:
             if not runner:
                 runner = Runner(name, surname, runnerclub, runnercategory)
                 runner.__registered_at = self.id
+                runner.siteId = siteId
                 runners.addRunner(runner)
         f.close()
 
@@ -387,7 +388,7 @@ class Races:
         f = open(outfile, 'w', encoding = 'utf-8')
 
         racenames = [race.name for race in self.races]
-        header = "Surname;First name;City;Class;Time;Pl;Points;" + ';'.join(racenames) + ";Sum;Average\n";
+        header = "Surname;First name;City;Class;Time;Pl;Points;" + ';'.join(racenames) + ";Sum;Average;ID\n";
         f.write(header)
 
         for runner in sortSOL(self.runners.runners):
@@ -420,6 +421,10 @@ class Races:
             line += [''] * (self.__racenum - raceNum) ## add remaining races to the end
             line.append(str(runner.sumscore))
             line.append(str(runner.avgscore))
+            siteId = ''
+            if hasattr(runner, 'siteId'):
+                siteId = runner.siteId
+            line.append(siteId)
             line = ';'.join(line)
 
             f.write(line)
