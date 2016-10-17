@@ -172,7 +172,6 @@ class Registration:
             category = row[4]
 
             runnerclub = clubs.getClub(club, add = True)
-            if not club: print("Tu")
             runnercategory = categories.getCat(category, add = True)
             runner = runners.getRunner({
                 'name': name,
@@ -182,7 +181,7 @@ class Registration:
             })
             if not runner:
                 runner = Runner(name, surname, runnerclub, runnercategory)
-                runner.registrated_at = self.id
+                runner.__registered_at = self.id
                 runners.addRunner(runner)
         f.close()
 
@@ -331,6 +330,9 @@ class Race:
                     'time': result['time']
                 })
                 place -= 1 ## this person does not count for scores
+            elif hasattr(runner, '__registered_at') and runner.__registered_at > self.__racenum:
+                place -= 1 ## not counting for scores
+                continue
             elif result['classifier'] == 0:
                 points = pointsSOL(place)
                 runner.addScore({
