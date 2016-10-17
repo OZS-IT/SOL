@@ -195,8 +195,8 @@ class Registrations:
         self.clubs = clubs
         for reg in reglist:
             newreg = Registration(reg)
-            newreg.getDataFromRegistration(self.runners, self.clubs, self.categories)
             self.addReg(newreg)
+            newreg.getDataFromRegistration(self.runners, self.clubs, self.categories)
 
 
     def addReg(self, reg):
