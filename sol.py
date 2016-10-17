@@ -1,10 +1,19 @@
 from sol_class import *
 from os import path
 
-registrations = Registrations(reglist=['./Registracije/registracije1.csv'])
+numberOfRaces = 8
+
+
+reglist = []
+racelist = []
+for i in range(1, numberOfRaces + 1):
+    reglist.append('./Registracije/registracije{0}.csv'.format(i))
+    racelist.append({'resultloc': './Rezultati/SOL{0}.csv'.format(i), 'name': 'SOL {0}'.format(i)})
+
+registrations = Registrations(reglist=reglist)
 
 races = Races('SOL',
-              raceslist= [{'resultloc': './Rezultati/SOL1.csv', 'name': 'SOL 1'}],
+              raceslist= racelist,
               runners = registrations.runners,
               clubs = registrations.clubs,
               categories= registrations.categories)
