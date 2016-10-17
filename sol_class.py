@@ -40,8 +40,8 @@ class Categories:
         else:
             raise ValueError("The added cat is not an instance of Category!")
 
-    def getCat(self, catname):
-        if not self.categories.get(Category.parseCat(catname)):
+    def getCat(self, catname, add = False):
+        if not self.categories.get(Category.parseCat(catname)) and add:
             self.add(Category(catname))
         return self.categories.get(Category.parseCat(catname))
 
@@ -72,10 +72,10 @@ class Clubs:
             self.clubs[club.name] = club
         else:
             raise ValueError("The added club is not an instance of Club!")
-    def getClub(self, clubname):
-        if not self.clubs.get(Club.parseClub(clubname)):
+    def getClub(self, clubname, add = False):
+        if not self.clubs.get(Club.parseClub(clubname)) and add:
             self.add(Club(clubname))
-        return self.clubs[Club.parseClub(clubname)]
+        return self.clubs.get(Club.parseClub(clubname))
 
 
 ## Runners
@@ -121,12 +121,12 @@ class Runners:
         self.runners = dict()
         self.__newRunnerId = 0
         for runner in runnerlist:
-            self.add(Runner(runner.name, runner.surname, runner.club, runner.category))
+            self.addRunner(Runner(runner.name, runner.surname, runner.club, runner.category))
 
     def __repr__(self):
         return str(self.runners)
 
-    def add(self, runner):
+    def addRunner(self, runner):
         if isinstance(runner, Runner):
             runner.id = self.getNewId()
             self.runners[runner.id] = runner
@@ -135,22 +135,85 @@ class Runners:
     def getNewId(self):
         self.__newRunnerId += 1
         return self.__newRunnerId
-    def getRunner(self, runnerdata):
+    def getRunner(self, runnerdata, add = False):
         myrunner = None
         ## check if any existing runners match. if no create a new one.
         ## todo when registration numbers are used in competitions use them here instead for
         ## fast searching
         for _, runner in self.runners.items():
             if (runner.title == Runner.parseRunner(runnerdata['name']+runnerdata['surname']) and
-                        runner.club == runnerdata.club):
+                        runner.club == runnerdata['club']):
                 if myrunner:
                     raise ValueError("Found multiple instances for runner {0}!".format(runner.title))
                 myrunner = runner
-        ## For non registration based events todo remove for sol
-        if not myrunner:
-            myrunner = Runner(runnerdata['name'], runnerdata['surname'], runnerdata['club'], Category(runnerdata['category']))
-            self.add(myrunner)
+        if not myrunner and add:
+            myrunner = Runner(runnerdata['name'], runnerdata['surname'], runnerdata['club'], runnerdata['category'])
+            self.addRunner(myrunner)
         return myrunner
+
+
+class Registration:
+    def __init__(self, fileloc):
+        self.fileloc = fileloc
+        self.id = 1
+
+    def getDataFromRegistration(self, runners, clubs, categories):
+        f = open(self.fileloc, 'r', encoding='utf-8')
+        reader = csv.reader(f, delimiter=';', quotechar='"')
+        for row in reader:
+            if not row:
+                continue
+            if row[0][0] == '\ufeff':
+                row[0] = row[0][1:]
+            siteId = int(row[0])
+            name = row[1]
+            surname = row[2]
+            club = row[3]
+            category = row[4]
+
+            runnerclub = clubs.getClub(club, add = True)
+            if not club: print("Tu")
+            runnercategory = categories.getCat(category, add = True)
+            runner = runners.getRunner({
+                'name': name,
+                'surname': surname,
+                'club': runnerclub,
+                'category': runnercategory
+            })
+            if not runner:
+                runner = Runner(name, surname, runnerclub, runnercategory)
+                runner.registrated_at = self.id
+                runners.addRunner(runner)
+        f.close()
+
+class Registrations:
+    def __init__(self, reglist = [], runners = Runners(), categories = Categories(), clubs = Clubs()):
+        self.registrations = []
+        self.__newRegId = 0
+        self.runners = runners
+        self.categories = categories
+        self.clubs = clubs
+        for reg in reglist:
+            newreg = Registration(reg)
+            newreg.getDataFromRegistration(self.runners, self.clubs, self.categories)
+            self.addReg(newreg)
+
+
+    def addReg(self, reg):
+        if isinstance(reg, Registration):
+            reg.id = self.getNewId()
+            self.registrations.append(reg)
+        else:
+            raise ValueError("The added reg is not an instance of Registration!")
+
+    def getNewId(self):
+        self.__newRegId += 1
+        return self.__newRegId
+
+    def getDataFromRegistrations(self):
+        for reg in self.registrations:
+            reg.getDataFromRegistration(self.runners, self.clubs, self.categories)
+
 
 
 ## Races
@@ -193,22 +256,27 @@ class Race:
             if not club:
                 club = 'ind.'
             club = self.clubs.getClub(club)
+            if not club:
+                continue
 
             category = row[catI]
+            category1 = self.categories.getCat(category)
 
             runner = self.runners.getRunner({
                 'name': row[nameI],
                 'surname': row[surnameI],
                 'club': club,
-                'category': category
+                'category': category1
             }) ## category is used only to create a new runner, not to check for equality
             if not runner:
                 continue ## runner not registered
 
-            if runner.category in self.altkats.get(category, []):
+            if runner.category.category in self.altkats.get(category, []):
                 category = runner.category
-
-            category = self.categories.getCat(category)
+            else:
+                category = category1
+            if not category:
+                continue ## category not existant and not merged with existing category
 
             time = row[timeI]
             classifiers = {"mp": 3, "dns": 1, "dnf": 2, "disq": 4}
@@ -328,13 +396,14 @@ class Races:
                     'show': '',
                     'time': ''
                 }
-
-            time = last['time']
-            timeH = time // 3600
-            time = (time % 3600)
-            timeM = time // 60
-            timeS = time % 60
-            time = "{0}:{1}:{2}".format(timeH, timeM, timeS)
+                time = ''
+            else:
+                time = last['time']
+                timeH = time // 3600
+                time = (time % 3600)
+                timeM = time // 60
+                timeS = time % 60
+                time = "{0}:{1}:{2}".format(timeH, timeM, timeS)
 
             line = [runner.surname, runner.name, str(runner.club), str(runner.category), time, last['place'], last['show']]
 
