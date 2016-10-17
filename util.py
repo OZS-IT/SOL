@@ -15,3 +15,7 @@ def pointsSOL(place):
     if place > len(t)-1:
         return 1
     return t[place]
+
+def sortSOL(dict):
+    ## todo expand
+    return sorted(dict.values(), key = lambda x: (x.category, -x.sumscore))

@@ -390,7 +390,7 @@ class Races:
         header = "Surname;First name;City;Class;Time;Pl;Points;" + ';'.join(racenames) + ";Sum;Average\n";
         f.write(header)
 
-        for _, runner in self.runners.runners.items():
+        for runner in sortSOL(self.runners.runners):
             last = runner.lastscore
             if not last:
                 last = {
