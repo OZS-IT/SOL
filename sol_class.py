@@ -1,6 +1,5 @@
 from util import *
 from re import sub
-from copy import deepcopy
 import csv
 
 
