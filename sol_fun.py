@@ -233,7 +233,6 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                 if naziv == "ivanboyadzhievml":
                     naziv+="."
                     #print(naziv,cas)
-                #print(kategorija)
                 if not kategorija:
                     pass
                 elif kategorija[0]=="W":
@@ -250,9 +249,6 @@ def rezultati(st_lige,stanjeLige,kat,tek):
                     kategorija="MŽ"+kategorija[2:]
                 elif kategorija[:2]=="HD":
                     kategorija="MŽ"+kategorija[2:]
-
-                if kategorija == "M10" or kategorija == "Ž10":
-                    kategorija = "MŽ10"
 
                 if kategorija in kat:
                     if naziv not in stanjeLige[kategorija].keys():
