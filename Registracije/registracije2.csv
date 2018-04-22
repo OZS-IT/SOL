@@ -17,6 +17,7 @@
 920;Borut;Gantar;OK Azimut;M12
 971;Aljaž;Škvarča;OK Azimut;M12
 972;Aljaž;Mar;OK Azimut;M12
+980;Jonatan;Čuk;OK Azimut;M12
 613;Luka;Seljak;OK Komenda;M12
 839;Nejc;Trunk;OK Komenda;M12
 884;Jaka;Seljak;OK Komenda;M12
@@ -34,7 +35,6 @@
 648;Rok;Kern;OK Komenda;M14
 700;Tilen;Zupan;OK Komenda;M14
 701;Nejc;Turk;OK Komenda;M14
-873;Natan Maj;Poženel;PD Tolmin;M14
 474;Luka;Anderluh;OK Polaris;M14
 654;Fedja;Močnik;OK Polaris;M14
 578;Matevž;Kunc;OK Tivoli;M14
@@ -50,6 +50,7 @@
 966;Aljaž;Luznar;OK Azimut;M16
 652;Domen;Kavčič;OK Komenda;M16
 688;Domen;Žurbi;OK Komenda;M16
+873;Natan Maj;Poženel;PD Tolmin;M16
 471;Enej;Smole;OK Polaris;M16
 706;Svit;Pestotnik Stres;OK Polaris;M16
 926;Martin;Trajbarič;OK Tivoli;M16
@@ -95,10 +96,13 @@
 96;Emil;Kacin;OK Azimut;M21B
 239;Matjaž;Koprivc;OK Azimut;M21B
 481;Andraž;Drešček;OK Azimut;M21B
+618;Aljaž;Pavšič;OK Azimut;M21B
 757;Matej;Vidič;OK Azimut;M21B
 765;Boštjan;Bogataj;OK Azimut;M21B
+929;Nicolas;Vanek;OK Azimut;M21B
 918;Kristjan;Gantar;OK Azimut;M21B
 961;Primož;Podobnik;OK Azimut;M21B
+983;Denis;Mikuž;OK Azimut;M21B
 904;Franc;Malus;OK Komenda;M21B
 914;Silvo;Babič;OK Komenda;M21B
 946;Timotej;Šuc;OK Komenda;M21B
@@ -187,9 +191,10 @@
 3;Krešo;Keresteš;OK Trzin;M45
 594;Marco;Giovannini;OK Trzin;M45
 559;Boris;Eržen;ŠOK;M45
-472;Dušan;Smole;OK Polaris;M50
+91;Cesare;Tarabocchia;OK Azimut;M50
 98;Igor;Bončina;OK Azimut;M50
 119;Vojko;Kacin;OK Azimut;M50
+186;Marijan;Leban;OK Azimut;M50
 193;Silvij;Močnik;OK Azimut;M50
 493;Pavel;Rejec;OK Azimut;M50
 610;Janez;Zavrl;OK Komenda;M50
@@ -198,14 +203,12 @@
 55;Aleš;Zupan;OK Polaris;M50
 151;Robert;Benko;OK Polaris;M50
 315;Vlado;Rogulja;OK Polaris;M50
-91;Cesare;Tarabocchia;OK Azimut;M50
-186;Marijan;Leban;OK Azimut;M50
+472;Dušan;Smole;OK Polaris;M50
 24;Aleš;Borštnik;OK Tivoli;M50
 29;Roman;Volčič;OK Tivoli;M50
 587;Aleš;Čerin;OK Tivoli;M50
 39;Roman;Sladič;ŠOK;M50
 395;Vinko;Pernek;MOK;M50
-635;Ivan;Boyadzhiev;MOK;M60
 105;Janko;Lapajne;OK Azimut;M60
 118;Vlado;Sedej;OK Azimut;M60
 198;Črtomir;Knap;OK Azimut;M60
@@ -213,6 +216,7 @@
 139;Srečo;Pirman;ŠOK;M60
 336;Stanko;Čufer;PD Ajdovščina;M60
 412;Ivo;Kete;PD Ajdovščina;M60
+635;Ivan;Boyadzhiev;MOK;M60
 869;Manca;Rupnik;OK Azimut;Ž10
 803;Brina;Kölner;OK Komenda;Ž10
 887;Neža;Trunk;OK Komenda;Ž10
@@ -220,6 +224,7 @@
 813;Ana Maja;Anderluh;OK Polaris;Ž10
 853;Ema Pika;Raj;OK Slovenj Gradec;Ž10
 949;Lili Ivana;Raj;OK Slovenj Gradec;Ž10
+979;Frida;Mezga;OK Slovenj Gradec;Ž10
 816;Ema;Kepic;Kamniški OK;Ž10
 597;Nea;Eržen;OK Azimut;Ž12
 847;Neža;Obid;OK Azimut;Ž12
@@ -247,7 +252,6 @@
 962;Patricija;Tušar;OK Azimut;Ž16
 441;Nika;Ravnikar;OK Komenda;Ž16
 647;Tina;Kern;OK Komenda;Ž16
-767;Zala;Špenko;OK Komenda;Ž16
 818;Katja;Babič;OK Komenda;Ž16
 584;Zarja;Kmetič;OK Polaris;Ž16
 399;Anja;Škarabot;OK Polaris;Ž16
@@ -288,6 +292,7 @@
 408;Špela;Draksler;ŠOK;Ž21B
 117;Urša;Tomažin;OK Azimut;Ž21E
 421;Nuša;Jeram;OK Azimut;Ž21E
+673;Lara;Gantar;OK Azimut;Ž21E
 843;Tajda;Bogataj;OK Azimut;Ž21E
 357;Monika;Ravnikar;OK Komenda;Ž21E
 519;Ajda;Flašker;OK Komenda;Ž21E
