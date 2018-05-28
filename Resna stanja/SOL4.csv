@@ -79,14 +79,15 @@ Smole;Brin;OK Polaris;M18;;;;;;;;0;0;318
 Močnik;Saš;OK Polaris;M18;;;;;;;;0;0;323
 Kunc;Gregor;OK Tivoli;M18;;;;-;;;;0;0;499
 Rodman;Maks;PD Ajdovščina;M18;;;;;;;;0;0;723
-Škarabot;Matej;OK Polaris;M21A;wrongKat;;;25;25;20;*;70;23;132
-Močnik;Nejc;OK Azimut;M21A;1:28:27;1;25;12;8;;25;45;15;190
-Petrovič;Gašper;OK Polaris;M21A;wrongKat;;;20;20;;*;40;20;71
+Škarabot;Matej;OK Polaris;M21A;1:19:10;1;25;25;25;20;25;75;25;132
+Petrovič;Gašper;OK Polaris;M21A;1:57:40;6;8;20;20;;8;48;16;71
 Eržen;Valentin;OK Azimut;M21A;wrongKat;;;*;15;25;*;40;20;386
-Kurinčič;Simon;OK Komenda;M21A;1:45:43;2;20;6;10;8;20;38;13;838
+Močnik;Nejc;OK Azimut;M21A;1:28:27;3;15;12;8;;15;35;12;190
 Zupan;Gregor;OK Komenda;M21A;;;;5;12;15;;32;11;712
-Zobavnik;Aleš;Kamniški OK;M21A;1:56:28;3;15;;;6;15;21;10;698
+Kurinčič;Simon;OK Komenda;M21A;1:45:43;4;12;6;10;8;12;30;10;838
+Šalamun;Jan;OK Polaris;M21A;1:28:26;2;20;;;;20;20;20;150
 Golja;Elio;OK Polaris;M21A;mp;;;10;;10;-;20;10;664
+Zobavnik;Aleš;Kamniški OK;M21A;1:56:28;5;10;;;6;10;16;8;698
 Hadalin;Iztok;OK Azimut;M21A;;;;15;;;;15;15;704
 Obid;Marko;OK Azimut;M21A;wrongKat;;;*;;12;*;12;12;392
 Černe;Aljaž;OK Tivoli;M21A;;;;8;;;;8;8;663
@@ -96,7 +97,6 @@ Furman;Zoran;OK Slovenske Konjice;M21A;;;;4;;;;4;4;5
 Valič;Jakob;PD Ajdovščina;M21A;;;;3;;;;3;3;947
 Knap;Franc;OK Azimut;M21A;;;;;;;;0;0;97
 Močnik;Rok;OK Azimut;M21A;;;;*;;;;0;0;191
-Šalamun;Jan;OK Polaris;M21A;wrongKat;;;;;;*;0;0;150
 Rebolj;Aljoša;OK Polaris;M21A;;;;;;;;0;0;711
 Borštnik;Aljaž;OK Tivoli;M21A;;;;;;;;0;0;26
 Malus;Franc;OK Komenda;M21B;0:51:53;1;25;20;25;20;25;70;23;904
@@ -305,6 +305,7 @@ Kalan;Petra;ŠOK;Ž21B;;;;;;;;0;0;141
 Pečlin;Tinkara;ŠOK;Ž21B;;;;;;;;0;0;329
 Ojstrež;Alja;ŠOK;Ž21B;;;;;;;;0;0;405
 Draksler;Špela;ŠOK;Ž21B;;;;;;;;0;0;408
+Malus;Marta;OK Komenda;Ž21B;;;;;;;;0;0;982
 Jeram;Nuša;OK Azimut;Ž21E;1:11:45;1;25;25;;25;25;75;25;421
 Flerin Drevenšek;Mojca;Kamniški OK;Ž21E;1:18:39;2;20;15;25;20;20;65;22;82
 Flašker;Ajda;OK Komenda;Ž21E;1:24:27;3;15;12;20;15;15;50;17;519
