@@ -51,6 +51,7 @@ class Club:
     def __init__(self, name):
         self.name = identifier(name)
         self.realname = name
+        self.scores = []
     def __eq__(self, other):
         return self.name == other.name
     def __repr__(self):
@@ -60,6 +61,12 @@ class Club:
     def parseClub(club):
         club = identifier(club)
         return club
+
+    def addScore(self, score):
+        self.scores.append(score)
+
+    def getClubScore(self):
+        return sum([score['points'] for score in self.scores])
 
 class Clubs:
     def __init__(self, clublist = []):
@@ -91,6 +98,7 @@ class Runner:
         self.lastscore = None
         self.sumscore = 0
         self.avgscore = 0
+        self.registered_at = dict()
 
     def __repr__(self):
         return "[{0} {1}, {2}, {3}]".format(self.surname, self.name, self.club, self.category)
@@ -100,6 +108,7 @@ class Runner:
 
     def addScore(self, score):
         self.scores.append(score)
+        self.club.addScore(score)
         self.lastscore = score
 
     def computeScore(self, noCountingRaces):
@@ -110,6 +119,9 @@ class Runner:
         n = min(len(scores), noCountingRaces)
         self.sumscore = sum(scores[:n])
         self.avgscore = round(self.sumscore / n)
+
+    def addRegistration(self, id):
+        self.registered_at[id] = True # todo test if this changes object
 
     @staticmethod
     def parseRunner(fullname):
@@ -180,9 +192,9 @@ class Registration:
             })
             if not runner:
                 runner = Runner(name, surname, runnerclub, runnercategory)
-                runner.__registered_at = self.id
                 runner.siteId = siteId
                 runners.addRunner(runner)
+            runner.addRegistration(self.id)
         f.close()
 
 class Registrations:
@@ -218,16 +230,22 @@ class Registrations:
 ## Races
 
 class Race:
-    def __init__(self, name, runners, clubs, categories, resultloc, joinedkats = [], racenum = 0):
+    def __init__(self, name, runners, clubs, categories, resultloc, joinedkats = [], racenum = 0, maxScoredRunners = float('inf'), scoreFunction = lambda x: -x, clubType='club'):
         self.name = name
         self.runners = runners
         self.clubs = clubs
         self.categories = categories
         self.altkats = dict()
         self.__racenum = racenum
+        self.maxScoredRunners = maxScoredRunners
+        self.scoreFunction = scoreFunction
+        self.clubType = clubType
         for lis in joinedkats:
             for kat in lis:
                 self.altkats[kat] = lis
+        self.clubCounterByCategory = dict()
+        for category in categories.categories.keys():
+            self.clubCounterByCategory[category] = dict()
         self.results = self.parseRace(resultloc)
 
     def parseRace(self, resultloc):
@@ -244,18 +262,26 @@ class Race:
         surnameI = header.index('Surname')
         clubI = header.index('Cl.name')
         cityI = header.index('City')
+        countryI = header.index('Nat')
         catI = header.index('Short')
         classifierI = header.index('Classifier')
         timeI = header.index('Time')
 
         for row in reader:
-            club = row[clubI]
-            if not club:
-                club = row[cityI]
-            if not club:
-                club = 'ind.'
+            if self.clubType == 'club':
+                club = row[clubI]
+                if not club:
+                    club = row[cityI]
+                if not club:
+                    club = 'ind.'
+            elif self.clubType == 'country':
+                club = row[countryI]
+            else:
+                raise ValueError('Provided clubType not supported: ' + self.clubType)
             club = self.clubs.getClub(club)
             if not club:
+                if self.clubType == 'country':
+                    print('No club')
                 continue
 
             category = row[catI]
@@ -298,13 +324,14 @@ class Race:
                 'runner': runner,
                 'category': category,
                 'classifier': classifier,
-                'time': time
+                'time': time,
+                'club': club
             })
             runner.addResult({
                 'name': self.name,
                 'racenum': self.__racenum,
                 'time': time,
-                'category': category
+                'category': category,
             })
         f.close()
         return results
@@ -330,11 +357,14 @@ class Race:
                     'time': result['time']
                 })
                 place -= 1 ## this person does not count for scores
-            elif hasattr(runner, '__registered_at') and runner.__registered_at > self.__racenum:
+            elif not runner.registered_at.get(self.__racenum, False):
                 place -= 1 ## not counting for scores
                 continue
+            elif self.clubCounterByCategory[result['category'].category].get(result['club'].name, 0) > self.maxScoredRunners:
+                place -= 1 ## club already scored the maximum number of runners
+                continue
             elif result['classifier'] == 0:
-                points = pointsSOL(place)
+                points = self.scoreFunction(place)
                 runner.addScore({
                     'racenum': self.__racenum,
                     'place': str(place),
@@ -350,15 +380,20 @@ class Race:
                     'show': '-',
                     'time': result['time']
                 })
+            self.clubCounterByCategory[result['category'].category][result['club'].name] = self.clubCounterByCategory[result['category'].category].get(result['club'].name, 0) + 1
             runner.computeScore(noCountingRaces = (self.__racenum // 2) + 1)
 
 class Races:
-    def __init__(self, name, runners = Runners(), clubs = Clubs(), categories = Categories(), raceslist = []):
+    def __init__(self, name, runners = Runners(), clubs = Clubs(), categories = Categories(), raceslist = [], maxScoredRunners = float('inf'), scoreFunction = lambda x: -x, clubType = 'club', scoreFunctionRelay = lambda x: -x):
         self.races = []
         self.name = name
         self.runners = runners
         self.clubs = clubs
         self.categories = categories
+        self.maxScoredRunners = maxScoredRunners
+        self.scoreFunction = scoreFunction
+        self.scoreFunctionRelay = scoreFunctionRelay
+        self.clubType = clubType
         self.__racenum = 0
         for race in raceslist:
             self.addRace(race)
@@ -371,13 +406,21 @@ class Races:
     def addRace(self, race):
         if not race.get('joinedkats'):
             race['joinedkats'] = []
+
+        if race.get('type') == 'relay':
+            scoreFunc = self.scoreFunctionRelay
+        else:
+            scoreFunc = self.scoreFunction
         self.races.append(Race(race['name'],
                                self.runners,
                                self.clubs,
                                self.categories,
                                race['resultloc'],
                                race['joinedkats'],
-                               self.getNewRaceNum()))
+                               self.getNewRaceNum(),
+                               maxScoredRunners = self.maxScoredRunners,
+                               scoreFunction = scoreFunc,
+                               clubType = self.clubType))
 
     def scoreRaces(self):
         for race in self.races:
