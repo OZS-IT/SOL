@@ -1,2 +1,2 @@
-SOL
+SEEOC scoring
 ===
