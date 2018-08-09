@@ -25,6 +25,7 @@ races = Races('seeoc',
               clubs = registrations.clubs,
               categories= registrations.categories,
               maxScoredRunners=2,
+              maxScoredTeamsRelay=1,
               scoreFunction=pointsSEEOC,
               scoreFunctionRelay=pointsSEEOCRelay)
 

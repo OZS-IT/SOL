@@ -384,13 +384,14 @@ class Race:
             runner.computeScore(noCountingRaces = (self.__racenum // 2) + 1)
 
 class Races:
-    def __init__(self, name, runners = Runners(), clubs = Clubs(), categories = Categories(), raceslist = [], maxScoredRunners = float('inf'), scoreFunction = lambda x: -x, clubType = 'club', scoreFunctionRelay = lambda x: -x):
+    def __init__(self, name, runners = Runners(), clubs = Clubs(), categories = Categories(), raceslist = [], maxScoredRunners = float('inf'), scoreFunction = lambda x: -x, clubType = 'club', scoreFunctionRelay = lambda x: -x, maxScoredTeamsRelay = float('inf')):
         self.races = []
         self.name = name
         self.runners = runners
         self.clubs = clubs
         self.categories = categories
         self.maxScoredRunners = maxScoredRunners
+        self.maxScoredTeamsRelay = maxScoredTeamsRelay
         self.scoreFunction = scoreFunction
         self.scoreFunctionRelay = scoreFunctionRelay
         self.clubType = clubType
@@ -409,8 +410,10 @@ class Races:
 
         if race.get('type') == 'relay':
             scoreFunc = self.scoreFunctionRelay
+            maxScoredRunners = self.maxScoredTeamsRelay
         else:
             scoreFunc = self.scoreFunction
+            maxScoredRunners = self.maxScoredRunners
         self.races.append(Race(race['name'],
                                self.runners,
                                self.clubs,
@@ -418,7 +421,7 @@ class Races:
                                race['resultloc'],
                                race['joinedkats'],
                                self.getNewRaceNum(),
-                               maxScoredRunners = self.maxScoredRunners,
+                               maxScoredRunners = maxScoredRunners,
                                scoreFunction = scoreFunc,
                                clubType = self.clubType))
 
