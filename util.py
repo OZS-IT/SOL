@@ -13,20 +13,23 @@ def identifier(string):
 
 def pointsSOL(place):
     t=[25,20,15,12,10,8,7,6,5,4,3,2,1]
+    place = place - 1
     if place > len(t)-1:
         return 1
     return t[place]
 
 def pointsSEEOC(place):
     t = [45,39,34,30,27,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
+    place = place - 1
     if place > len(t)-1:
-        return 1
+        return 0
     return t[place]
 
 def pointsSEEOCRelay(place):
     t = [90,78,68,60,54,50,48,46,44,42,40,38,36,34,0]
+    place = place - 1
     if place > len(t)-1:
-        return 1
+        return 0
     return t[place]
 
 def sortSOL(dict):
@@ -67,7 +70,7 @@ def registrationsFromResults(infile, outfile, clubType = 'club'):
         else:
             raise ValueError('Provided clubType not supported: ' + clubType)
         if not club:
-            print('No country/club, even though it is needed for scoring: ' + name + ' ' + surname )
+            print('No country/club, even though it is needed for scoring: ' + name + ' ' + surname + ' ' + infile )
         
         g.write(';'.join([siteId, name, surname, club, category]))        
         g.write('\n')        

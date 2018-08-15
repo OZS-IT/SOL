@@ -316,10 +316,12 @@ class Race:
                 time1 = time.split(':')[::-1]
                 time = 0
                 for i in range(len(time1)):
-                    time +=  int(time1[i]) * (60^i)
+                    time +=  int(time1[i]) * (60**i)
                 if not classifier:
                     classifier = 0
 
+            if not time:
+                time = float('inf')
             results.append({
                 'runner': runner,
                 'category': category,
@@ -338,7 +340,7 @@ class Race:
 
     def scoreResults(self):
         ## todo create a subclass, that includes this function and leave the instance clean
-        self.results.sort(key=lambda x: (x['category'], -x['time']))
+        self.results.sort(key=lambda x: (x['category'], x['time']))
         prevCat = Category('')
         place = 1
         for result in self.results:
@@ -360,7 +362,7 @@ class Race:
             elif not runner.registered_at.get(self.__racenum, False):
                 place -= 1 ## not counting for scores
                 continue
-            elif self.clubCounterByCategory[result['category'].category].get(result['club'].name, 0) > self.maxScoredRunners:
+            elif self.clubCounterByCategory[result['category'].category].get(result['club'].name, 0) >= self.maxScoredRunners:
                 place -= 1 ## club already scored the maximum number of runners
                 continue
             elif result['classifier'] == 0:
