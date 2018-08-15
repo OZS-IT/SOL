@@ -5,16 +5,14 @@ from main_classes import *
 from os import path
 from util import *
 
-
-
 reglist = []
 racelist = []
 i = 1
 
-registrationsFromResults(infile = './results/test{0}.csv'.format(i), outfile = './registrations/registrations_test{0}.csv'.format(i), filterSEEOC = True)
-reglist.append('./registrations/registrations_test{0}.csv'.format(i))
-racelist.append({'resultloc': './results/test{0}.csv'.format(i), 'name': 'test{0}'.format(i)})
-if i == 4:
+registrationsFromResults(infile = './results/test_relay{0}.csv'.format(i), outfile = './registrations/registrations_test_relay{0}.csv'.format(i))
+reglist.append('./registrations/registrations_test_relay{0}.csv'.format(i))
+racelist.append({'resultloc': './results/test_relay{0}.csv'.format(i), 'name': 'test_relay{0}'.format(i)})
+if i == 1:
     racelist[-1]['type'] = 'relay'
 
 registrations = Registrations(reglist=reglist)
@@ -31,10 +29,10 @@ races = Races('seeoc',
 
 races.scoreRaces()
 
-assert races.clubs.clubs['seeocokazimut'].getClubScore() == 45
-assert races.clubs.clubs['seeocokpolaris'].getClubScore() == 39
-assert races.clubs.clubs['seeocokkomenda'].getClubScore() == 64
-assert races.clubs.clubs['seeocoksg'].getClubScore() == 0
+assert races.clubs.clubs['okazimut'].getClubScore() == 158
+assert races.clubs.clubs['okpolaris'].getClubScore() == 168
+assert races.clubs.clubs['okkomenda'].getClubScore() == 146
+assert races.clubs.clubs['oksg'].getClubScore() == 0
 
 for name,club in races.clubs.clubs.items():
     print(name, club.getClubScore())

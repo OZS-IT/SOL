@@ -5,11 +5,9 @@ from main_classes import *
 from os import path
 from util import *
 
-
-
 reglist = []
 racelist = []
-i = 1
+i = 2
 
 registrationsFromResults(infile = './results/test{0}.csv'.format(i), outfile = './registrations/registrations_test{0}.csv'.format(i), filterSEEOC = True)
 reglist.append('./registrations/registrations_test{0}.csv'.format(i))
@@ -32,7 +30,7 @@ races = Races('seeoc',
 races.scoreRaces()
 
 assert races.clubs.clubs['seeocokazimut'].getClubScore() == 45
-assert races.clubs.clubs['seeocokpolaris'].getClubScore() == 39
+assert races.clubs.clubs['seeocokpolaris'].getClubScore() == 66
 assert races.clubs.clubs['seeocokkomenda'].getClubScore() == 64
 assert races.clubs.clubs['seeocoksg'].getClubScore() == 0
 

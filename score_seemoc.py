@@ -11,7 +11,7 @@ for i in range(1, numberOfRaces + 1):
     if i == 2 or i == 3:
         continue
 
-    registrationsFromResults(infile = './results/seemoc{0}.csv'.format(i), outfile = './registrations/registrations_seemoc{0}.csv'.format(i), clubType = 'country')
+    registrationsFromResults(infile = './results/seemoc{0}.csv'.format(i), outfile = './registrations/registrations_seemoc{0}.csv'.format(i), clubType = 'country', filterSEEMOC = True)
     reglist.append('./registrations/registrations_seemoc{0}.csv'.format(i))
     racelist.append({'resultloc': './results/seemoc{0}.csv'.format(i), 'name': 'seemoc{0}'.format(i)})
     if i == 4:

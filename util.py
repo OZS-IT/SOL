@@ -37,7 +37,7 @@ def sortSOL(dict):
     return sorted(dict.values(), key = lambda x: (x.category, -x.sumscore))
 
 
-def registrationsFromResults(infile, outfile, clubType = 'club'):
+def registrationsFromResults(infile, outfile, clubType = 'club', filterSEEOC = False, filterSEEMOC = False):
     f = open(infile, 'r', encoding = 'utf-8')
     g = open(outfile, 'w', encoding = 'utf-8')
     reader = csv.reader(f, delimiter = ';', quotechar = '"')
@@ -71,9 +71,12 @@ def registrationsFromResults(infile, outfile, clubType = 'club'):
             raise ValueError('Provided clubType not supported: ' + clubType)
         if not club:
             print('No country/club, even though it is needed for scoring: ' + name + ' ' + surname + ' ' + infile )
+
+        seemocCountriesList = ['BUL', 'CRO', 'CYP', 'GRE', 'ITA', 'MAC', 'MOL', 'MNT', 'ROM', 'SRB', 'SLO', 'TUR']
         
-        g.write(';'.join([siteId, name, surname, club, category]))        
-        g.write('\n')        
+        if (filterSEEOC and len(club) > 5 and club[0:5] == 'SEEOC') or ( filterSEEMOC and len(club) == 3 and club in seemocCountriesList ) or (not filterSEEOC and not filterSEEMOC):
+            g.write(';'.join([siteId, name, surname, club, category]))        
+            g.write('\n')        
 
     g.close()
     f.close()
