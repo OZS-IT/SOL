@@ -8,7 +8,7 @@ from util import *
 reglist = []
 racelist = []
 
-i = 3
+i = 4
 
 registrationsFromResults(infile = './results/test{0}.csv'.format(i), outfile = './registrations/registrations_test{0}.csv'.format(i), filterSEEOC = True)
 reglist.append('./registrations/registrations_test{0}.csv'.format(i))
