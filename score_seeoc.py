@@ -34,5 +34,7 @@ races.scoreRaces()
 for name,club in races.clubs.clubs.items():
     print(name, club.getClubScore())
 
+clubScoresToCSV(races, file = 'seeoc_2018.csv')
+clubScoresToHTML(races, file = 'seeoc_2018.html')
 
 #races.saveResults('seeoc_2018.csv')

@@ -1,5 +1,6 @@
 from unidecode import unidecode
 import csv
+import pandas as pd
 
 def despace(niz):
     a=''
@@ -36,6 +37,37 @@ def sortSOL(dict):
     ## todo expand
     return sorted(dict.values(), key = lambda x: (x.category, -x.sumscore))
 
+def sortedResultsByClubs(races):
+    results = []
+    for name,club in races.clubs.clubs.items():
+        results.append({
+            'name': name,
+            'score': club.getClubScore()
+            })
+    results.sort(key = lambda x: -x['score'])
+    return results
+
+def clubScoresToCSV(races, file):
+    f = open(file, 'w', encoding = 'utf-8')
+    f.write('club;score\n')
+
+    results = sortedResultsByClubs(races)
+    for result in results:
+        f.write('{0};{1}'.format(result['name'], result['score']))
+        f.write('\n')
+
+    f.close()
+    return
+
+def clubScoresToHTML(races, file):
+    f = open(file, 'w', encoding = 'utf-8')
+    results = sortedResultsByClubs(races)
+    
+    df = pd.DataFrame(results)
+
+    f.write(df.to_html())
+    f.close()
+    return
 
 def registrationsFromResults(infile, outfile, clubType = 'club', filterSEEOC = False, filterSEEMOC = False):
     f = open(infile, 'r', encoding = 'utf-8')
@@ -72,7 +104,7 @@ def registrationsFromResults(infile, outfile, clubType = 'club', filterSEEOC = F
         if not club:
             print('No country/club, even though it is needed for scoring: ' + name + ' ' + surname + ' ' + infile )
 
-        seemocCountriesList = ['BUL', 'CRO', 'CYP', 'GRE', 'ITA', 'MAC', 'MOL', 'MNT', 'ROM', 'SRB', 'SLO', 'TUR'] # todo limit seemoc categories
+        seemocCountriesList = ['BUL', 'CRO', 'CYP', 'GRE', 'ITA', 'MAC', 'MOL', 'MNT', 'ROM', 'SRB', 'SLO', 'TUR']
         seemocCategoriesList = ['W35', 'M35', 'W40', 'M40', 'W45', 'M45', 'W50', 'M50', 'W55', 'M55', 'W60', 'M60', 'W65', 'M65', 'W70', 'M70', 'MW35', 'MW45', 'MW55']
         seeocCategoriesList = ['W16', 'M16', 'M18', 'W18', 'W20', 'M20', 'W21E', 'M21E']
 
