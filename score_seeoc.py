@@ -8,7 +8,7 @@ numberOfRaces = 4
 reglist = []
 racelist = []
 for i in range(1, numberOfRaces + 1):
-    if i == 2 or i == 3:
+    if i == 2 or i == 3 or i == 4:
         continue
 
     registrationsFromResults(infile = './results/seeoc{0}.csv'.format(i), outfile = './registrations/registrations{0}.csv'.format(i), filterSEEOC = True)
