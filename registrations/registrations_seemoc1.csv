@@ -1,22 +1,171 @@
--1;Igor;Gavrilov;SLO;M35
--1;Blaž;Kölner;SLO;M35
--1;Tihomir;Salopek;SLO;M35
--1;Gregor;Raj;SLO;M35
--1;Aleš;Poljanšek;SLO;M35
--1;Simon;Kurinčič;SLO;M35
--1;Valentin;Eržen;SLO;M35
--1;Marko;Dudic;SLO;M35
--1;Klemen;Kenda;SLO;M35
--1;Marko;Obid;SLO;M35
--1;Matej;Sedej;SLO;M35
--1;Blaž;Miheljak;SLO;M35
--1;Valter;Foški;SLO;M35
--1;Franc;Malus;SLO;M35
--1;Kristjan;Gantar;SLO;M35
--1;Alessio;Rozzi;SLO;M35
--1;Marko;Pahor;SLO;M35
--1;Bojan;Jevševar;SLO;M35
--1;Aleš;Zupan;SLO;M50
--1;Miha;Škarabot;SLO;M50
--1;Aleš;Borštnik;SLO;M50
--1;Charles;Nelson;SLO;M50
+-1;Petar;Delić;CRO;M35 SEEMOC
+-1;Blaž;Kölner;SLO;M35 SEEMOC
+-1;Bojan;Jevševar;SLO;M35 SEEMOC
+-1;Matej;Sedej;SLO;M35 SEEMOC
+-1;Tomislav;Vuk;CRO;M35 SEEMOC
+-1;Drago;Peternelj;SLO;M35 SEEMOC
+-1;Ivan;Šeperić Grdiša;CRO;M35 SEEMOC
+-1;Daniel;Fabijanić;CRO;M35 SEEMOC
+-1;Branimir;Pongrac;CRO;M35 SEEMOC
+-1;Nikolay;Halachev;BUL;M35 SEEMOC
+-1;Klemen;Kenda;SLO;M35 SEEMOC
+-1;Luka;Ivanišević;SRB;M35 SEEMOC
+-1;Roland;Pin;ITA;M40 SEEMOC
+-1;Slobodan;Veljovic;SRB;M40 SEEMOC
+-1;Tomislav;Varnica;CRO;M40 SEEMOC
+-1;Istvan;Sebestyen;ROU;M40 SEEMOC
+-1;Plamen;Iordanov;BUL;M40 SEEMOC
+-1;Edi;Ocvirk;CRO;M40 SEEMOC
+-1;Dejan;Avramovic;SRB;M40 SEEMOC
+-1;Gregor;Zupan;SLO;M40 SEEMOC
+-1;Horia;Galateanu;ROU;M40 SEEMOC
+-1;Milen;Kasev;BUL;M40 SEEMOC
+-1;Gorgi;Kostov;MKD;M40 SEEMOC
+-1;Tomislav;Meštrovič;CRO;M40 SEEMOC
+-1;Predrag;Krstić;SRB;M40 SEEMOC
+-1;Relu;Tămas;ROU;M45 SEEMOC
+-1;Damir;Gobec;CRO;M45 SEEMOC
+-1;Aleš;Poljanšek;SLO;M45 SEEMOC
+-1;Petru;Stupu;ROU;M45 SEEMOC
+-1;Dušan;Petrovič;SLO;M45 SEEMOC
+-1;Robert;Orehoci;CRO;M45 SEEMOC
+-1;Krasimir;Kolev;BUL;M45 SEEMOC
+-1;Veaceslav;Isacov;MDA;M45 SEEMOC
+-1;Tomaž;Pust;SLO;M45 SEEMOC
+-1;Ivaylo;Kabadjov;BUL;M45 SEEMOC
+-1;Daniel;Nikolov;BUL;M45 SEEMOC
+-1;Krasimiv;Koev;BUL;M45 SEEMOC
+-1;Aleksandar;Atanasov;BUL;M45 SEEMOC
+-1;Milen;Dragoev;BUL;M45 SEEMOC
+-1;Bojan;Vukelić;CRO;M45 SEEMOC
+-1;Dragan;Krstić;SRB;M45 SEEMOC
+-1;Dejan;Ilic;SRB;M45 SEEMOC
+-1;Suat;Ipekoglu;TUR;M45 SEEMOC
+-1;Ruslan;Iurichin;MDA;M45 SEEMOC
+-1;Todor;Pedev;BUL;M45 SEEMOC
+-1;Hüseyin;Dogan;TUR;M45 SEEMOC
+-1;Ekrem;Deniz;TUR;M45 SEEMOC
+-1;Boris;Bauman;SLO;M50 SEEMOC
+-1;Alberto;Grilli;ITA;M50 SEEMOC
+-1;Stefano;Brambilla;ITA;M50 SEEMOC
+-1;Róbert Kálmán;Ráduly;ROU;M50 SEEMOC
+-1;Stoyan;Dachev;BUL;M50 SEEMOC
+-1;Igor;Bončina;SLO;M50 SEEMOC
+-1;Konstantin;Koynov;BUL;M50 SEEMOC
+-1;Daniel;Stefan;ROU;M50 SEEMOC
+-1;Janez;Zavrl;SLO;M50 SEEMOC
+-1;Radovan;Markovic;SRB;M50 SEEMOC
+-1;Srdjan;Markovic;SRB;M50 SEEMOC
+-1;Slav;Iliev;BUL;M50 SEEMOC
+-1;Mitko;Mitev;BUL;M50 SEEMOC
+-1;Sinan;Sen;TUR;M50 SEEMOC
+-1;Ahmet;Yaşar;TUR;M50 SEEMOC
+-1;Slobodan;Radovanovic;SRB;M50 SEEMOC
+-1;Kudret;Gökbulut;TUR;M50 SEEMOC
+-1;Sorin;Botos;ROU;M55 SEEMOC
+-1;Árpád;Tőkés;ROU;M55 SEEMOC
+-1;Kamen;Kamenarov;BUL;M55 SEEMOC
+-1;Pavel;Cerescu;MDA;M55 SEEMOC
+-1;Darko;Merunka;CRO;M55 SEEMOC
+-1;Grigor;Costan;ROU;M55 SEEMOC
+-1;Dimitar;Dimitrov;BUL;M55 SEEMOC
+-1;Aleš;Borštnik;SLO;M55 SEEMOC
+-1;Vasko;Serafimovski;MKD;M55 SEEMOC
+-1;Zoran;Milovanovic;SRB;M55 SEEMOC
+-1;Roman;Sladič;SLO;M55 SEEMOC
+-1;Darko;Raškaj;CRO;M55 SEEMOC
+-1;Sulejman;Šuškić;SRB;M55 SEEMOC
+-1;Silvij;Močnik;SLO;M60 SEEMOC
+-1;Sandor;Fey;ROU;M60 SEEMOC
+-1;Emilian;Minoiu;ROU;M60 SEEMOC
+-1;Ivo;Kete;SLO;M60 SEEMOC
+-1;Radi;Ganev;BUL;M60 SEEMOC
+-1;Pavel;Mihalev;BUL;M60 SEEMOC
+-1;Dinu;Gheorghe;ROU;M60 SEEMOC
+-1;Dragan;Nikolic;SRB;M60 SEEMOC
+-1;Gheorghe;Urdea;ROU;M60 SEEMOC
+-1;Alexei;Sitnic;MDA;M60 SEEMOC
+-1;Stanko;Čufer;SLO;M60 SEEMOC
+-1;Mircea;Ticleanu;ROU;M65 SEEMOC
+-1;Andrei;Enyedi;ROU;M65 SEEMOC
+-1;Toncho;Neichev;BUL;M65 SEEMOC
+-1;Hristo;Nikolaev;BUL;M65 SEEMOC
+-1;Milan;Cvetković;SRB;M65 SEEMOC
+-1;Gabriel;Maiorescu;ROU;M65 SEEMOC
+-1;Vladimir ;Vorobiov;MDA;M65 SEEMOC
+-1;Janko;Lapajne;SLO;M65 SEEMOC
+-1;Gheorghe;Balmus;MDA;M65 SEEMOC
+-1;Ion;Dodonu;ROU;M65 SEEMOC
+-1;Djordje;Zagorac;SRB;M65 SEEMOC
+-1;Silvano;Bernardi;ITA;M65 SEEMOC
+-1;Constantin;Alexandrescu;ROU;M65 SEEMOC
+-1;Ivica;Mesić;CRO;M65 SEEMOC
+-1;Vlado;Sedej;SLO;M65 SEEMOC
+-1;Lucian;Galateanu;ROU;M70 SEEMOC
+-1;Kiril;Kamenov;BUL;M70 SEEMOC
+-1;Gheorghe;Albici;ROU;M70 SEEMOC
+-1;Vladimir;Degteareov;MDA;M70 SEEMOC
+-1;Serghei;Ivahnenco;MDA;M70 SEEMOC
+-1;Anca;Stupu;ROU;W35 SEEMOC
+-1;Anica;Hribar;SLO;W35 SEEMOC
+-1;Eleonora;Nikolova;BUL;W35 SEEMOC
+-1;Antonija;Orlić;CRO;W35 SEEMOC
+-1;Mariyana;Atanasova;BUL;W35 SEEMOC
+-1;Tanya;Dimitrova;BUL;W35 SEEMOC
+-1;Barbara;Giuganino;ITA;W35 SEEMOC
+-1;Ana;Beblek;CRO;W35 SEEMOC
+-1;Irena;Čorko Meštrović;CRO;W35 SEEMOC
+-1;Sanda;Berženji;CRO;W35 SEEMOC
+-1;Clizia;Zambiasi;ITA;W35 SEEMOC
+-1;Romana;Zupan;SLO;W40 SEEMOC
+-1;Milena;Krasteva;BUL;W40 SEEMOC
+-1;Radina;Georgieva;BUL;W40 SEEMOC
+-1;Violeta;Penkova;BUL;W40 SEEMOC
+-1;Natasha;Petrovic;SRB;W40 SEEMOC
+-1;Sabina;Seražin Korper;CRO;W40 SEEMOC
+-1;Irena;Hacin Kölner;SLO;W40 SEEMOC
+-1;Tatjana;Ljubisavljevic;SRB;W40 SEEMOC
+-1;Ana;Pribaković Borštnik;SLO;W45 SEEMOC
+-1;Veronica;Minoiu;ROU;W45 SEEMOC
+-1;Tzvetanka;Vassileva;ITA;W45 SEEMOC
+-1;Pavlina;Ilieva;BUL;W45 SEEMOC
+-1;Ivana;Gobec;CRO;W45 SEEMOC
+-1;Julia;Kainakchieva;BUL;W45 SEEMOC
+-1;Radmila;Sapundjieva;BUL;W45 SEEMOC
+-1;Miglena;Gateva;BUL;W45 SEEMOC
+-1;Beata Adrianna;Glinska;CRO;W45 SEEMOC
+-1;Tatiana;Kalenderoglu;TUR;W45 SEEMOC
+-1;Sibel;Sen;TUR;W45 SEEMOC
+-1;Nikolina;Topalova;BUL;W45 SEEMOC
+-1;Irina;Juhas;SRB;W50 SEEMOC
+-1;Mariana;Zheceva;BUL;W50 SEEMOC
+-1;Petya;Dimitrova;BUL;W50 SEEMOC
+-1;Margarita;Todorova;BUL;W50 SEEMOC
+-1;Elvina;Ivanova;BUL;W50 SEEMOC
+-1;Cristina;Stefan;ROU;W50 SEEMOC
+-1;Olga;Cecan;MDA;W50 SEEMOC
+-1;Pavlina;Miteva;BUL;W50 SEEMOC
+-1;Elena;Marusceac;MDA;W55 SEEMOC
+-1;Tzvetelina;Kamenarova;BUL;W55 SEEMOC
+-1;Mariana;Dimitrova;BUL;W55 SEEMOC
+-1;Diana;Bridger;CYP;W55 SEEMOC
+-1;Natalia;Cretu;MDA;W55 SEEMOC
+-1;Maja;Cvitković;CRO;W55 SEEMOC
+-1;Jelena;Babić;SRB;W55 SEEMOC
+-1;Ayse Petek;Bingol;TUR;W55 SEEMOC
+-1;Krassimira;Marinova-Zhaltova;BUL;W60 SEEMOC
+-1;Natalia;Deconescu;ROU;W60 SEEMOC
+-1;Marisya;Danailova;BUL;W60 SEEMOC
+-1;Niculina;Maiorescu;ROU;W60 SEEMOC
+-1;Cornelia;Bors;ROU;W60 SEEMOC
+-1;Zhivka;Frangova;BUL;W60 SEEMOC
+-1;Nermin;Fenmen;TUR;W60 SEEMOC
+-1;Olga;Vorobiova;MDA;W60 SEEMOC
+-1;Ljubica;Bacanac;SRB;W65 SEEMOC
+-1;Valentina;Nistoreanu;ROU;W65 SEEMOC
+-1;Milica;Jovanović;SRB;W65 SEEMOC
+-1;Marija;Kovač;SLO;W65 SEEMOC
+-1;Clara;Fey;ROU;W70 SEEMOC
+-1;Kalcich;Licia;ITA;W70 SEEMOC
+-1;Larisa;Pogorletcaia;MDA;W70 SEEMOC
+-1;Mirjana;Milacic - Bajic;SRB;W70 SEEMOC
