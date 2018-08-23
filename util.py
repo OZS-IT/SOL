@@ -104,11 +104,11 @@ def registrationsFromResults(infile, outfile, clubType = 'club', filterSEEOC = F
         if not club:
             print('No country/club, even though it is needed for scoring: ' + name + ' ' + surname + ' ' + infile )
 
-        seemocCountriesList = ['BUL', 'CRO', 'CYP', 'GRE', 'ITA', 'MAC', 'MOL', 'MNT', 'ROM', 'SRB', 'SLO', 'TUR']
-        seemocCategoriesList = ['W35', 'M35', 'W40', 'M40', 'W45', 'M45', 'W50', 'M50', 'W55', 'M55', 'W60', 'M60', 'W65', 'M65', 'W70', 'M70', 'MW35', 'MW45', 'MW55']
-        seeocCategoriesList = ['W16', 'M16', 'M18', 'W18', 'W20', 'M20', 'W21E', 'M21E']
+        seemocCountriesList = ['BUL', 'CRO', 'CYP', 'GRE', 'ITA', 'MKD', 'MDA', 'BIH', 'ROU', 'SRB', 'SLO', 'TUR', 'BiH']
+        seemocCategoriesList = ['W35 SEEMOC', 'M35 SEEMOC', 'W40 SEEMOC', 'M40 SEEMOC', 'W45 SEEMOC', 'M45 SEEMOC', 'W50 SEEMOC', 'M50 SEEMOC', 'W55 SEEMOC', 'M55 SEEMOC', 'W60 SEEMOC', 'M60 SEEMOC', 'W65 SEEMOC', 'M65 SEEMOC', 'W70 SEEMOC', 'M70 SEEMOC', 'MW35 SEEMOC', 'MW45 SEEMOC', 'MW55 SEEMOC']
+        seeocCategoriesList = ['W16 SEEOC', 'M16 SEEOC', 'M18 SEEOC', 'W18 SEEOC', 'W20 SEEOC', 'M20 SEEOC', 'W21E SEEOC', 'M21E SEEOC']
 
-        if (filterSEEOC and len(club) > 5 and club[0:5] == 'SEEOC' and category in seeocCategoriesList) or ( filterSEEMOC and len(club) == 3 and club in seemocCountriesList and category in seemocCategoriesList ) or (not filterSEEOC and not filterSEEMOC):
+        if (filterSEEOC and len(club) > 5 and club[0:4] == 'Team' and category in seeocCategoriesList) or ( filterSEEMOC and len(club) == 3 and club in seemocCountriesList and category in seemocCategoriesList ) or (not filterSEEOC and not filterSEEMOC):
             g.write(';'.join([siteId, name, surname, club, category]))        
             g.write('\n')        
 

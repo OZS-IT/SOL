@@ -278,10 +278,11 @@ class Race:
                 club = row[countryI]
             else:
                 raise ValueError('Provided clubType not supported: ' + self.clubType)
+            club1 = club    
             club = self.clubs.getClub(club)
             if not club:
                 if self.clubType == 'country':
-                    print('No club')
+                    print('No club', row[nameI], row[surnameI], club1)
                 continue
 
             category = row[catI]
