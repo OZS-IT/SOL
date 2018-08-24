@@ -38,4 +38,9 @@ for name,club in races.clubs.clubs.items():
 clubScoresToCSV(races, file = 'seeomoc_2018.csv')
 clubScoresToHTML(races, file = 'seemoc_2018.html')
 
+for i in range(1, numberOfRaces + 1):
+    if i == 3 or i == 4:
+        continue
+    raceScores(races, i, file = 'results/seemoc{0}_scored.html'.format(i))
+
 #races.saveResults('seemoc_2018.csv')

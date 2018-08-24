@@ -37,6 +37,22 @@ def sortSOL(dict):
     ## todo expand
     return sorted(dict.values(), key = lambda x: (x.category, -x.sumscore))
 
+
+def raceScores(races, i, file):
+    f = open(file, 'w', encoding = 'utf-8')
+    results = races.races[i-1].results
+    for result in results:
+        result['runner'] = result['runner'].name + ' ' + result['runner'].surname
+        result['category'] = result['category'].category[:3] + ' ' + result['category'].category[3:].upper()
+    
+    df = pd.DataFrame(results)
+    df=df[['place', 'points', 'club', 'runner', 'category']]
+
+    f.write(df.to_html(index=False))
+    f.close()
+    return
+
+
 def sortedResultsByClubs(races):
     results = []
     seemocCountriesMap = {'BUL': 'Bulgaria', 'CRO': 'Croatia', 'CYP': 'Cyprus', 

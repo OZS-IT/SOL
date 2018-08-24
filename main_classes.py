@@ -359,12 +359,18 @@ class Race:
                     'show': '*',
                     'time': result['time']
                 })
+                result['points'] = '*'
+                result['place'] = '*'
                 place -= 1 ## this person does not count for scores
             elif not runner.registered_at.get(self.__racenum, False):
                 place -= 1 ## not counting for scores
+                result['points'] = '-'
+                result['place'] = '-'
                 continue
             elif self.clubCounterByCategory[result['category'].category].get(result['club'].name, 0) >= self.maxScoredRunners:
                 place -= 1 ## club already scored the maximum number of runners
+                result['points'] = '-'
+                result['place'] = '-'
                 continue
             elif result['classifier'] == 0:
                 points = self.scoreFunction(place)
@@ -375,6 +381,8 @@ class Race:
                     'show': str(points),
                     'time': result['time']
                 })
+                result['points'] = points
+                result['place'] = place
             else:
                 runner.addScore({
                     'racenum': self.__racenum,
@@ -383,6 +391,8 @@ class Race:
                     'show': '-',
                     'time': result['time']
                 })
+                result['points'] = '-'
+                result['place'] = '-'
             self.clubCounterByCategory[result['category'].category][result['club'].name] = self.clubCounterByCategory[result['category'].category].get(result['club'].name, 0) + 1
             runner.computeScore(noCountingRaces = (self.__racenum // 2) + 1)
 
