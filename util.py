@@ -43,7 +43,10 @@ def raceScores(races, i, file):
     results = races.races[i-1].results
     for result in results:
         result['runner'] = result['runner'].name + ' ' + result['runner'].surname
-        result['category'] = result['category'].category[:3] + ' ' + result['category'].category[3:].upper()
+        if not result['category'].category[3] == 'e':
+            result['category'] = result['category'].category[:3] + ' ' + result['category'].category[3:].upper()
+        else:
+            result['category'] = result['category'].category[:4].upper() + ' ' + result['category'].category[4:].upper()
     
     df = pd.DataFrame(results)
     df=df[['place', 'points', 'club', 'runner', 'category']]
