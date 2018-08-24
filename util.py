@@ -39,21 +39,31 @@ def sortSOL(dict):
 
 def sortedResultsByClubs(races):
     results = []
+    seemocCountriesMap = {'BUL': 'Bulgaria', 'CRO': 'Croatia', 'CYP': 'Cyprus', 
+    'GRE': 'Greece', 'ITA': 'Italy', 'MKD': 'Republic of Macedonia', 'MDA': 'Moldavia', 
+    'BIH': 'Bosnia and Herzegovina', 'ROU': 'Romania', 'SRB': 'Serbia', 'SLO': 'Slovenia', 
+    'TUR': 'Turkey'}
     for name,club in races.clubs.clubs.items():
+        if len(name) > 3:
+            name = 'Team ' + name[4:].capitalize()
+        else:
+            name = seemocCountriesMap[name.upper()]
         results.append({
             'name': name,
             'score': club.getClubScore()
             })
     results.sort(key = lambda x: -x['score'])
+    for i in range(len(results)):
+        results[i][' place'] = i + 1
     return results
 
 def clubScoresToCSV(races, file):
     f = open(file, 'w', encoding = 'utf-8')
-    f.write('club;score\n')
+    f.write('place;club;score\n')
 
     results = sortedResultsByClubs(races)
     for result in results:
-        f.write('{0};{1}'.format(result['name'], result['score']))
+        f.write('{0};{1};{2}'.format(result[' place'],result['name'], result['score']))
         f.write('\n')
 
     f.close()
@@ -64,8 +74,9 @@ def clubScoresToHTML(races, file):
     results = sortedResultsByClubs(races)
     
     df = pd.DataFrame(results)
+    print(df)
 
-    f.write(df.to_html())
+    f.write(df.to_html(index=False))
     f.close()
     return
 

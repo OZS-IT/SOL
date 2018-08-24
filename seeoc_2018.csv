@@ -1,9 +1,9 @@
-club;score
-teambulgaria;583
-teamslovenia;471
-teamromania;454
-teammoldova;432
-teamserbia;293
-teammacedonia;210
-teamcroatia;151
-teambih;72
+place;club;score
+1;Team Bulgaria;583
+2;Team Slovenia;471
+3;Team Romania;454
+4;Team Moldova;432
+5;Team Serbia;293
+6;Team Macedonia;210
+7;Team Croatia;151
+8;Team Bih;72

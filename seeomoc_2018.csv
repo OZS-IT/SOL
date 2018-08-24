@@ -1,11 +1,11 @@
-club;score
-bul;800
-rou;767
-slo;525
-srb;450
-cro;422
-mda;339
-ita;237
-tur;72
-mkd;43
-cyp;30
+place;club;score
+1;Bulgaria;800
+2;Romania;767
+3;Slovenia;525
+4;Serbia;450
+5;Croatia;422
+6;Moldavia;339
+7;Italy;237
+8;Turkey;72
+9;Republic of Macedonia;43
+10;Cyprus;30
