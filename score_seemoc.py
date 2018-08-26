@@ -8,9 +8,6 @@ numberOfRaces = 4
 reglist = []
 racelist = []
 for i in range(1, numberOfRaces + 1):
-    if i == 4:
-        continue
-
     registrationsFromResults(infile = './results/seemoc{0}.csv'.format(i), outfile = './registrations/registrations_seemoc{0}.csv'.format(i), clubType = 'country', filterSEEMOC = True)
     reglist.append('./registrations/registrations_seemoc{0}.csv'.format(i))
     racelist.append({'resultloc': './results/seemoc{0}.csv'.format(i), 'name': 'seemoc{0}'.format(i)})
@@ -39,8 +36,6 @@ clubScoresToCSV(races, file = 'seeomoc_2018.csv')
 clubScoresToHTML(races, file = 'seemoc_2018.html')
 
 for i in range(1, numberOfRaces + 1):
-    if i == 4:
-        continue
     raceScores(races, i, file = 'results/seemoc{0}_scored.html'.format(i))
 
 #races.saveResults('seemoc_2018.csv')
