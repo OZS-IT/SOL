@@ -138,7 +138,6 @@ Obid;Marko;OK Azimut;M35;wrongKat;;;*;0;0;392
 Salopek;Tihomir;OK Azimut;M35;wrongKat;;;*;0;0;851
 Rojc;Iztok;OK Polaris;M35;;;;;0;0;65
 Savinšek;Primož;OK Polaris;M35;;;;;0;0;134
-Anderluh;Gregor;OK Polaris;M35;wrongKat;;;*;0;0;155
 Andrejc;Gregor;OK Slovenj Gradec;M35;;;;;0;0;214
 Cokan;Samo;OK Slovenj Gradec;M35;;;;;0;0;217
 Raj;Gregor;OK Slovenj Gradec;M35;;;;;0;0;282
@@ -152,19 +151,20 @@ Rozzi;Alessio;PD Ajdovščina;M35;wrongKat;;;*;0;0;860
 Bauman;Boris;MOK;M35;;;;;0;0;62
 Kokelj;Denis;Kamniški OK;M35;wrongKat;;;*;0;0;436
 Škarabot;Miha;OK Polaris;M45;1:05:25;1;25;25;25;25;54
-Zupan;Gregor;OK Komenda;M45;1:10:53;2;20;20;20;20;712
-Pretnar;Janez;Kamniški OK;M45;1:10:56;3;15;15;15;15;102
-Poljanšek;Aleš;OK Azimut;M45;1:13:48;4;12;12;12;12;176
-Giovannini;Marco;OK Trzin;M45;1:18:49;5;10;10;10;10;594
-Foški;Valter;OK Polaris;M45;1:27:19;6;8;8;8;8;58
-Jazbar;Jožko;OK Azimut;M45;1:28:06;7;7;7;7;7;106
-Kunc;Robert;OK Tivoli;M45;1:33:12;8;6;6;6;6;726
-Eržen;Boris;ŠOK;M45;1:39:04;9;5;5;5;5;559
-Bončina;Igor;OK Slovenske Konjice;M45;1:46:52;10;4;4;4;4;98
-Benko;Robert;OK Polaris;M45;1:51:27;11;3;3;3;3;151
-Kacin;Vojko;OK Azimut;M45;1:52:30;12;2;2;2;2;119
-Pobega;Davor;OK Tivoli;M45;2:13:45;13;1;1;1;1;1038
-Korelc;Andrej;OK Komenda;M45;2:26:09;14;1;1;1;1;756
+Anderluh;Gregor;OK Polaris;M45;1:09:28;2;20;20;20;20;155
+Zupan;Gregor;OK Komenda;M45;1:10:53;3;15;15;15;15;712
+Pretnar;Janez;Kamniški OK;M45;1:10:56;4;12;12;12;12;102
+Poljanšek;Aleš;OK Azimut;M45;1:13:48;5;10;10;10;10;176
+Giovannini;Marco;OK Trzin;M45;1:18:49;6;8;8;8;8;594
+Foški;Valter;OK Polaris;M45;1:27:19;7;7;7;7;7;58
+Jazbar;Jožko;OK Azimut;M45;1:28:06;8;6;6;6;6;106
+Kunc;Robert;OK Tivoli;M45;1:33:12;9;5;5;5;5;726
+Eržen;Boris;ŠOK;M45;1:39:04;10;4;4;4;4;559
+Bončina;Igor;OK Slovenske Konjice;M45;1:46:52;11;3;3;3;3;98
+Benko;Robert;OK Polaris;M45;1:51:27;12;2;2;2;2;151
+Kacin;Vojko;OK Azimut;M45;1:52:30;13;1;1;1;1;119
+Pobega;Davor;OK Tivoli;M45;2:13:45;14;1;1;1;1;1038
+Korelc;Andrej;OK Komenda;M45;2:26:09;15;1;1;1;1;756
 Groff;Tomaž;OK Azimut;M45;;;;;0;0;240
 Zupan;Aleš;OK Polaris;M45;;;;;0;0;55
 Kmetič;Sandi;OK Polaris;M45;;;;;0;0;67
