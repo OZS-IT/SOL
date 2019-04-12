@@ -28,6 +28,7 @@ Valič;Ištvan;OK Slovenj Gradec;M12;;;;;0;0;950
 Svetec;Staš;OK Slovenj Gradec;M12;;;;;0;0;997
 Ilovar;Rok;OK Tivoli;M12;;;;;0;0;916
 Kerševan;Aljaž;PD Ajdovščina;M12;;;;;0;0;1031
+Faganel;Vid;PD Ajdovščina;M12;;;;;0;0;1041
 Turk;Nejc;OK Komenda;M14;0:43:54;1;25;25;25;25;701
 Seljak;Luka;OK Komenda;M14;0:59:07;2;20;20;20;20;613
 Gantar;Primož;OK Azimut;M14;1:06:04;3;15;15;15;15;917
@@ -232,6 +233,7 @@ Mamič;Hana;PD Ajdovščina;Ž14;mp;;;-;0;0;864
 Stres;Tinkara;PD Ajdovščina;Ž14;;;;;0;0;964
 Gregorčič;Ema;PD Ajdovščina;Ž14;;;;;0;0;965
 Samec;Saraja;PD Ajdovščina;Ž14;;;;;0;0;1037
+Ilovar;Pia;OK Tivoli;Ž14;;;;;0;0;836
 Kern;Tina;OK Komenda;Ž16;0:48:04;1;25;25;25;25;647
 Tušar;Teja;OK Azimut;Ž16;0:48:48;2;20;20;20;20;735
 Pust;Karin;OK Komenda;Ž16;1:12:12;3;15;15;15;15;837
@@ -320,3 +322,4 @@ Balažič;Irena;OK Slovenj Gradec;Ž45;;;;;0;0;298
 Pogorevčnik;Olga;OK Slovenj Gradec;Ž45;;;;;0;0;958
 Fras;Tina;OK Slovenj Gradec;Ž45;;;;;0;0;1000
 Kunc Rešek;Natalija;OK Tivoli;Ž45;wrongKat;;;*;0;0;900
+Zaman Groff;Maja;OK Azimut;Ž45;;;;;0;0;201
