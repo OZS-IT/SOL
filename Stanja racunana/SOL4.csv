@@ -29,6 +29,7 @@ Valič;Ištvan;OK Slovenj Gradec;M12;;;;;;;;0;0;950
 Svetec;Staš;OK Slovenj Gradec;M12;;;;;;;;0;0;997
 Kerševan;Aljaž;PD Ajdovščina;M12;;;;;;;;0;0;1031
 Faganel;Vid;PD Ajdovščina;M12;;;;;;;;0;0;1041
+Vodlan;Nik;OK Komenda;M12;;;;;;;;0;0;1044
 Turk;Nejc;OK Komenda;M14;0:20:52;1;25;25;25;25;25;75;25;701
 Seljak;Luka;OK Komenda;M14;;;;20;20;20;;60;20;613
 Zupan;Tilen;OK Komenda;M14;0:29:39;3;15;12;15;15;15;45;15;700
@@ -80,6 +81,7 @@ Andrejc;Klemen;OK Slovenj Gradec;M21A;;;;;;;;0;0;216
 Andrejc;David;OK Slovenj Gradec;M21A;;;;;;;;0;0;289
 Gutenberger;Matjaž;OK Slovenj Gradec;M21A;;;;;;;;0;0;1013
 Furman;Zoran;OK Slovenske Konjice;M21A;;;;;;;;0;0;5
+Cesar;Jaka;OK Slovenj Gradec;M21A;;;;;;;;0;0;1043
 Kenda;Klemen;OK Azimut;M21B;0:27:11;2;20;15;20;25;20;65;22;1
 Malus;Franc;OK Komenda;M21B;0:48:34;8;6;6;25;20;6;51;17;904
 Kurinčič;Simon;OK Komenda;M21B;0:23:30;1;25;20;-;;25;45;22;838
@@ -124,6 +126,8 @@ Petrovič;Blaž;OK Polaris;M21E;;;;;;;;0;0;70
 Dovč;Jan;OK Tivoli;M21E;;;;;;;;0;0;410
 Šumečki;Žan Luka;OK Tivoli;M21E;;;;;;;;0;0;541
 Gregorc;Urban;PD Ajdovščina;M21E;;;;;;;;0;0;859
+Lapajne;Jošt;OK Azimut;M21E;;;;;;;;0;0;363
+Mukhidinov;Sarhiy;OK Azimut;M21E;;;;;;;;0;0;1042
 Kölner;Blaž;OK Komenda;M35;0:39:10;2;20;25;25;;20;70;23;556
 Sedej;Matej;OK Azimut;M35;0:47:18;4;12;5;15;25;12;52;17;108
 Gavrilov;Igor;OK Komenda;M35;0:36:37;1;25;20;;;25;45;22;967
@@ -208,6 +212,7 @@ Cvelbar;Mila;OK Azimut;Ž10;;;;;5;;;5;5;942
 Poženel;Leila Ema;OK Komenda;Ž10;wrongKat;;;;*;*;*;0;0;1002
 Mezga;Frida;OK Slovenj Gradec;Ž10;;;;;;;;0;0;979
 Valič;Ivana;OK Slovenj Gradec;Ž10;;;;;;;;0;0;1018
+Jeraj;Mija;OK Komenda;Ž10;;;;;;;;0;0;1040
 Obid;Neža;OK Azimut;Ž12;0:16:20;1;25;20;25;15;25;70;23;847
 Eržen;Nea;OK Azimut;Ž12;0:16:59;2;20;25;20;20;20;65;22;597
 Kölner;Brina;OK Komenda;Ž12;0:20:21;3;15;15;12;25;15;55;18;803
@@ -292,6 +297,8 @@ Mirnik;Jona;OK Komenda;Ž21E;;;;;;;;0;0;545
 Foški;Tajda;OK Polaris;Ž21E;;;;*;;;;0;0;129
 Bernik;Jerca;ŠOK;Ž21E;;;;*;;;;0;0;22
 Flerin Drevenšek;Suzana;Kamniški OK;Ž21E;;;;;;;;0;0;316
+Mirnik Cerar;Jona;OK Komenda;Ž21E;;;;;;;;0;0;545
+Jolič;Barbara;OK Komenda;Ž21E;;;;;;;;0;0;1045
 Pribaković Borštnik;Ana;OK Tivoli;Ž35;0:44:16;1;25;20;25;25;25;75;25;23
 Hribar;Anica;OK Brežice;Ž35;0:44:16;1;25;25;20;*;25;70;23;44
 Plavčak;Ana;ŠOK;Ž35;0:53:15;3;15;12;;12;15;39;13;401
