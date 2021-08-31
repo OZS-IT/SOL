@@ -74,8 +74,6 @@
 155;Gregor;Anderluh;OK Polaris;M21A;
 664;Elio;Golja;OK Polaris;M21A;
 711;Aljoša;Rebolj;OK Polaris;M21A;
-282;Gregor;Raj;OK Slovenj Gradec;M21A;
-289;David;Andrejc;OK Slovenj Gradec;M21A;
 290;Blaž;Marot;OK Slovenj Gradec;M21A;
 5;Zoran;Furman;OK Slovenske Konjice;M21A;
 663;Aljaž;Černe;OK Tivoli;M21A;
@@ -155,6 +153,7 @@
 1033;Natan;Osterman;OK Polaris;M35;
 214;Gregor;Andrejc;OK Slovenj Gradec;M35;
 217;Samo;Cokan;OK Slovenj Gradec;M35;
+289;David;Andrejc;OK Slovenj Gradec;M35;
 640;Marko;Zanoškar;OK Slovenj Gradec;M35;
 854;Primož;Pogorelčnik;OK Slovenj Gradec;M35;
 957;Tomaž;Pritržnik;OK Slovenj Gradec;M35;
@@ -169,6 +168,7 @@
 134;Primož;Savinšek;OK Polaris;M45;
 151;Robert;Benko;OK Polaris;M45;
 444;Andrej;Cimerman;OK Polaris;M45;
+282;Gregor;Raj;OK Slovenj Gradec;M45;
 283;Blaž;Miheljak;OK Slovenj Gradec;M45;
 467;Marko;Dudić;OK Slovenj Gradec;M45;
 726;Robert;Kunc;OK Tivoli;M45;
@@ -240,8 +240,6 @@
 445;Katarina Eva;Anderluh;OK Polaris;Ž18;
 506;Zala;Ferenc;OK Tivoli;Ž18;
 939;Barbara;Čibej;OK Azimut;Ž21A;
-203;Nastja;Raj;OK Slovenj Gradec;Ž21A;
-294;Petja;Balažič;OK Slovenj Gradec;Ž21A;
 1091;Katka;Šoster;OK Slovenj Gradec;Ž21A;
 117;Urša;Štanfel;OK Azimut;Ž21B;
 188;Marjanca;Poljanšek;OK Azimut;Ž21B;
@@ -266,7 +264,6 @@
 462;Alenka;Škarabot;OK Polaris;Ž21B;
 1096;Neža;Sluga;OK Polaris;Ž21B;
 298;Irena;Balažič;OK Slovenj Gradec;Ž21B;
-639;Tanja;Mezga;OK Slovenj Gradec;Ž21B;
 4;Andreja;Anžur;OK Tivoli;Ž21B;
 409;Julija;Ferenc;OK Tivoli;Ž21B;
 900;Natalija;Kunc Rešek;OK Tivoli;Ž21B;
@@ -302,8 +299,10 @@
 912;Petra;Paradiž;OK Komenda;Ž35;
 1032;Tina;Močnik;OK Komenda;Ž35;
 59;Mojca;Foški;OK Polaris;Ž35;
+203;Nastja;Raj;OK Slovenj Gradec;Ž35;
+294;Petja;Balažič;OK Slovenj Gradec;Ž35;
 229;Maja;Visinski Andrejc;OK Slovenj Gradec;Ž35;
-1015;Anja;Mihelič Porogelčnik;OK Slovenj Gradec;Ž35;
+1015;Anja;Mihelič Pogorelčnik;OK Slovenj Gradec;Ž35;
 931;Abigael Vanessa;Bončina;OK Slovenske Konjice;Ž35;
 401;Ana;Plavčak;ŠOK;Ž35;
 110;Saša;Žižek;OK Azimut;Ž45;
@@ -313,5 +312,6 @@
 322;Maruša;Debeljak;OK Polaris;Ž45;
 1051;Darja;Vodlan;OK Polaris;Ž45;
 465;Urška;Kordiš Miheljak;OK Slovenj Gradec;Ž45;
+639;Tanja;Mezga;OK Slovenj Gradec;Ž45;
 958;Olga;Pogorevčnik;OK Slovenj Gradec;Ž45;
 1000;Tina;Fras;OK Slovenj Gradec;Ž45;

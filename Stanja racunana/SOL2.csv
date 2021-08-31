@@ -63,10 +63,8 @@ Kunc;Matevž;OK Tivoli;M18;;;;;;0;0;578
 Obid;Marko;OK Azimut;M21A;0:41:35;1;25;;25;25;25;392
 Gantar;Kristjan;OK Azimut;M21A;0:41:38;2;20;;20;20;20;918
 Čufer;Stanko;PD Ajdovščina;M21A;0:41:56;3;15;;15;15;15;336
-Raj;Gregor;OK Slovenj Gradec;M21A;0:45:38;4;12;;12;12;12;282
-Eržen;Valentin;OK Azimut;M21A;0:48:11;5;10;;10;10;10;386
-Pust;Tomaž;OK Komenda;M21A;0:48:44;6;8;;8;8;8;893
-Andrejc;David;OK Slovenj Gradec;M21A;0:49:01;7;7;;7;7;7;289
+Eržen;Valentin;OK Azimut;M21A;0:48:11;4;12;;12;12;12;386
+Pust;Tomaž;OK Komenda;M21A;0:48:44;5;10;;10;10;10;893
 Knap;Franc;OK Azimut;M21A;;;;;;0;0;97
 Močnik;Nejc;OK Azimut;M21A;;;;;;0;0;190
 Kavčič;Jure;OK Komenda;M21A;;;;;;0;0;901
@@ -155,6 +153,7 @@ Petrovič;Dušan;OK Polaris;M35;;;;;;0;0;69
 Osterman;Natan;OK Polaris;M35;;;;;;0;0;1033
 Andrejc;Gregor;OK Slovenj Gradec;M35;;;;;;0;0;214
 Cokan;Samo;OK Slovenj Gradec;M35;;;;;;0;0;217
+Andrejc;David;OK Slovenj Gradec;M35;wrongKat;;;;*;0;0;289
 Zanoškar;Marko;OK Slovenj Gradec;M35;;;;;;0;0;640
 Pogorelčnik;Primož;OK Slovenj Gradec;M35;;;;;;0;0;854
 Pritržnik;Tomaž;OK Slovenj Gradec;M35;;;;;;0;0;957
@@ -169,6 +168,7 @@ Foški;Valter;OK Polaris;M45;;;;;;0;0;58
 Savinšek;Primož;OK Polaris;M45;;;;;;0;0;134
 Benko;Robert;OK Polaris;M45;;;;;;0;0;151
 Cimerman;Andrej;OK Polaris;M45;;;;;;0;0;444
+Raj;Gregor;OK Slovenj Gradec;M45;wrongKat;;;;*;0;0;282
 Miheljak;Blaž;OK Slovenj Gradec;M45;;;;;;0;0;283
 Dudić;Marko;OK Slovenj Gradec;M45;wrongKat;;;;*;0;0;467
 Kunc;Robert;OK Tivoli;M45;wrongKat;;;;*;0;0;726
@@ -239,23 +239,20 @@ Pust;Karin;OK Komenda;Ž18;mp;;;;-;0;0;837
 Škarabot;Anja;OK Polaris;Ž18;;;;;;0;0;399
 Anderluh;Katarina Eva;OK Polaris;Ž18;;;;;;0;0;445
 Ferenc;Zala;OK Tivoli;Ž18;;;;;;0;0;506
-Balažič;Petja;OK Slovenj Gradec;Ž21A;0:46:37;1;25;;25;25;25;294
-Raj;Nastja;OK Slovenj Gradec;Ž21A;0:50:38;2;20;;20;20;20;203
-Šoster;Katka;OK Slovenj Gradec;Ž21A;0:54:12;3;15;;15;15;15;1091
+Šoster;Katka;OK Slovenj Gradec;Ž21A;0:54:12;1;25;;25;25;25;1091
 Čibej;Barbara;OK Azimut;Ž21A;;;;;;0;0;939
 Vuga Seljak;Alenka;OK Komenda;Ž21B;0:35:06;1;25;;25;25;25;612
 Poljanšek;Marjanca;OK Azimut;Ž21B;0:36:53;2;20;;20;20;20;188
 Malus;Marta;OK Komenda;Ž21B;0:38:16;3;15;;15;15;15;982
 Gantar;Damjana;OK Azimut;Ž21B;0:38:42;4;12;;12;12;12;919
 Gombač Šuc;Elena;OK Komenda;Ž21B;0:41:46;5;10;;10;10;10;945
-Mezga;Tanja;OK Slovenj Gradec;Ž21B;0:48:09;6;8;;8;8;8;639
-Istenič;Maja;OK Azimut;Ž21B;0:49:09;7;7;;7;7;7;930
-Obid;Maja;OK Azimut;Ž21B;0:50:32;8;6;;6;6;6;933
-Balažič;Irena;OK Slovenj Gradec;Ž21B;0:54:26;9;5;;5;5;5;298
-Sedej;Katarina;OK Azimut;Ž21B;0:55:35;10;4;;4;4;4;992
-Tušar;Tina;OK Azimut;Ž21B;1:01:23;11;3;;3;3;3;1121
-Škarabot;Alenka;OK Polaris;Ž21B;1:07:59;12;2;;2;2;2;462
-Kmetec;Tanja;Kamniški OK;Ž21B;1:18:24;13;1;;1;1;1;1103
+Istenič;Maja;OK Azimut;Ž21B;0:49:09;6;8;;8;8;8;930
+Obid;Maja;OK Azimut;Ž21B;0:50:32;7;7;;7;7;7;933
+Balažič;Irena;OK Slovenj Gradec;Ž21B;0:54:26;8;6;;6;6;6;298
+Sedej;Katarina;OK Azimut;Ž21B;0:55:35;9;5;;5;5;5;992
+Tušar;Tina;OK Azimut;Ž21B;1:01:23;10;4;;4;4;4;1121
+Škarabot;Alenka;OK Polaris;Ž21B;1:07:59;11;3;;3;3;3;462
+Kmetec;Tanja;Kamniški OK;Ž21B;1:18:24;12;2;;2;2;2;1103
 Štanfel;Urša;OK Azimut;Ž21B;;;;;;0;0;117
 Bogataj;Nataša;OK Azimut;Ž21B;;;;;;0;0;817
 Prezelj;Klavdija;OK Azimut;Ž21B;;;;;;0;0;1070
@@ -302,8 +299,10 @@ Hacin Kölner;Irena;OK Komenda;Ž35;wrongKat;;;;*;0;0;630
 Paradiž;Petra;OK Komenda;Ž35;wrongKat;;;;*;0;0;912
 Močnik;Tina;OK Komenda;Ž35;wrongKat;;;;*;0;0;1032
 Foški;Mojca;OK Polaris;Ž35;;;;;;0;0;59
+Raj;Nastja;OK Slovenj Gradec;Ž35;wrongKat;;;;*;0;0;203
+Balažič;Petja;OK Slovenj Gradec;Ž35;wrongKat;;;;*;0;0;294
 Visinski Andrejc;Maja;OK Slovenj Gradec;Ž35;;;;;;0;0;229
-Mihelič Porogelčnik;Anja;OK Slovenj Gradec;Ž35;;;;;;0;0;1015
+Mihelič Pogorelčnik;Anja;OK Slovenj Gradec;Ž35;;;;;;0;0;1015
 Bončina;Abigael Vanessa;OK Slovenske Konjice;Ž35;;;;;;0;0;931
 Plavčak;Ana;ŠOK;Ž35;wrongKat;;;;*;0;0;401
 Žižek;Saša;OK Azimut;Ž45;;;;;;0;0;110
@@ -313,5 +312,6 @@ Stojan;Petra;OK Komenda;Ž45;wrongKat;;;;*;0;0;892
 Debeljak;Maruša;OK Polaris;Ž45;;;;;;0;0;322
 Vodlan;Darja;OK Polaris;Ž45;wrongKat;;;;*;0;0;1051
 Kordiš Miheljak;Urška;OK Slovenj Gradec;Ž45;;;;;;0;0;465
+Mezga;Tanja;OK Slovenj Gradec;Ž45;wrongKat;;;;*;0;0;639
 Pogorevčnik;Olga;OK Slovenj Gradec;Ž45;;;;;;0;0;958
 Fras;Tina;OK Slovenj Gradec;Ž45;;;;;;0;0;1000
