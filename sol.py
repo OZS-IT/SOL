@@ -23,14 +23,15 @@ for j in range(1,17):
             s=s.lower()
             if kate[-1] == "\n":
                 kate = kate[:-1]
-            kat.add(kate)
+            if kate not in ["Ž21A"]:
+                kat.add(kate)
             if ime=="Žiga" and priimek=="Groff":
                 st="483"
             elif ime == "Cesare" and priimek == "Tarrabocchia":
                 klub = "OK Azimut"
             elif ime == "Andraž" and priimek == "De Luisa":
                 klub = "OK Azimut"
-            if s not in tek.keys():
+            if s not in tek.keys() and kate not in ["Ž21A"]:
                 tek[s]=[kate,ime,priimek,tekmaRegistracije,klub,st]
     for i in kat:
         stanjeLige[i]={}
