@@ -11,6 +11,7 @@ Andrejc;Aljoša;OK Slovenj Gradec;M10;;;;;0;0;1017
 Andrejc;Lenart;OK Slovenj Gradec;M10;wrongKat;;;*;0;0;1063
 Gaber Raj;Tejo;OK Slovenj Gradec;M10;;;;;0;0;1106
 Cankar;Teodor;ŠOK;M10;;;;;0;0;1053
+Kurtanjek;Lan;OK Azimut;M10;;;;;0;0;1134
 Sedej;Rok;OK Azimut;M12;wrongKat;;;*;0;0;924
 Bizjak;Beno;OK Azimut;M12;wrongKat;;;*;0;0;1055
 Mlakar;Robi;OK Azimut;M12;;;;;0;0;1058
@@ -38,11 +39,11 @@ Foški;Oskar;OK Polaris;M14;;;;;0;0;878
 Miheljak;Tevž;OK Slovenj Gradec;M14;;;;;0;0;902
 Valič;Ištvan;OK Slovenj Gradec;M14;;;;;0;0;950
 Svetec;Staš;OK Slovenj Gradec;M14;;;;;0;0;997
-Seljak;Luka;OK Komenda;M16;0:22:50;1;25;25;25;25;613
-Gantar;Primož;OK Azimut;M16;0:31:35;2;20;20;20;20;917
 Žižek;Lev;OK Azimut;M16;;;;;0;0;934
+Gantar;Primož;OK Azimut;M16;wrongKat;;;*;0;0;917
+Seljak;Luka;OK Komenda;M16;wrongKat;;;*;0;0;613
 Zupan;Tilen;OK Komenda;M16;;;;;0;0;700
-Turk;Nejc;OK Komenda;M16;;;;;0;0;701
+Turk;Nejc;OK Komenda;M16;wrongKat;;;*;0;0;701
 Močnik;Fedja;OK Polaris;M16;;;;;0;0;654
 Štifter;Matevž;OK Slovenj Gradec;M16;;;;;0;0;956
 Ferenc;Martin;OK Tivoli;M16;;;;;0;0;975
@@ -83,6 +84,7 @@ Cankar;Uroš;ŠOK;M21A;;;;;0;0;1034
 Kete;Ivo;PD Ajdovščina;M21A;;;;;0;0;412
 Boyadzhiev ml.;Ivan;MOK;M21A;;;;;0;0;590
 Pretnar;Janez;Kamniški OK;M21A;;;;;0;0;102
+Pirnat;Tomaž;OK Slovenj Gradec;M21A;;;;;0;0;1131
 Kurinčič;Simon;OK Komenda;M21B;0:27:17;1;25;25;25;25;838
 Šuc;Timotej;OK Komenda;M21B;0:29:02;2;20;20;20;20;946
 Vidič;Matej;OK Azimut;M21B;0:30:48;3;15;15;15;15;757
@@ -160,6 +162,8 @@ Lebar;Daniel;OK Slovenske Konjice;M35;;;;;0;0;6
 Bončina;Igor;OK Slovenske Konjice;M35;wrongKat;;;*;0;0;98
 Bauman;Boris;MOK;M35;;;;;0;0;62
 Lebar;Bojan;Kamniški OK;M35;;;;;0;0;1128
+Kolman;Miran;Kamniški OK;M35;;;;;0;0;123
+Kurtanjek;Luka;OK Azimut;M35;;;;;0;0;1135
 Jazbar;Jožko;OK Azimut;M45;;;;;0;0;106
 Poljanšek;Aleš;OK Azimut;M45;wrongKat;;;*;0;0;176
 Zupan;Gregor;OK Komenda;M45;wrongKat;;;*;0;0;712
@@ -212,6 +216,7 @@ Raj;Lili Ivana;OK Slovenj Gradec;Ž12;wrongKat;;;*;0;0;949
 Mezga;Frida;OK Slovenj Gradec;Ž12;;;;;0;0;979
 Andrejc;Miša;OK Slovenj Gradec;Ž12;;;;;0;0;1016
 Mlakar;Alicija;OK Slovenj Gradec;Ž12;;;;;0;0;1065
+Vrtnik;Taja;OK Komenda;Ž12;;;;;0;0;1136
 Eržen;Nea;OK Azimut;Ž14;wrongKat;;;*;0;0;597
 Obid;Neža;OK Azimut;Ž14;wrongKat;;;*;0;0;847
 Močnik;Jana;OK Azimut;Ž14;wrongKat;;;*;0;0;973
@@ -222,8 +227,8 @@ Kölner;Brina;OK Komenda;Ž14;wrongKat;;;*;0;0;803
 Kern;Patricija;OK Komenda;Ž14;;;;;0;0;883
 Lončar;Naja;OK Komenda;Ž14;;;;;0;0;885
 Raj;Ema Pika;OK Slovenj Gradec;Ž14;wrongKat;;;*;0;0;853
-Gnezda;Neža;OK Azimut;Ž16;0:38:35;1;25;25;25;25;1111
-Malus;Vita;OK Komenda;Ž16;0:39:12;2;20;20;20;20;898
+Gnezda;Neža;OK Azimut;Ž16;wrongKat;;;*;0;0;1111
+Malus;Vita;OK Komenda;Ž16;wrongKat;;;*;0;0;898
 Anderluh;Ana Maja;OK Polaris;Ž16;;;;;0;0;813
 Ferenc;Tinka;OK Tivoli;Ž16;;;;;0;0;727
 Kunc;Mojca;OK Tivoli;Ž16;;;;;0;0;774
@@ -273,6 +278,8 @@ Pretnar;Irma;Kamniški OK;Ž21B;;;;;0;0;99
 Benigar;Lidija;Kamniški OK;Ž21B;;;;;0;0;277
 Flerin Drevenšek;Suzana;Kamniški OK;Ž21B;;;;;0;0;316
 Zagorc;Tina;Kamniški OK;Ž21B;;;;;0;0;670
+Štrumbelj;Lana;OK Polaris;Ž21B;;;;;0;0;855
+Česnik Mažgon;Anita;OK Azimut;Ž21B;;;;;0;0;1133
 Osterman;Eneja;OK Polaris;Ž21E;0:32:43;1;25;25;25;25;66
 Flerin Drevenšek;Mojca;Kamniški OK;Ž21E;0:34:53;2;20;20;20;20;82
 Jeram;Nuša;OK Azimut;Ž21E;0:35:38;3;15;15;15;15;421
@@ -291,6 +298,7 @@ Jolič;Barbara;OK Komenda;Ž21E;;;;;0;0;1045
 Foški;Brina;OK Polaris;Ž21E;;;;;0;0;128
 Foški;Tajda;OK Polaris;Ž21E;;;;;0;0;129
 Bernik;Jerca;ŠOK;Ž21E;;;;;0;0;22
+Firešová;Markéta;OK Komenda;Ž21E;;;;;0;0;1132
 Hribar;Anica;OK Brežice;Ž35;wrongKat;;;*;0;0;44
 Hacin Kölner;Irena;OK Komenda;Ž35;wrongKat;;;*;0;0;630
 Paradiž;Petra;OK Komenda;Ž35;wrongKat;;;*;0;0;912
@@ -302,6 +310,7 @@ Visinski Andrejc;Maja;OK Slovenj Gradec;Ž35;;;;;0;0;229
 Mihelič Pogorelčnik;Anja;OK Slovenj Gradec;Ž35;;;;;0;0;1015
 Bončina;Abigael Vanessa;OK Slovenske Konjice;Ž35;;;;;0;0;931
 Plavčak;Ana;ŠOK;Ž35;wrongKat;;;*;0;0;401
+Mihelič Porogelčnik;Anja;OK Slovenj Gradec;Ž35;;;;;0;0;1015
 Žižek;Saša;OK Azimut;Ž45;;;;;0;0;110
 Prosen;Maja;OK Komenda;Ž45;;;;;0;0;232
 Zupan;Romana;OK Komenda;Ž45;;;;;0;0;713
